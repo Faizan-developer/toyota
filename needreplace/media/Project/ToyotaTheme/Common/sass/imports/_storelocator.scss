@@ -1,0 +1,1636 @@
+*::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Infowindow Roboto font override */
+.gm-style div, .gm-style span, .gm-style label, .gm-style a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* InfoBubble font size */
+.bh-sl-window {
+  font-size: 13px;
+}
+
+.bh-sl-error {
+  clear: both;
+  color: #ae2118;
+  float: left;
+  font-weight: bold;
+  padding: 10px 0;
+  width: 100%;
+}
+
+/* Avoid image issues with Google Maps and CSS resets */
+.bh-sl-map-container img {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  max-height: none !important;
+  max-width: none !important;
+}
+
+.bh-sl-container {
+  box-sizing: border-box;
+  float: left;
+  padding: 0;
+  width: 100%;
+  /* Avoid issues with Google Maps and CSS frameworks */
+}
+
+.bh-sl-container > * {
+  box-sizing: content-box !important;
+}
+
+.bh-sl-container .bh-sl-form-container {
+  clear: left;
+  float: left;
+  margin-top: 0px;
+  width: 100%;
+}
+
+.bh-sl-container .form-input {
+  float: left;
+  margin-top: 3px;
+  width: 100%;
+}
+
+.accordion,
+.filter {
+  &-mobile-header-controls {
+    font-family: $ToyotaText-Bold;
+    position: fixed;
+    font-weight: normal;
+    top: 0;
+    left: 0;
+    right: auto;
+    width: 100%;
+    background: #ffffff;
+    z-index: 10;
+    height: 70px;
+    align-items: center;
+    padding: 22px 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    border-bottom: 1px solid #f3f3f3;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: #888888;
+    display: none;
+    img {
+      margin-right: 15px;
+    }
+    &.show {
+      display: flex;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.bh-sl-container .form-input label {
+  display: block;
+  font-weight: bold;
+  width: 100%;
+}
+
+.bh-sl-container .form-input input[type=text], .bh-sl-container .form-input select {
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  font: normal 14px/1.4 Arial, Helvetica, sans-serif;
+  margin: 0px 0;
+  padding: 6px 5px 6px 30px;
+  width: 100%;
+  -webkit-border-radius: 4px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .bh-sl-container .form-input {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+  }
+  .bh-sl-container .form-input label {
+    display: inline-block;
+    width: auto;
+  }
+
+  .bh-sl-container .form-input input, .bh-sl-container .form-input select {
+    width: auto;
+    margin: 0;
+    padding: 25px 60px 25px 30px;
+    line-height: 20px;
+    font: normal 14px $ToyotaText-Regular;
+    height: 68px;
+    border-right: 1px solid #f3f3f3;
+    border-radius: 0;
+    width: 515px;
+  }
+
+}
+
+.bh-sl-container .loc-alt-dist {
+  display: none;
+}
+
+.bh-sl-container button {
+  background: #00447a;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  float: left;
+  font: bold 14px/1.4 Arial, Helvetica, sans-serif;
+  margin-top: 3px;
+  padding: 6px 12px;
+  white-space: nowrap;
+  -webkit-border-radius: 4px;
+}
+
+.bh-sl-container .bh-sl-loading {
+  background: url(../images/maps/ajax-loader.gif) no-repeat;
+  float: left;
+  margin: 4px 0 0 10px;
+  height: 16px;
+  width: 16px;
+}
+
+.bh-sl-container .bh-sl-filters-container {
+  clear: both;
+  float: left;
+  margin: 15px 0;
+  width: 100%;
+}
+
+.bh-sl-container .bh-sl-filters-container .bh-sl-filters {
+  float: left;
+  list-style: none;
+  margin: 0 100px 0 0;
+  padding: 0;
+}
+
+.bh-sl-container .bh-sl-filters-container .bh-sl-filters li {
+  clear: left;
+  display: block;
+  float: left;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.bh-sl-container .bh-sl-filters-container .bh-sl-filters li label {
+  display: inline;
+  vertical-align: text-bottom;
+}
+
+.bh-sl-container .bh-sl-filters-container .bh-sl-filters li input {
+  display: block;
+  float: left;
+  margin-right: 8px;
+}
+
+.bh-sl-container .bh-sl-filters-container .bh-sl-filters li select {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: normal 14px/1.4 Arial, Helvetica, sans-serif;
+  padding: 6px 12px;
+  -webkit-border-radius: 4px;
+}
+
+.bh-sl-container .bh-sl-map-container {
+  clear: right;
+  float: right;
+  margin-top: 0px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .bh-sl-container .bh-sl-map-container {
+    margin-bottom: 0px;
+    border-bottom: 1px solid #f3f3f3;
+  }
+}
+
+.bh-sl-container .bh-sl-map-container a {
+  color: #d40618;
+  text-decoration: none !important;
+
+}
+
+.bh-sl-container .bh-sl-map-container a:active, .bh-sl-container .bh-sl-map-container a:focus, .bh-sl-container .bh-sl-map-container a:hover {
+  text-decoration: underline;
+}
+
+.bh-sl-container .bh-sl-loc-list {
+  font-size: 13px;
+  height: 530px;
+  overflow-x: auto;
+  width: 100%;
+  //  margin-top: 225px;
+
+}
+
+@media (min-width: 1024px) {
+  .bh-sl-container .bh-sl-loc-list {
+    left: 0;
+    width: 515px;
+    position: absolute;
+    height: 800px;
+    background: #fff;
+    display: none;
+  }
+}
+
+.bh-sl-container .bh-sl-loc-list ul {
+  //  display: block;
+  clear: left;
+  float: left;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.bh-sl-container .bh-sl-loc-list ul li {
+  //  border: 1px solid #fff;
+  background: #fff !important;
+
+  margin: 0;
+  /* Adding this to prevent moving li elements when adding the list-focus class*/
+  box-sizing: border-box;
+  clear: left;
+  cursor: pointer;
+  display: block;
+  float: left;
+
+  width: 100%;
+}
+
+.bh-sl-container .bh-sl-filters {
+  .form-check-label {
+    white-space: nowrap;
+  }
+}
+
+.bh-sl-container .bh-sl-loc-list .list-label {
+  background: #00192d;
+  border-radius: 15px;
+  color: #fff;
+  display: block;
+  float: left;
+  font-weight: bold;
+  margin: 10px 0 0 15px;
+  padding: 4px 7px;
+  text-align: center;
+  width: auto;
+  min-width: 13px;
+}
+
+.bh-sl-container .bh-sl-loc-list .list-details {
+  float: left;
+  margin-left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bh-sl-container .bh-sl-loc-list .list-details .list-content {
+  padding: 0 30px 30px;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.bh-sl-container .bh-sl-loc-list .list-details .loc-dist {
+  color: #8e8e8e;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.bh-sl-container .bh-sl-loc-list .list-focus {
+  /*  border: 1px solid rgba(0, 82, 147, 0.4);*/
+  transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+
+.bh-sl-container .bh-sl-loc-list .bh-sl-close-directions-container {
+  height: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.bh-sl-container .bh-sl-loc-list .bh-sl-close-directions-container .bh-sl-close-icon {
+  right: 6px;
+  top: 0;
+}
+
+.bh-sl-container .bh-sl-loc-list .bh-sl-directions-panel {
+  margin: 0 2%;
+  /* Avoid issues with table-layout */
+}
+
+.bh-sl-container .bh-sl-loc-list .bh-sl-directions-panel table {
+  table-layout: auto;
+  width: 100%;
+}
+
+.bh-sl-container .bh-sl-loc-list .bh-sl-directions-panel table, .bh-sl-container .bh-sl-loc-list .bh-sl-directions-panel td {
+  vertical-align: middle;
+  border-collapse: separate;
+}
+
+.bh-sl-container .bh-sl-loc-list .bh-sl-directions-panel td {
+  padding: 1px;
+}
+
+.bh-sl-container .bh-sl-loc-list .bh-sl-directions-panel .adp-placemark {
+  margin: 10px 0;
+  border: 1px solid #c0c0c0;
+}
+
+.bh-sl-container .bh-sl-loc-list .bh-sl-directions-panel .adp-marker {
+  padding: 3px;
+}
+
+.bh-sl-container .bh-sl-loc-list .bh-sl-noresults-title {
+  font-weight: bold;
+  margin: 15px;
+}
+
+.bh-sl-container .bh-sl-loc-list .bh-sl-noresults-desc {
+  margin: 0 15px;
+}
+
+.bh-sl-container .loc-name {
+  /* Picked up by both list and infowindows */
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.bh-sl-container .bh-sl-map {
+  float: left;
+  height: 800px;
+  width: 100%;
+  //box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+@media (min-width: 1024px) {
+  .bh-sl-container .bh-sl-map {
+    width: 100%;
+
+  }
+}
+
+.bh-sl-container .bh-sl-pagination-container {
+  clear: both;
+
+}
+
+.bh-sl-container .bh-sl-pagination-container ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.bh-sl-container .bh-sl-pagination-container ol li {
+  color: #d40618;
+  cursor: pointer;
+  display: inline-block;
+  font: bold 14px Arial, Helvetica, sans-serif;
+  padding: 10px;
+}
+
+.bh-sl-container .bh-sl-pagination-container ol .bh-sl-current {
+  color: #555;
+  cursor: auto;
+  text-decoration: none;
+}
+
+/* Modal window */
+.bh-sl-overlay {
+  background: url(../images/maps/overlay-bg.png) repeat;
+  height: 100%;
+  left: 0;
+  right: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+
+.bh-sl-overlay .bh-sl-modal-window {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #656565;
+  position: absolute;
+  left: 50%;
+  right: auto;
+  margin-left: -460px;
+  /* width divided by 2 */
+  margin-top: 60px;
+  height: 620px;
+  width: 920px;
+  z-index: 10010;
+}
+
+.bh-sl-overlay .bh-sl-modal-window .bh-sl-map-container {
+  margin-top: 50px;
+  /* increase map container margin */
+}
+
+.bh-sl-overlay .bh-sl-modal-window .bh-sl-modal-content {
+  float: left;
+  padding: 0 1%;
+  /* there's already a margin on the top of the map-container div */
+  width: 98%;
+}
+
+.bh-sl-overlay .bh-sl-modal-window .bh-sl-close-icon {
+  right: 22px;
+  top: 13px;
+}
+
+.bh-sl-close-icon {
+  cursor: pointer;
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.bh-sl-close-icon:after, .bh-sl-close-icon:before {
+  background: #ccc;
+  content: '';
+  display: block;
+  height: 24px;
+  margin: -3px 0 0 -1px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: auto;
+  right: 3px;
+  top: 3px;
+  width: 3px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.bh-sl-close-icon:hover:after, .bh-sl-close-icon:hover:before {
+  background: #b3b3b3;
+}
+
+.bh-sl-close-icon:before {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/* CUSTOM */
+.tt-form-search-box-init, .pac-container {
+  min-width: 515px;
+}
+
+.pac-container {
+  //min-width: 515px;
+  //box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.1);
+  position: absolute !important;
+  border-radius: 0px;
+  box-shadow: none;
+  border: none;
+  margin: 0px 0 0;
+  height: 792px;
+  font: normal 14px $ToyotaText-Regular;
+}
+
+.pac-logo:after {
+  display: none !important;
+
+}
+
+.hdpi.pac-logo:after {
+  background: none;
+}
+
+.pac-item {
+  font: normal 14px $ToyotaText-Regular;
+  border-top: 1px solid #f3f3f3;
+  padding: 19px 30px;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #000000;
+  &:hover {
+    background-color: #fafafa;
+  }
+  &:last-child {
+    border-bottom: 1px solid #f3f3f3;
+  }
+}
+
+.pac-item-selected {
+  background-color: #ebf2fe;
+  &:hover {
+    background-color: #ebf2fe;
+  }
+}
+
+.pac-matched {
+  //font: normal 14px $ToyotaText-Regular;
+  font-weight: normal;
+  font-family: $ToyotaText-Bold;
+}
+
+.pac-item-query {
+  font-size: 13px;
+  padding-right: 3px;
+  color: #000;
+}
+
+.pac-icon {
+  display: none !important;
+}
+
+.pac-icon-search {
+  background-position: -1px -1px;
+}
+
+.pac-item-selected .pac-icon-search {
+  background-position: -18px -1px;
+}
+
+.pac-icon-marker {
+  background-position: -1px -161px;
+}
+
+.pac-item-selected .pac-icon-marker {
+  background-position: -18px -161px;
+}
+
+.pac-placeholder {
+  color: gray;
+}
+
+.tt-branch-locator-sec {
+  display: block;
+  overflow: hidden;
+  padding: 0px 0 40px;
+}
+
+.tt-branch-locator-form-sec {
+  width: 100%;
+  clear: both;
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid rgba(243, 243, 243, 0.5);
+  overflow: hidden;
+  height: 68px;
+}
+
+.tt-form-input-inline {
+  display: inline-block;
+
+  margin: 0;
+  padding: 0;
+  //min-width: 25%;
+  vertical-align: middle;
+  min-height: 35px;
+  width: 515px;
+  float: left;
+  .form-check {
+    position: relative;
+    float: left;
+    margin: 0 1px 0 50px;
+    padding: 15px 0 0;
+
+    .form-check-input {
+      display: inline-block;
+    }
+  }
+  ul {
+    width: 100%;
+    display: table;
+    max-width: 780px;
+    li {
+      display: table-cell;
+      padding: 0px 0px 0 40px;
+      width: 1%;
+      height: 68px;
+      overflow: hidden;
+      line-height: 68px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.tt-form-input.tt-form-input-inline.tt-filters {
+  width: calc(100% - 515px);
+  float: left;
+  margin: 0px 0;
+}
+
+.bh-sl-address {
+  min-width: 445px;
+  font: normal 14px $ToyotaText-Regular;
+  border-radius: 0;
+  &::-webkit-input-placeholder {
+    color: rgba(138, 138, 138, 0.7) !important;
+  }
+
+  &::-moz-placeholder {
+    color: rgba(138, 138, 138, 0.7) !important;
+  }
+
+  &:-ms-input-placeholder {
+    color: rgba(138, 138, 138, 0.7) !important;
+  }
+
+  &::placeholder {
+    color: rgba(138, 138, 138, 0.7) !important;
+  }
+}
+
+#content .bh-sl-address-btn {
+  position: absolute;
+  display: block;
+  width: 70px !important;
+  right: -69px;
+  top: 0;
+  left: auto;
+  border: none;
+  padding: 0 !important;
+  overflow: hidden;
+  z-index: 1;
+  border-right: 1px solid #f3f3f3;
+  display: block;
+  height: 69px;
+  text-indent: 100%;
+  //background: none;
+  //border: none;
+  margin: 0;
+  padding: 0;
+  //width: 50px;
+  float: right;
+  cursor: pointer;
+  background: #fff url('../images/icons/location-search.svg') no-repeat center;
+}
+
+#content .tt-form-search-box-init.active .bh-sl-address-btn {
+  //background: #fff url(../images/icons/location-search-red.svg) no-repeat calc(100% - 24px) center;
+  //background-image: url("../images/icons/location-search-red.svg");
+}
+
+.bh-sl-location {
+  display: block;
+  width: 70px;
+  height: 68px;
+  background: #fcfcfc url("../images/icons/find-a-center.svg") no-repeat center;
+  box-shadow: inset -1px 0 0 0 #f3f3f3, inset 1px 0 0 0 #f3f3f3;
+}
+
+.tt-maps-accordion .tt-content {
+  display: none;
+}
+
+.tt-heading-box {
+  padding: 22px 60px 22px 30px;
+  background: #fff;
+  border-top: 1px solid #f3f3f3;
+  .loc-name {
+    font-family: $ToyotaText-Bold;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    display: inline-block;
+    padding-right: 20px;
+  }
+  .loc-default-dist {
+    font-family: $ToyotaText-Regular;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d40618;
+    //display: inline-block;
+    padding-left: 20px;
+    border-left: 1px solid rgba(155, 155, 155, 0.2);
+    display: inline;
+    padding-right: 20px;
+    line-height: 26px;
+  }
+}
+
+.tt-maps-accordion {
+  //  display: block;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+
+  .accordion-inner {
+    .tt-heading-box {
+      position: relative;
+      &:before {
+        display: inline-block;
+        margin-left: .3em;
+        margin-right: 0;
+        vertical-align: middle;
+        content: "";
+        float: $right;
+        background: url(../images/arrows/menu-arrow-active-mob.svg) no-repeat center;
+        border: none;
+        height: 100%;
+        width: 10px;
+        transform: rotate(-180deg);
+        position: absolute;
+        right: 30px;
+        top: 0;
+      }
+
+      &.active {
+        color: $dark-red;
+        border-bottom: none;
+        &:before {
+          transform: rotate(0);
+        }
+        em {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+    &.list-focus .tt-heading-box {
+      color: $dark-red;
+      border-bottom: none;
+      &:before {
+        transform: rotate(0);
+      }
+
+    }
+  }
+  li {
+    transition: 400ms all ease;
+    .tt-content {
+      transition: opacity 1s ease-out;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+      display: block;
+    }
+    &.list-focus .tt-content {
+      opacity: 1;
+      height: 100%;
+    }
+  }
+}
+
+.bh-sl-container .bh-sl-loc-list .list-details .list-content {
+  .tt-address, .tt-filter-categories {
+    border-bottom: solid 1px #f3f3f3;
+    overflow: hidden;
+  }
+  .loc-addr {
+    background: url(../images/icons/find-a-center.svg) no-repeat center left;
+  }
+  .loc-addr, .loc-addr2, .loc-addr3 {
+    font-family: $ToyotaText-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #333333;
+    padding-left: 40px;
+    padding-right: 0px;
+    margin-bottom: 20px;
+  }
+  .loc-phone {
+    font-family: $ToyotaText-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #333333;
+    background: url(../images/icons/icon-phone.svg) no-repeat center left;
+    padding-left: 40px;
+    margin-bottom: 20px;
+  }
+  .loc-web {
+    font-family: $ToyotaText-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #333333;
+    background: url(../images/icons/help.png) no-repeat center left;
+    padding-left: 40px;
+    margin-bottom: 20px;
+  }
+  .loc-dist {
+  }
+  .loc-directions {
+  }
+
+}
+
+#content {
+  .tt-filter-categories {
+    ul {
+      display: table;
+      width: 100%;
+      li {
+        /*        display: table-cell;
+                float: none;
+                width: 1%;
+                background: none !important;
+                padding: 20px 0;
+                text-align: center;*/
+        display: inline-block;
+        float: none;
+        width: auto;
+        background: none !important;
+        padding: 20px 0;
+        text-align: center;
+        float: left;
+        clear: none;
+        margin: 0 15px;
+        .c-icon {
+          margin-bottom: 15px;
+          display: block;
+          width: 100%;
+          min-width: 50px;
+          height: 34px;
+          &.icon-show-room {
+            background: url(../images/icons/icon-car.svg) no-repeat center;
+          }
+          &.icon-service-center {
+            background: url(../images/icons/icon-wrench.svg) no-repeat center;
+          }
+          &.icon-parts-center {
+            background: url(../images/icons/icon-alloy-wheel.svg) no-repeat center;
+          }
+          &.icon-body-paint {
+            background: url(../images/icons/icon-brush.svg) no-repeat center;
+          }
+        }
+        .c-label {
+          font-family: $ToyotaText-Regular;
+          font-size: 14px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: 0.3px;
+          color: #000000;
+          white-space: nowrap;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .tt-opening-hours {
+    margin: 40px 0;
+    overflow: hidden;
+    ul {
+      li {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        .tt-day, .tt-time {
+          font-family: $ToyotaText-Regular;
+          font-size: 12px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.67;
+          letter-spacing: 0.7px;
+          text-align: left;
+          color: #888888;
+          width: 50%;
+          display: inline-block;
+          float: left;
+        }
+        .tt-day {
+        }
+        .tt-time {
+
+        }
+      }
+    }
+    h5 {
+      font-family: $ToyotaText-Regular;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.71;
+      letter-spacing: 0.3px;
+      text-align: left;
+      color: #d40618;
+      strong {
+        font-family: $ToyotaText-Regular;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.71;
+        letter-spacing: 0.3px;
+        text-align: left;
+        color: #333333;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1254px) {
+  .tt-form-input-inline {
+    .bh-sl-filters {
+      li {
+        padding-left: 15px;
+        padding-right: 0;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1090px) {
+  .bh-sl-container .form-input input {
+    //min-width: 304px;
+  }
+  #bh-sl-address-btn {
+
+    //min-width: auto;
+
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+  .tt-branch-locator-sec {
+    padding: 0;
+  }
+  .bh-sl-map {
+    position: fixed !important;
+    top: 0;
+    //pointer-events: none;
+    //height: 500px !important;
+    height: 100vh !important;
+  }
+  .bh-sl-loc-list {
+    background: #ffffff;
+    position: relative;
+    //margin-top: 436px;
+    //margin-top: 100vh;
+    margin-top: calc(55vh - 13px);
+  }
+  .bh-sl-container {
+    .bh-sl-form-container {
+      position: absolute;
+      width: 90%;
+      top: 90px;
+      left: 5%;
+      right: auto;
+      z-index: 8;
+    }
+  }
+  .tt-branch-locator-form-sec {
+    border: 0;
+    background: none;
+    height: 60px;
+    //box-shadow: 15px 7px 30px 0 rgba(0, 0, 0, 0.1);
+    .tt-form-search-box-init {
+      min-width: auto;
+      width: 100%;
+      height: 60px;
+      display: flex;
+      .form-input {
+        height: 100%;
+        width: auto;
+        margin: 0;
+        input {
+          border-radius: 0;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+        }
+        &:nth-child(1) {
+          //max-width:530px;
+          flex: 3;
+        }
+        .mobile-filter {
+          background: #fcfcfc url("../images/icons/filter.svg") no-repeat center;
+          width: 70px;
+          height: 60px;
+        }
+        input {
+          height: 100%;
+          &.bh-sl-address {
+            width: 100%;
+            min-width: auto;
+            margin: 0;
+            padding-right: 60px;
+            padding-left: 30px;
+
+          }
+        }
+      }
+    }
+
+    .tt-form-input-inline:nth-child(2) {
+      margin-top: 0;
+      display: none;
+      position: fixed;
+      background: #ffffff;
+      padding: 30px 20px 30px 20px;
+      box-sizing: border-box;
+      top: 0;
+      left: 0;
+      right: auto;
+      z-index: 100;
+      height: 100%;
+      width: 100%;
+      .filter-modal-close {
+        cursor: pointer;
+        background-image: url("../images/icons/close-filter.svg");
+        background-repeat: no-repeat;
+        background-position: right top;
+        display: flex;
+        align-items: center;
+        height: 19px;
+        width: 72px;
+        position: fixed;
+        top: 30px;
+        right: 20px;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        font-family: $ToyotaText-Bold;
+        color: #888888;
+      }
+      .map-filter-heading {
+        margin-top: 55px;
+        margin-bottom: 25px;
+        display: none;
+        font-family: $ToyotaText-Bold;
+        font-size: 15px;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        &.show {
+          display: block;
+        }
+      }
+      .bh-sl-filters {
+        max-width: 100%;
+        li {
+          display: block !important;
+          width: 100% !important;
+          margin: 0;
+          padding: 0;
+          text-align: left;
+          label {
+            font-size: 16px;
+            letter-spacing: 0.3px;
+            margin: 0 0 -1px 0;
+            padding: 25px 10px;
+            border-top: 1px solid #f3f3f3;
+            border-bottom: 1px solid #f3f3f3;
+            color: rgba(138, 138, 138, 0.7);
+            text-align: left;
+            display: block;
+            &:before {
+              float: right;
+              height: 100%;
+              border: 0;
+              left: auto;
+              right: 0;
+              background-color: #ffffff;
+              border: none !important;
+            }
+          }
+
+          .form-check-input:checked ~ .form-check-label {
+            color: #000000;
+            &::before {
+              background-image: url('../images/icons/selected-filter.svg');
+              background-position: right 30px;
+              background-repeat: no-repeat;
+              border: none !important;
+              margin-right: 30px;
+            }
+          }
+        }
+      }
+    }
+
+    &.filter-scroll,
+    &.show-mobile-filter {
+      //box-shadow: 0 0 0 #ffffff;
+      //
+      //height: 60px !important;
+      //top: 0;
+      //left: 0;
+      //right: auto;
+      //width: 100%;
+      //position: fixed !important;
+      .tt-form-search-box-init {
+        top: 70px;
+        width: 100%;
+        left: 0;
+      }
+      .bh-sl-address {
+        padding-left: 30px;
+        padding-right: 0;
+      }
+      .bh-sl-loc-list {
+        margin-top: 406px;
+      }
+    }
+
+  }
+  .bh-sl-loc-list {
+    height: auto !important;
+  }
+  .apply-filter-wrapper {
+    margin-top: 40px;
+    text-align: center;
+    .btn {
+      float: none;
+    }
+  }
+  /* find center accordion */
+  #content .tt-maps-accordion {
+    .accordion-inner {
+      &.list-focus {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        right: auto;
+        top: 70px;
+        z-index: 10;
+        overflow: auto;
+        //header
+        .tt-heading-box {
+          &::before {
+            display: none;
+          }
+        }
+        //content
+        .tt-content {
+          .list-content {
+            border-bottom: 0;
+          }
+          .tt-filter-categories {
+            .c-label {
+              font-size: 13px;
+            }
+          }
+          .tt-web {
+            display: none;
+          }
+          .tt-opening-hours {
+            .tt-time {
+              text-align: right;
+            }
+          }
+          .loc-directions {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .pac-container.show {
+    position: fixed !important;
+    overflow-y: scroll;
+    top: 130px !important;
+    left: 0 !important;
+    right: auto;
+    width: 100% !important;
+    height: 100%;
+    display: block !important;
+    border-top: 1px solid #f9f9f9;
+  }
+  #content .tt-form-search-box-init .bh-sl-address-btn {
+    min-width: auto;
+    right: 0;
+    left: auto;
+    height: 59px;
+  }
+  .tt-heading-box .loc-default-dist {
+    display: block;
+    clear: both;
+    padding: 0;
+    border: none;
+  }
+  .accordion-mobile-header-controls.show .tt-maps-accordion .accordion-inner.list-focus .tt-heading-box {
+    border: none;
+  }
+  .tt-maps-accordion li.list-focus .tt-content {
+    overflow: visible;
+  }
+  #content .tt-maps-accordion .accordion-inner.list-focus .tt-content .list-content {
+    padding-bottom: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tt-branch-locator-form-sec {
+    .tt-form-search-box-init {
+      .form-input {
+        &:nth-child(1) {
+          width: 80vw;
+          position: relative;
+        }
+        &.mobile-filter {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+
+.bh-sl-loc-list li.bh-no-result {
+  position: absolute;
+  box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.1);
+  display: block;
+  height: 100%;
+  top: 0;
+}
+
+.bh-sl-container .bh-sl-loc-list .bh-sl-noresults-title {
+  font-family: $ToyotaText-Bold;
+  margin: 0 70px 0px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #888888;
+
+}
+
+.bh-sl-container .bh-sl-loc-list .bh-sl-noresults-title:before {
+  content: "";
+  background: url(../images/icons/search-icon-large.svg) no-repeat;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 100px auto 50px;
+}
+
+.bh-sl-container .bh-sl-loc-list .bh-sl-noresults-desc {
+  font-family: $ToyotaText-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #888888;
+}
+
+.bh-sl-container .bh-sl-loc-list ul li:last-child .tt-heading-box {
+  border-bottom: none;
+}
+
+.tt-page-findacenter, .tt-page-findcenter {
+  .ui-autocomplete {
+    height: 801px;
+    width: 515px;
+    margin-top: 0px;
+    li {
+      background: none !important;
+      line-height: 3.92;
+      border-bottom: 1px solid #f3f3f3;
+      font-size: 14px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      /* line-height: normal; */
+      letter-spacing: 0.3px;
+      text-align: left;
+      color: #000000;
+      &.tt-no-reults-li {
+        //pointer-events: none
+        cursor: auto;
+        .ui-menu-item-wrapper, .tt-no-result {
+          background: none !important;
+          padding: 0 70px;
+          border: none !important;
+          text-align: center;
+          font-family: $ToyotaText-Regular;
+          font-size: 14px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 1.71;
+          letter-spacing: 0.2px;
+          text-align: center;
+          color: #888888;
+          .title {
+            font-family: $ToyotaText-Bold;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.5;
+            letter-spacing: 0.3px;
+            text-align: center;
+            color: #888888;
+            margin-bottom: 10px;
+            display: block;
+          }
+          p {
+            font-family: $ToyotaText-Regular;
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.71;
+            letter-spacing: 0.2px;
+            text-align: center;
+            color: #888888;
+          }
+          &:before {
+            content: "";
+            background: url(../images/icons/search-icon-large.svg) no-repeat;
+            display: block;
+            width: 50px;
+            height: 50px;
+            margin: 100px auto 50px;
+
+          }
+
+        }
+      }
+    }
+  }
+  .ui-autocomplete {
+    li.ui-menu-divider.ui-widget-content {
+      display: none;
+    }
+  }
+
+}
+
+.bh-sl-container .bh-sl-filters-container.form-check {
+  margin: 0;
+  padding: 0;
+}
+
+.bh-sl-container .loc-name {
+  margin: 10px 0;
+  display: inline;
+  line-height: 26px;
+}
+
+@media screen and (max-width: 990px) {
+  .tt-branch-locator-form-sec .tt-form-search-box-init {
+    min-width: auto;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    position: fixed;
+    top: 90px;
+    left: 20px;
+    width: calc(100vw - 40px);
+    box-shadow: 15px 7px 30px 0 rgba(0, 0, 0, 0.1);
+    right: 20px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+  }
+  .filter-scroll-show {
+
+    .tt-branch-locator-form-sec .tt-form-search-box-init {
+      top: 0;
+      width: 100%;
+      z-index: 40;
+      left: 0;
+
+      &.active {
+        //top: 70px;
+      }
+
+    }
+    .show-mobile-filter .tt-form-search-box-init {
+      top: 70px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  .is-branchlocator {
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 9;
+      -webkit-transition: transform 0.5s ease;
+      -moz-transition: transform 0.5s ease;
+      -o-transition: transform 0.5s ease;
+      transition: transform 0.5s ease;
+    }
+
+    &.filter-scroll-show {
+      header {
+        transform: translateY(-100%);
+      }
+    }
+
+    &.mob-filters-open {
+      header {
+        z-index: 0;
+      }
+    }
+  }
+  .tt-page-findacenter, .tt-page-findcenter {
+    .ui-autocomplete li {
+      border-bottom: solid 1px #ecebe9;
+      margin: 0px 0px 0 20px;
+      padding: 20px 0;
+      .ui-menu-item-wrapper {
+        padding: 0;
+        letter-spacing: 0.3px;
+        text-align: left;
+        color: #000000;
+        font-family: $ToyotaText-Regular;
+        font-size: 14px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .tt-branch-locator-form-sec .tt-form-input-inline:nth-child(2) .bh-sl-filters li label {
+    padding: 25px 10px 28px 10px;
+  }
+  .tt-branch-locator-form-sec .tt-form-search-box-init .form-input .bh-sl-address-close-btn {
+    display: none;
+  }
+}
+
+.tt-form-input-inline.tt-filters {
+  ul li {
+    height: 71px;
+  }
+}
+
+.tt-opening-hours {
+  .tt-day {
+    text-transform: capitalize;
+  }
+}
+
+.bh-sl-address-close-btn {
+  display: none
+}
+
+.bh-search-done .bh-sl-address-close-btn {
+  position: absolute;
+  display: block;
+  width: 70px !important;
+  right: -69px;
+  top: 0;
+  left: auto;
+  border: none;
+  padding: 0 !important;
+  overflow: hidden;
+  z-index: 1;
+  border-right: 1px solid #f3f3f3;
+  height: 69px;
+  text-indent: 100%;
+  margin: 0;
+  float: right;
+  cursor: pointer;
+  background: #fff url(../images/icons/close-filter.svg) no-repeat center;
+}
+
+.bh-sl-container .bh-sl-loc-list .bh-sl-noresults-desc {
+  // padding-bottom: 70px;
+}
+
+#content .tt-form-search-box-init .bh-sl-address-btn {
+  text-indent: -999px;
+}
+
+.closingSoon {
+  display: none !important;
+}
+
+@media screen and (min-width: 992px) {
+  .tt-page-findacenter, .tt-page-findcenter {
+    .ui-autocomplete {
+      margin-top: 0px;
+      box-shadow: none;
+      border: 1px solid #f3f3f3;
+      left: -1px !important;
+      right: auto;
+      height: 803px;
+      width: 516px !important;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .bh-sl-map {
+    height: 55vh !important;
+  }
+
+  .tt-page-findacenter, .tt-page-findcenter {
+    .ui-autocomplete {
+      top: 130px !important;
+      left: 0 !important;
+      box-shadow: none;
+      border-top: 1px solid #f3f3f3;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bh-sl-container .bh-sl-loc-list .bh-sl-noresults-title:before {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bh-search-done {
+    .bh-sl-container .bh-sl-map-container {
+      width: calc(100% - 515px);
+      float: right;
+    }
+
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  #content .bh-sl-address-btn, .bh-search-done .bh-sl-address-close-btn {
+    right: -60px;
+  }
+  .bh-sl-address {
+    min-width: 300px;
+    // test
+     max-width: 360px;
+  }
+  .bh-sl-container .bh-sl-loc-list, .tt-form-input-inline {
+    // test
+    max-width: 360px;
+    min-width: auto;
+  }
+  .bh-search-done .bh-sl-container .bh-sl-map-container {
+    width: calc(100% - 360px);
+  }
+  .tt-page-findacenter .ui-autocomplete, .tt-page-findcenter .ui-autocomplete {
+    max-width: 360px;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .bh-sl-address {
+    // test
+    max-width: 100%;
+  }
+  .bh-sl-container .bh-sl-loc-list, .tt-form-input-inline {
+    // test
+    max-width: 100%;
+  }
+
+}

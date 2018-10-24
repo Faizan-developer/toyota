@@ -1,0 +1,92 @@
+---
+title_en: Toyota
+title_ar: Toyota
+
+showInNav: true
+navSortOrder: 2
+---
+
+<div class="mobile-only">
+    {{> vehicles-accordion-mobile }}
+</div>
+<div class="desktop-only tt-vehicle-listing">
+    <div class="container">
+
+        <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+            <div class="main-heading">
+                {{#is language "en"}}
+                    <h1>THE TOYOTA VEHICLES</h1>
+                    <h2 class="paragraph">Find your perfect Toyota vehicle. Navigate through <br/>our recent Toyota cars collection</h2>
+                {{else}}
+                    <h1>سيارات تويوتا
+                    </h1>
+                    <h2 class="paragraph">اعثر على سيارة تويوتا المثالية. تنقل من خلال مجموعة سيارات تويوتا الأخيرة
+                    </h2>
+                {{/is}}
+
+            </div>
+        </div>
+
+        <div class="sub-heading">
+            <h3>
+                {{#is language "en"}}
+                    {{tabs_menu_item_en_1}}
+                {{else}}
+                    {{tabs_menu_item_ar_1}}
+                {{/is}}
+            </h3>
+        </div>
+        <div class="tt-content">
+            <div class="car-listing-box">
+                {{> _vehicles-item-list-passengers }}
+            </div>
+        </div>
+
+        <div class="sub-heading">
+            <h3>
+                {{#is language "en"}}
+                    {{tabs_menu_item_en_2}}
+                {{else}}
+                    {{tabs_menu_item_ar_2}}
+                {{/is}}
+            </h3>
+        </div>
+        <div class="tt-content">
+            <div class="car-listing-box">
+                {{> _vehicles-item-list-suvs }}
+            </div>
+        </div>
+
+        <div class="sub-heading">
+            <h3>
+
+                {{#is language "en"}}
+                    {{tabs_menu_item_en_3}}
+                {{else}}
+                    {{tabs_menu_item_ar_3}}
+                {{/is}}
+            </h3>
+        </div>
+        <div class="tt-content">
+            <div class="car-listing-box">
+                {{> _vehicles-item-list-vans }}
+            </div>
+        </div>
+
+        <div class="sub-heading">
+            <h3>
+                {{#is language "en"}}
+                    {{tabs_menu_item_en_4}}
+                {{else}}
+                    {{tabs_menu_item_ar_4}}
+                {{/is}}
+            </h3>
+        </div>
+        <div class="tt-content">
+            <div class="car-listing-box">
+                {{> _vehicles-item-list-commercial }}
+            </div>
+        </div>
+
+    </div>
+</div>

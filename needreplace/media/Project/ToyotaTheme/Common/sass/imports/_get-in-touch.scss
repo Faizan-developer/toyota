@@ -1,0 +1,35 @@
+.tt-offer-item {
+  &.tt-get {
+    padding-top: 37px;
+    .content {
+      h4 {
+        position: relative;
+        padding-left: 36px;
+        margin: 0 0 15px;
+        font-weight: bold;
+        a, a:hover {
+          color: inherit
+        }
+        img {
+          width: 23px;
+          width: 23px;
+          margin-right: 10px;
+          position: absolute;
+          top: -1px;
+          left: 0;
+
+        }
+      }
+      .btn-content, .time {
+        &.time {
+          font-size: 12px;
+          color: #888888;
+          line-height: 1.67;
+          border-top: 0;
+          bottom: 21px;
+        }
+      }
+    }
+
+  }
+}

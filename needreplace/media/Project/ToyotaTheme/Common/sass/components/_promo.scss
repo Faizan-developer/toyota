@@ -1,0 +1,78 @@
+.component {
+  &.promo {
+    &.tt-simple-promo {
+
+      margin: 40px 0 0;
+      padding: 50px 25px 77px 25px;
+      .promo-img {
+        width: 74px;
+        height: 69px;
+        display: block;
+        text-align: center;
+        margin: 10px auto 45px;
+        img {
+          height: 100%
+        }
+      }
+      h3 {
+        font: normal 20px $ToyotaText-Bold;
+        letter-spacing: 3.2px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000000;
+        margin: 0 0 20px;
+        &.dashed:before {
+
+        }
+        a, a:hover {
+          color: inherit
+        }
+      }
+      p {
+        margin: 0 0 20px;
+        font: normal 15px $ToyotaText-Regular;
+        line-height: 1.67;
+        letter-spacing: 0.5px;
+        padding: 0 14px;
+      }
+
+      .btn-link {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        width: auto;
+        -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        -ms-flex-item-align: center;
+        align-self: center;
+      }
+
+    }
+
+  }
+}
+
+#content .tt-quicklinks-promos {
+  .tt-simple-promo {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+    p {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+    }
+    .btn-link {
+      padding: 0;
+      margin: 0 0 12px 0;
+    }
+
+  }
+}

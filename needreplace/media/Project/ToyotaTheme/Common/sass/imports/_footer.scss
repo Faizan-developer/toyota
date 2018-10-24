@@ -1,0 +1,474 @@
+#footer {
+  width: 100%;
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(138, 138, 138, 0.7) !important;
+    font-family: $ToyotaText-Regular;
+  }
+
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(138, 138, 138, 0.7) !important;
+    font-family: $ToyotaText-Regular;
+  }
+
+  :-ms-input-placeholder { /* IE 10+ */
+    color: rgba(138, 138, 138, 0.7) !important;
+    font-family: $ToyotaText-Regular;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    color: rgba(138, 138, 138, 0.7) !important;
+    font-family: $ToyotaText-Regular;
+  }
+
+  .component.link-list.tt-link-list ul li a, .component.link-list.tt-link-list ul li {
+    color: rgba(138, 138, 138, 0.7);
+    font-size: 12px;
+    color: #a3a6a0;
+    line-height: 1.42;
+  }
+  overflow: hidden;
+  color: #5e738d;
+  //margin-top: 50px;
+
+  .tt-link-list-line, .tt-link-list-inline {
+    float: $left;
+    clear: both;
+    display: block !important;
+    width: 100%;
+  }
+  .col {
+    padding: 0
+  }
+
+  .footer-cols {
+    position: relative;
+  }
+  .tt-copyright {
+    color: #a3a6a0;
+    float: $right;
+    padding: 30px 50px;
+    text-align: $right;
+    p {
+
+      color: #a3a6a0 !important;
+      font-family: $ToyotaText-Regular;
+      font-size: 11px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .footer-bottom {
+    position: relative;
+    background-color: #333333;
+    height: 74px;
+    margin-right: 200px;
+    margin-left: 0px;
+    &:before {
+      position: absolute;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      content: '';
+      display: block;
+      z-index: 1;
+      top: 0;
+      background: #333333;
+    }
+    &:after {
+      position: absolute;
+      right: -100%;
+      width: 100%;
+      height: 100%;
+      content: '';
+      display: block;
+      z-index: 1;
+      top: 0;
+      background: url(../images/icons/info-icon.png) no-repeat right center;
+      visibility: hidden;
+    }
+
+    .tt-link-list-inline {
+      margin: 3px 0;
+      padding: 0 15px 0 0;
+      float: $left;
+      width: auto !important;
+      white-space: nowrap;
+      ul {
+        display: block;
+        padding: 0;
+        margin: 25px 0;
+        float: $left;
+        li {
+          display: inline-block;
+          font: normal 11px $ToyotaText-Regular;
+          color: #a3a6a0;
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+
+          margin-#{$left}: 0;
+          margin-#{$right}: 0px;
+          em {
+            svg {
+              margin-bottom: -14px;
+            }
+          }
+          &:last-child {
+            margin: 0;
+          }
+          a {
+            text-decoration: none;
+            &:hover {
+              text-decoration: none;
+            }
+            color: #a3a6a0 !important;
+            position: relative;
+            top: 2px;
+            &:hover {
+              color: $white;
+            }
+          }
+          &:before {
+            content: "";
+            position: relative;
+            display: inline-block;
+            height: 10px;
+            border-left: 1px solid rgba(155, 155, 155, 0.2);
+            margin: 0 25px;
+            vertical-align: middle;
+            top: 0;
+          }
+          &:first-child:before {
+            border: none;
+            display: none;
+          }
+        }
+
+      }
+    }
+    &.tt-last-child-no-border {
+      li:first-child:before {
+        border-left: 1px solid rgba(155, 155, 155, 0.9);
+        display: inline-block;
+      }
+      li:last-child:before {
+        border: none;
+        display: none;
+      }
+    }
+
+  }
+  .footer-contact {
+    display: block;
+    position: relative;
+    background: #f8f8f8;
+    padding: 60px 0;
+    margin: 0;
+    color: #8a8a8a;
+    overflow: visible;
+    height: 249px;
+    &:before {
+      position: absolute;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      content: '';
+      display: block;
+      z-index: 1;
+      top: 0;
+      background: #f8f8f8;
+    }
+    &:after {
+      position: absolute;
+      left: calc(100% - 250px);
+      width: 100%;
+      height: 100%;
+      content: '';
+      display: block;
+      z-index: -1;
+      top: 83px;
+      background: #000000;
+    }
+
+    .col-md-5 {
+      .col-md-6 {
+        position: relative;
+        &:last-child {
+          &:after {
+            display: none;
+          }
+        }
+      }
+      .col {
+        padding: 0;
+      }
+      &:first-child {
+        &:after {
+          content: "";
+          position: absolute;
+          top: 0;
+          #{$right}: 5%;
+          #{$left}: auto;
+          height: 100%;
+          width: 1px;
+          background: #495a6e;
+        }
+      }
+    }
+    em {
+      float: $left;
+      margin-top: 2px;
+      margin-#{$left}: 0;
+      margin-#{$right}: 5px;
+    }
+    h2 {
+      font: normal 20px $ToyotaText-Regular;
+      color: #8a8a8a;
+      span {
+        font: normal 16px $ToyotaText-Regular;
+        color: #5e738d;
+        margin-#{$left}: 20px;
+        margin-#{$right}: 0;
+      }
+    }
+    p {
+
+    }
+    a {
+      font: normal 16px $ToyotaText-Regular;
+      color: #8a8a8a;
+      text-decoration: none;
+      &:hover {
+        color: #5e738d;
+        em {
+          svg {
+            path {
+              fill: #5e738d;
+              transition: 400ms all ease;
+            }
+          }
+        }
+      }
+      em {
+        img {
+          &:nth-of-type(2) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .foot-item {
+    padding-right: 30px;
+    max-width: 322px;
+    padding-left: 0;
+  }
+  .tt-link-list, .tt-link-list-line, .tt-link-list-inline {
+    margin: 3px 0 0;
+    h4 {
+      margin-top: 7px;
+      letter-spacing: normal;
+
+    }
+  }
+  .component.link-list.tt-link-list-inline p {
+    margin: 40px 0 -8px
+  }
+}
+
+.tt-newsletter-box {
+
+  .heading {
+    margin-bottom: 32px;
+    h3 {
+      font: normal 25px/30px $ToyotaText-Bold;
+      color: #8a8a8a;
+      letter-spacing: normal;
+    }
+    p {
+      font: normal 11px $ToyotaText-Regular;
+      color: #8a8a8a;
+      letter-spacing: normal;
+    }
+  }
+  .tt-subscription-box {
+
+    .form-control {
+      font: normal 11px $ToyotaText-Regular;
+      letter-spacing: 0.2px;
+      color: rgba(138, 138, 138, 0.7);
+      border-radius: 2px;
+      background-color: rgba(51, 51, 51, .06);
+      padding: 0 15px;
+      line-height: 44px;
+      overflow: hidden;
+      height: 44px;
+      display: block;
+    }
+  }
+}
+
+.tt-footer-list {
+  display: inline-block;
+  /*  float: $left;*/
+  vertical-align: top;
+  padding: 0 25px 0 25px;
+  max-width: 50%;
+  .social-icon-list {
+    a {
+      margin-right: 10px;
+      color: #8a8a8a;
+    }
+
+  }
+
+}
+
+#footer .tt-client-logos {
+  margin: 0 55px 0 0;
+  float: $right;
+
+  li {
+    /*rtl:begin:ignore*/
+    margin-top: 4px;
+    margin-left: 50px;
+    margin-right: 0;
+    display: inline-block;
+    /*rtl:end:ignore*/
+    a {
+      margin: 0
+    }
+  }
+
+}
+
+.alert-message, .field-validation-error {
+  min-height: 15px;
+  display: block;
+  color: #d0011b;
+  font-family: $ToyotaText-Regular;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin: 10px 15px;
+  background: url("../images/icons/info-icon.png") no-repeat right center;
+  padding-right: 20px;
+  padding-left: 0;
+  .text-danger {
+    color: #d0011b;
+  }
+  li {
+    text-align: right;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #d0011b;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.tt-success {
+  font-family: $ToyotaText-Regular;
+  font-size: 17px;
+  color: #172328;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  padding: 10px 0;
+  p {
+    color: inherit;
+    font-size: inherit;
+  }
+
+}
+
+.tt-form {
+  position: relative;
+  height: 44px;
+  vertical-align: top;
+  display: block;
+  width: 100%;
+  > label {
+    display: none
+  }
+  .submit-newsletter {
+    cursor: pointer;
+    background: rgb(236, 236, 236) url(../images/arrows/newsletter-icon.png) no-repeat center;
+    width: 44px;
+    height: 44px;
+    border: none;
+    text-indent: -99px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    left: auto;
+    bottom: 0;
+    z-index: 1;
+  }
+}
+
+footer .footer-bottom .tt-link-list-inline ul li a {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+footer .footer-bottom .tt-link-list-inline h4, footer .footer-bottom .tt-link-list-inline p {
+  display: none;
+}
+
+footer .component.link-list.tt-link-list-line ul li a, footer .component.link-list.tt-link-list-inline ul li a {
+  font-size: 11px;
+}
+
+#footer .tt-link-list-inline .tt-client-logos {
+  margin-top: -6px;
+}
+
+#footer .tt-link-list h4, #footer .tt-link-list-line h4, #footer .tt-link-list-inline h4 {
+  font: normal 14px $ToyotaText-Bold;
+  color: #8a8a8a;
+  a {
+    font: normal 14px $ToyotaText-Bold;
+    color: #8a8a8a;
+  }
+
+}
+
+@media screen and (max-width: 424px) {
+  #footer .footer-bottom .tt-link-list-inline ul li:before {
+    margin: 0 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #footer .tt-client-logos {
+    /*rtl:begin:ignore*/
+    margin: 0;
+    float: right !important;
+    /*rtl:end:ignore*/
+    li {
+      &:first-child {
+        display: none;
+      }
+      &:last-child {
+        margin-top: 4px;
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}

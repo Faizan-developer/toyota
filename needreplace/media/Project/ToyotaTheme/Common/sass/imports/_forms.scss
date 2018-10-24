@@ -1,0 +1,828 @@
+.form-start {
+  .tt-forms {
+    max-height: 100%;
+  }
+}
+
+.tt-forms {
+  display: block;
+  //max-height: calc(100vh - 203px);
+  //overflow: hidden;
+
+  margin: 0 auto;
+  padding: 100px 0px 20px;
+
+  .swiper-wrapper {
+    align-items: center; /* add this will all relevant prefixes */
+    position: relative;
+    //top: -800px;
+    padding-top: 0px;
+    //max-height: 400px;
+  }
+  .swiper-slide {
+    align-items: center;
+    opacity: .2;
+    pointer-events: none;
+    //max-height: 200px;
+    //height: auto !important;
+    &.swiper-slide-active {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+  .swiper-button-prev, .swiper-button-next {
+    top: 5px;
+    background-image: url('../images/arrows/form-pagination.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 13px 7px;
+    width: 30px;
+    height: 50px;
+    outline: none;
+  }
+
+  .swiper-button-prev {
+    right: 25px;
+    left: auto;
+  }
+  .swiper-button-next {
+    transform: rotate(180deg);
+    right: -10px;
+  }
+
+  .swiper-container-vertical > .swiper-pagination-progressbar {
+    top: 30px;
+  }
+
+  .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+    opacity: .7;
+  }
+
+}
+
+.custom-pagination {
+  color: #a3a6a0;
+  font-family: $ToyotaText-Bold;
+  font-size: 10px;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1;
+  text-align: left;
+  position: absolute;
+  top: 5px;
+}
+
+@-moz-document url-prefix() {
+  .tt-form-input {
+    label, .control-label {
+      line-height: normal !important;
+    }
+  }
+}
+
+.tt-form-input {
+  //padding: 40px 0;
+  padding: 0;
+  min-height: 50px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: block;
+  label, .control-label {
+    font: normal 15px $ToyotaText-Bold;
+    line-height: 1.47;
+    letter-spacing: normal;
+    color: #000000;
+    small {
+      font: normal 15px $ToyotaText-Regular;
+      font-weight: normal;
+      color: #a3a6a0;
+    }
+  }
+  .form-control {
+    padding: 10px 0;
+    font: normal 15px $ToyotaText-Regular;
+    color: #888888;
+    //transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    border-bottom: solid 2px #d6d6d6;
+    margin: 0;
+    background: none;
+    border-radius: 0;
+  }
+
+  .radio-strip {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    .radio {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      position: relative;
+      font-family: $ToyotaText-Bold;
+      font-size: 10px;
+      font-weight: normal;
+      line-height: normal;
+      letter-spacing: 1px;
+      text-align: center;
+      color: #ffffff;
+      margin: 0 15px 0 0;
+      text-transform: uppercase;
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        cursor: pointer;
+        span {
+          background-color: #d40618;
+        }
+      }
+
+      span {
+        display: block;
+        padding-top: 18px;
+        padding-bottom: 17px;
+        background-color: #888888;
+        border-radius: 5px;
+      }
+
+      .text {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-transform: none;
+        padding: 14px 9px;
+      }
+    }
+    .form-check-input {
+      position: absolute;
+      top: 0;
+      left: 22px;
+      z-index: -1;
+      opacity: 0;
+      &:checked ~ span {
+        background-color: #d40618;
+      }
+      //opacity:0;
+    }
+    &.content-width {
+      .radio {
+        -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+        flex-grow: 0;
+        -ms-flex-negative: 1;
+        flex-shrink: 1;
+        span {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+
+    }
+
+  }
+
+  .form-check {
+    margin-bottom: 10px;
+    padding-top: 10px;
+    .mini-label {
+      margin-bottom: 5px;
+    }
+  }
+
+  .no-touch {
+    .form-check-input {
+      &:hover {
+        ~ .form-check-label:before {
+          border-color: #c5c6c7;
+        }
+      }
+    }
+  }
+
+  .form-check-input {
+    position: absolute;
+    opacity: 0;
+
+    &:focus ~ .form-check-label:before {
+      border-color: #c5c6c7;
+    }
+
+    //&:checked:focus ~ .form-check-label:before{
+    //  border-width:2px;
+    //}
+
+  }
+
+  .form-check-input:checked ~ .form-check-label:before {
+    background-image: url('../images/icons/check-icon.svg');
+    background-color: $dark-red;
+
+  }
+
+  .form-check-label {
+    font-family: $ToyotaText-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #333333;
+    position: relative;
+    display: block;
+    padding: 2px 0 2px 32px;
+    &:before {
+      border-radius: 2px;
+      content: '';
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      border: 1px solid #e4e5e6;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-position: center center;
+      background-repeat: no-repeat;
+      box-sizing: border-box;
+    }
+
+  }
+
+  .selectize-input {
+    border: none;
+    border-bottom: 1px solid #d6d6d6;
+  }
+
+  .p-small-1 {
+    margin-top: 20px;
+    max-width: 383px;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    color: #888888;
+  }
+
+}
+
+.mini-label {
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #888888;
+}
+
+.has-danger .form-control {
+  border-color: #d9534f;
+}
+
+.tt-forms {
+  .swiper-wrapper, .swiper-slide {
+    align-items: center;
+    height: auto;
+    //height: 200px;
+  }
+
+  .swiper-slide {
+  }
+
+  .grey-bg {
+    position: relative;
+    background-color: #fcfcfc;
+  }
+  .swiper-container {
+    //height: 650px;
+    height: 68.5vh;
+    margin-bottom: 20px;
+    //height: 100%;
+    clear: both;
+    float: none;
+    width: 570px;
+    //padding: 0px 285px;
+    margin: 0 auto;
+    min-height: 100px;
+    overflow: hidden;
+  }
+}
+
+.controls-box {
+  position: relative;
+  display: block;
+  overflow: visible;
+  z-index: 1;
+  height: 100%;
+  max-width: 570px;
+  margin: 0 auto;
+  top: -70px;
+  padding-top: 30px;
+}
+
+.controls-footer-box {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  //margin-bottom: -50px;
+  margin-bottom: 0px;
+  width: 100%;
+  background: #f8f8f8;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  .form-group {
+    position: relative;
+    display: block;
+    overflow: visible;
+    z-index: 1;
+    height: 100%;
+    max-width: 570px;
+    margin: 0 auto;
+    padding: 20px 0;
+    transition: 1.2s all ease;
+
+    h4 {
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: normal;
+      text-transform: uppercase;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 3.2px;
+    }
+  }
+
+  .error-details {
+    display: none;
+    background: #d40618;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    .alert-message {
+      padding: 10px 0 !important;
+      color: #fff;
+    }
+    img {
+      vertical-align: -3px;
+      margin: 0 4px;
+    }
+  }
+  &.active-end {
+    .form-group {
+      //padding: 64px 0 200px;
+      padding: 40px 0 80px;
+      h4 {
+        margin-bottom: 40px;
+      }
+    }
+    .error-details {
+      //display: block
+    }
+  }
+  .text-field-controls {
+    padding-top: 18px;
+  }
+}
+
+.text-field-controls {
+  padding-top: 30px;
+}
+
+.custom-combobox {
+  position: relative;
+  display: inline-block;
+}
+
+.form-group.opened .custom-combobox-toggle {
+  transform: rotate(0);
+}
+
+.custom-combobox-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 5px 0 0;
+  cursor: pointer;
+  background-image: url(../images/arrows/form-pagination.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 13px 7px;
+  width: 40px;
+  height: 100%;
+  transform: rotate(180deg);
+  transition: none;
+}
+
+.custom-combobox-input {
+  margin: 0;
+  padding: 5px 10px;
+}
+
+.custom-combobox {
+  display: block;
+}
+
+.splash-screen {
+  .component.link {
+    padding-top: 10px;
+    margin-right: 0;
+  }
+
+  .centered-title {
+    margin-top: 0;
+    padding-top: 12px;
+    margin-bottom: 18px;
+  }
+
+  padding-bottom: 100px;
+  height: 100%;
+  margin: 20px 0;
+
+  background-color: #fcfcfc;
+
+  p, .paragraph {
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    margin-bottom: 50px;
+  }
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  &.form-response {
+    padding-bottom: 0;
+    position: static;
+    min-height: 70vh;
+
+  }
+
+  .car-selected-block {
+    overflow: hidden;
+    margin-bottom: 35px;
+    padding-top: 8px;
+  }
+
+}
+
+input.ui-widget.ui-widget-content, .custom-combobox-input {
+  border: none;
+  background: none;
+  border-bottom: 2px solid #d6d6d6;
+}
+
+.has-error .input.ui-widget.ui-widget-content, .has-error .custom-combobox-input {
+  border-bottom-color: #d9534f !important;
+}
+
+.custom-combobox-input {
+  display: block;
+  width: 100%;
+  background-color: white;
+  font-size: 15px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+  padding-bottom: 16px;
+  padding-left: 0;
+  padding-right: 46px;
+  font-family: $ToyotaText-Regular;
+  box-sizing: border-box;
+}
+
+.ui-widget.ui-widget-content {
+  border: none;
+}
+
+.ui-autocomplete {
+  box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.1);
+  li {
+    font-family: $ToyotaText-Regular;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 3.62;
+    letter-spacing: normal;
+    text-align: left;
+    color: #172328;
+    line-height: 3.52;
+    .ui-menu-item-wrapper {
+      padding-top: 1px;
+      padding-bottom: 1px;
+      padding-left: 21px;
+      &.ui-state-active {
+        background-color: #f8f8f8;
+        color: #d40618;
+        border-color: #f8f8f8
+      }
+    }
+  }
+}
+
+.form-group.radio-group {
+  margin-bottom: 0;
+}
+
+.car-selected-block {
+  padding: 30px 0 0;
+
+  .image {
+    margin-right: 37px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-bottom: 5px;
+    img {
+      max-width: 212px;
+    }
+  }
+  .content {
+    display: inline-block;
+    vertical-align: middle;
+    h4 {
+      font-size: 13px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 1.6px;
+      text-align: left;
+      color: #000000;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+    .pricing {
+      text-align: left;
+      .label {
+        font-family: $ToyotaText-Regular;
+        font-size: 13px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #333333;
+      }
+      .price-tag {
+        font-family: $ToyotaText-Bold;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1.8px;
+        text-align: left;
+        color: #d40618;
+        margin: 0 5px;
+      }
+      margin-bottom: 10px;
+    }
+    p {
+      max-width: 180px;
+      font-family: $ToyotaText-Regular;
+      font-size: 9px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.5;
+      letter-spacing: 0.3px;
+      text-align: left;
+      color: #888888;
+    }
+  }
+
+}
+
+.controls-box-spacer {
+  height: 60px;
+  display: none;
+  width: 100%;
+}
+
+/*.swiper-slide .tt-form-input .radio-strip.current-radio-strip .form-check-input:checked ~ span {
+  box-shadow: inset 0 0 1px 2px rgba(99, 3, 11, .5)
+}*/
+
+.tt-forms.current-blur .swiper-slide.swiper-slide-active {
+  opacity: .2;
+  pointer-events: none;
+}
+
+.tt-forms {
+  .alert-message, .field-validation-error {
+    background: none;
+  }
+  .has-error {
+    .alert-message, .field-validation-error {
+      background: url("../images/icons/info-icon.svg") no-repeat right center;
+    }
+  }
+}
+
+.tt-form-input {
+  .d-flex {
+    .col {
+      padding-right: 0;
+    }
+    .alert-message, .field-validation-error {
+      margin-right: 0;
+    }
+  }
+}
+
+.controls-box {
+  .progress {
+    background-color: #eaeaea;
+  }
+  .progress-bar {
+    width: 0%;
+    transition: all .3s ease;
+    height: 4px;
+    background-color: #333333
+  }
+}
+
+.tt-form-input .multi-text {
+  label, .control-label {
+    margin-bottom: 15px;
+  }
+}
+
+.form-group.multi-text {
+  margin-top: 30px;
+  margin-bottom: 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+}
+
+.desktop-width-limit {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  .radio {
+    max-width: 180px;
+  }
+}
+
+.splash-screen {
+  height: calc(100% - 40px);
+
+}
+
+.tt-short-splash-screen {
+  position: relative;
+  top: -100px;
+  .scroll-to-continue-btn {
+    display: none;
+    &:after {
+      content: "";
+      top: 5px;
+      background-image: url(../images/arrows/form-pagination.svg);
+      background-repeat: no-repeat;
+
+      background-position: center center;
+      background-size: 13px 7px;
+      transform: rotate(180deg);
+      height: 50px;
+      outline: none;
+      display: block;
+      clear: both;
+      float: none;
+      width: 100%;
+      opacity: .5;
+    }
+
+  }
+  h3 {
+    font-family: $ToyotaText-Bold;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    color: #000000;
+
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .scroll-message-desktop {
+    display: none !important;
+  }
+
+  .tt-short-splash-screen {
+    position: relative;
+    top: 0;
+    text-align: center;
+    height: 50vh;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+    .scroll-to-continue-btn {
+      display: block;
+      position: fixed;
+      bottom: 0;
+      text-align: center;
+      width: 100%;
+      font-size: 13px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 0.3px;
+      color: #a3a6a0;
+
+    }
+  }
+
+}
+
+@-moz-document url-prefix() {
+  .tt-form-input .form-check-input:checked ~ .form-check-label::before {
+    border: none;
+  }
+}
+
+input[type=number].form-control {
+  -moz-appearance: textfield;
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+.dropdown-limit {
+  .ui-autocomplete {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+.auto-expanded {
+  resize: none;
+  overflow: hidden;
+}
+
+.has-textarea {
+  padding-bottom: 7px;
+  .mini-label {
+    padding-top: 7px;
+  }
+}
+
+.slide-textarea {
+  .text-field-controls {
+    padding-top: 8px;
+  }
+  .btn-side-info {
+    display: none;
+  }
+}
+
+.tt-form-input .radio-strip.content-width .radio span {
+  line-height: 1.8;
+}
+
+.scroll-message-desktop {
+  display: inline-block;
+  color: #3b3b3b;
+  font-size: 13px;
+  position: relative;
+  margin-top: 40px;
+
+  &:after {
+    content: "";
+    //top: 5px;
+    background-image: url(../images/arrows/form-pagination.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 13px 7px;
+    transform: rotate(180deg);
+    height: 14px;
+    outline: none;
+    display: block;
+    clear: both;
+    float: none;
+    width: 100%;
+    opacity: .5;
+    padding-bottom: 4px;
+  }
+}
+
+.form-start .ui-menu .ui-menu-divider {
+  display: none;
+}

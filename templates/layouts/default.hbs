@@ -1,0 +1,89 @@
+---
+title_en: Toyota
+title_ar: Toyota
+
+showInNav: true
+navSortOrder: 2
+
+
+title_en_1: Vehicles
+title_en_2: Tools & Info
+title_en_3: Campaigns & Offers
+title_en_4: Content Hub
+title_en_5: Corporate
+
+title_ar_1: السيارات
+title_ar_2: الأدوات والمعلومات
+title_ar_3: العروض
+title_ar_4: المقالات
+title_ar_5: الأعمال
+
+
+car_item_link_nav_en_1: Overview
+car_item_link_nav_en_2: Get a quote
+car_item_link_nav_ar_1: نظرة عامة
+car_item_link_nav_ar_2: طلب قيادة تجريبية
+
+tabs_menu_item_en_1: Passenger
+tabs_menu_item_en_2: SUVs
+tabs_menu_item_en_3: VANS
+tabs_menu_item_en_4: Debt Investor Information
+tabs_menu_item_en_5: Archive
+
+tabs_menu_item_ar_1: راكب
+tabs_menu_item_ar_2: سيارات الدفع الرباعي
+tabs_menu_item_ar_3: شاحنة مقفلة
+tabs_menu_item_ar_4: الديون المستثمر المعلومات
+tabs_menu_item_ar_5: أرشيف
+
+text_en_now: Now
+text_en_starting: Starting
+
+text_ar_now: الآن
+text_ar_starting: ابتداء
+
+tag_en_1: CASHBACK
+tag_en_2: LEASE
+tag_en_3: Finance
+
+tag_ar_1: كاش باك
+tag_ar_2: تأجير على
+tag_ar_3: المالية
+
+---
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{> head }}
+</head>
+<body class="tt-local-environment tt-page-features">
+
+<header id="header">
+    {{#is language "en"}}
+        {{> top-nav }}
+
+    {{else}}
+        {{> top-nav-ar }}
+
+    {{/is}}
+    {{> header }}
+</header>
+<main id="content">
+    {{> body }}
+</main>
+
+<footer id="footer">
+    {{#is language "en"}}
+        {{> footer }}
+    {{else}}
+        {{> footer-ar }}
+    {{/is}}
+
+</footer>
+{{> scripts }}
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+.idea/*
+.ftppass
+node_modules/
+.sass-cache/*
+package/
+/w3cErrors/
+/validation-status.json
+/validation-report.json

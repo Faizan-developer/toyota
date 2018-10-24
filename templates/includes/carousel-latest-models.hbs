@@ -1,0 +1,44 @@
+<div class="component link-list tt-links-with-image-box mobile-only">
+    <ul>
+        <li><a href="#"><em>
+            <img alt="image" src="../needreplace/media/Project/ToyotaTheme/Common/images/icons/book-icon.svg">
+
+        </em>Overview</a></li>
+        <li><a href="#"><em>
+            <img alt="image" src="../needreplace/media/Project/ToyotaTheme/Common/images/icons/quote-icon.svg">
+
+        </em>Overview</a></li>
+    </ul>
+</div>
+<div class="component carousel tt-carousel tt-latest-models-box">
+    <div class="main-heading">
+        {{#is language "en"}}
+            <h4>THE ALL NEW 2018</h4>
+            <h2>EXPLORE THE LATEST MODELS</h2>
+        {{else}}
+            <h4>كل جديد 2018</h4>
+            <h3>اكتشف أحدث الموديلات</h3>
+        {{/is}}
+
+
+
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-carousel swiper-container">
+        <div class="swiper-wrapper">
+            {{> _carousel-item }}
+            {{> _carousel-item }}
+            {{> _carousel-item }}
+            {{> _carousel-item }}
+            {{> _carousel-item }}
+            {{> _carousel-item }}
+            {{> _carousel-item }}
+            {{> _carousel-item }}
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!--<div class="swiper-button-next"><span class="tt-text">Next</span><span class="tt-progress-bar"></span></div>-->
+        <!--<div class="swiper-button-prev"><span class="tt-text">Previous</span><span class="tt-progress-bar"></span></div>-->
+    </div>
+</div>

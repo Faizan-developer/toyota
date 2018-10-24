@@ -1,0 +1,108 @@
+/*About Us section 3*/
+@media screen and (max-width: 1199px) {
+  .about-us-section-3 .section-3-background-image {
+    top: 40px;
+  }
+  .offers .offers-listing .offer {
+    margin: 0 27px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .finance-image img {
+    box-shadow: none;
+  }
+  .terms-conditions-content > h4 {
+    font: normal 15px "toyota_textbold", "Tohama", "Arial";
+  }
+  .about-us-boxes-handler {
+    overflow: auto;
+    .about-us-box-container {
+      width: 275px;
+      max-width: 275px;
+      .about-us-boxes {
+        padding: 50px 20px 65px;
+      }
+    }
+  }
+  .about-us-section-3 .section-3-background-image {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 50px;
+    .heading h3 {
+      margin-bottom: 30px;
+    }
+    h4 {
+      margin-top: 0px;
+    }
+    .row .col-xs-12 {
+      margin-top: 20px;
+    }
+  }
+  .offers .offers-listing {
+    text-align: center;
+    padding: 5px 0;
+    .offer {
+      margin: 25px auto;
+      display: block;
+      max-width: 135px;
+      &:first-child, &:last-child {
+        margin: 25px auto;
+        display: block;
+        max-width: 135px;
+      }
+    }
+  }
+  .error-page {
+    height: 373px !important;
+    img {
+      height: 373px;
+      width: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .dream-car {
+    padding: 77px 0;
+    background-position: center 80%;
+    .dream-car-container {
+      .box-item {
+        padding: 0 50px;
+      }
+      .box .box-item {
+        p, .btn-align {
+          display: none;
+        }
+      }
+    }
+  }
+  .disclaimer .container .disclaimer-content ul {
+    width: 100%;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  .error-page .text-center {
+    padding: 100px 20px;
+    h1 {
+      font-size: 30px;
+      line-height: 1.33;
+      letter-spacing: 17.9px;
+    }
+    p {
+      font-size: 12px;
+      max-width: 295px;
+    }
+  }
+  .about-us-small-container .main-heading {
+    margin-top: 30px;
+  }
+  .offers {
+    margin-top: 0;
+  }
+}

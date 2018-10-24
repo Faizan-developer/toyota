@@ -1,0 +1,151 @@
+.tt-accordion {
+  display: block;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+
+  .accordion-inner {
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .accordion-inner {
+    padding: 0px;
+    display: block;
+    margin: 0;
+    background-color: #fcfcfc;
+    > h4 {
+      cursor: pointer;
+      font: normal 15px $ToyotaText-Regular;
+      color: #888;
+      margin: 0;
+      padding: 20px 50px 20px 20px;
+      position: relative;
+      letter-spacing: normal;
+      &:before {
+        display: inline-block;
+        margin-left: .3em;
+        vertical-align: middle;
+        content: "";
+        float: $right;
+        background: url(../images/arrows/menu-arrow-active-mob.svg) no-repeat center;
+        border: none;
+        height: 20px;
+        width: 10px;
+        transform: rotate(-180deg);
+      }
+      em {
+        float: $right;
+        transition: 400ms all ease;
+        margin-left: 0;
+        margin-right: 0px;
+
+      }
+      &.active {
+        color: $dark-red;
+        &:before {
+          transform: rotate(0);
+        }
+        em {
+          transform: rotate(-180deg);
+        }
+      }
+
+    }
+    .tt-content {
+      overflow: scroll;
+      -webkit-overflow-scrolling: touch;
+      -ms-overflow-style: scrollbar;
+      max-width: 766px;
+
+    }
+    p {
+      margin: 0 0 23px;
+    }
+  }
+  &.tt-accordion-faqs {
+    margin: 70px 0;
+    border-bottom: 1px solid #ecebe9;
+    box-shadow: none;
+    .accordion-inner {
+
+      background: #fff;
+      border-top: 1px solid #ecebe9;
+      .tt-content {
+        overflow: hidden;
+        padding: 0 20px;
+        p {
+          font: normal 15px $ToyotaText-Regular;
+          line-height: 1.67;
+          letter-spacing: 0.5px;
+          color: #888888;
+        }
+      }
+      > h4 {
+        font: normal 15px $ToyotaText-Bold;
+        margin: 0 0;
+        letter-spacing: normal;
+        color: #000;
+        position: relative;
+        &:before {
+          width: 17px;
+          background-size: 100%;
+        }
+      }
+    }
+    &.tt-accordion-large {
+      margin: 0;
+      .table {
+        margin: 0;
+      }
+      border-bottom: 2px solid #ecebe9;
+      h4 {
+        position: relative;
+        font-size: 20px;
+        font-weight: normal;
+        letter-spacing: 3.2px;
+        text-align: left;
+        text-transform: uppercase;
+        padding-top: 22px;
+      }
+
+      .accordion-inner {
+        transition: border .3s ease;
+        border-top: 2px solid #ecebe9;
+        border-bottom: 1px solid #ecebe9;
+        .tt-content {
+          padding: 0;
+          max-width:100%;
+        }
+        &:first-child {
+          border-top: 3px solid #ecebe9;
+        }
+        &.expand {
+          //border-top: 1px solid #ecebe9 !important;
+
+        }
+      }
+    }
+  }
+
+}
+.tt-accordion .accordion-inner > h4:before {
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  //right: 0;
+  height: 100%;
+  right: 20px;
+  left: auto;
+}
+
+.vehicles-toggle-box .tt-accordion .accordion-inner > h4:before {
+  right: 20px;
+  left: auto;
+}
+.tt-accordion.tt-accordion-faqs .accordion-inner > h4:before {
+  width: 20px;
+}
+.tt-accordion .accordion-inner>h4 {
+  white-space: normal;
+  word-break: break-word;
+}

@@ -1,0 +1,70 @@
+---
+title_en: Toyota
+title_ar: Toyota
+
+showInNav: true
+navSortOrder: 2
+
+
+tag_en_1: CASHBACK
+tag_en_2: LEASE
+tag_en_3: Finance
+
+tag_ar_1: كاش باك
+tag_ar_2: تأجير على
+tag_ar_3: المالية
+
+---
+
+{{> vehicle-overview-inpage-nav }}
+
+<div class="tt-vehicle-available-offers-sec">
+    <div class="container">
+
+        <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+            <div class="main-heading">
+                {{#is language "en"}}
+                    <h1>THE AVALON OFFERS</h1>
+                    <h2 class="paragraph">Explore the latest offers and discover different ways to finance
+                        your next Avalon Toyota.</h2>
+                {{else}}
+                    <h1>سيارات تويوتا
+                    </h1>
+                    <h2 class="paragraph">اعثر على سيارة تويوتا المثالية. تنقل من خلال مجموعة سيارات تويوتا الأخيرة
+                    </h2>
+                {{/is}}
+            </div>
+        </div>
+
+
+        <div class="component offer-listing tt-offer-listing-box">
+            <div class="row  row-eq-height">
+                <div class="col col-lg-4 col-md-6"> {{> _vehicle-offer-item1 }}</div>
+                <div class="col col-lg-4 col-md-6"> {{> _vehicle-offer-item2 }}</div>
+                <div class="col col-lg-4 col-md-6"> {{> _vehicle-offer-item3 }}</div>
+                <div class="col col-lg-4 col-md-6"> {{> _vehicle-offer-item4 }}</div>
+                <div class="col col-lg-4 col-md-6"> {{> _vehicle-offer-item5 }}</div>
+                <div class="col col-lg-4 col-md-6"> {{> _vehicle-offer-item6 }}</div>
+
+
+            </div>
+            <div class="btn-align text-center">
+                <a href="vehicle-gallery.html" class="btn btn-primary">
+                    {{#is language "en"}}
+                        See more
+                    {{else}}
+                        للمزيد
+                    {{/is}}
+
+
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+{{> vehicle-overview-quicklinks-promos }}
+

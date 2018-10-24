@@ -1,0 +1,87 @@
+---
+title_en: Toyota
+title_ar: Toyota
+
+showInNav: true
+navSortOrder: 2
+---
+
+{{> vehicle-overview-inpage-nav }}
+
+<div class="container">
+
+    <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 p-0">
+        <div class="main-heading">
+            {{#is language "en"}}
+                <h1 class="white-space-pre">THE AVALON 2017 FEATURES</h1>
+                <h2 class="paragraph">From its impressive modern grille to its sleek profile, elegant styling defines
+                    Avalon. Inside, find
+                    an array of high-tech features and indulgent luxury.</h2>
+            {{else}}
+                <h1>سيارات تويوتا
+                </h1>
+                <h2 class="paragraph">اعثر على سيارة تويوتا المثالية. تنقل من خلال مجموعة سيارات تويوتا الأخيرة
+                </h2>
+            {{/is}}
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="tt-hub-tabs-box ">
+
+
+    <div class="tt-tabs tt-tabs-centered">
+        <div class="component tabs tt-tabs-box">
+            <ul class="tabs-menu">
+
+                <li class="active"><a href="#tab-hub1"> Exterior </a></li>
+                <li><a href="#tab-hub2">Interior</a></li>
+                <li><a href="#tab-hub3"> Performance</a></li>
+                <li><a href="#tab-hub4"> Technology</a></li>
+                <li><a href="#tab-hub5"> Safety</a></li>
+            </ul>
+        </div>
+        <div class="tab tab-content">
+            <div id="tab-hub1" class="tab-pane  active">
+                <div class="text-center"> tabs1</div>
+                <div class="container">
+                    {{> _vehicle-promo-feature-items-top }}
+                </div>
+                {{> story-feature }}
+
+                <div class="container">
+                    {{> _vehicle-promo-feature-items-bottom }}
+                </div>
+
+
+            </div>
+            <div id="tab-hub2" class="tab-pane">
+                <div class="text-center"> tabs2</div>
+                <div class="container">
+
+                    {{> _vehicle-promo-feature-items-top }}
+                    {{> _vehicle-promo-feature-items-bottom }}
+                </div>
+
+            </div>
+            <div id="tab-hub3" class="tab-pane">
+                <div class="text-center">tabs3</div>
+            </div>
+            <div id="tab-hub4" class="tab-pane">
+                <div class="text-center">tabs4</div>
+            </div>
+            <div id="tab-hub5" class="tab-pane">
+                <div class="text-center">tabs5</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+{{> vehicle-overview-quicklinks-promos }}
+

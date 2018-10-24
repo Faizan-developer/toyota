@@ -1,0 +1,606 @@
+/*
+$ToyotaDisplay-Regular: 'toyota_displayregular', 'toyota_textregular', 'Tohama', 'Arial';
+$ToyotaDisplay-Bold: 'toyota_displaybold', 'toyota_textbold' 'Tohama', 'Arial';
+$ToyotaDisplay-Heavy: 'toyota_displayheavy', 'toyota_textbold_italic', 'Tohama', 'Arial';
+*/
+.hub-image-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+/*
+@font-face {
+  font-family: 'ToyotaDisplay-Bold';
+  src: url('../fonts/toyotaarabicdisplay-bold-w2.woff2') format('woff2'),
+  url('../fonts/toyotaarabicdisplay-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'ToyotaDisplay-Heavy';
+  src: url('../fonts/toyotaarabicdisplay-heavy-w2.woff2') format('woff2'),
+  url('../fonts/toyotaarabicdisplay-heavy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'ToyotaDisplay-Regular';
+  src: url('../fonts/toyotaarabicdisplay-regular-w2.woff2') format('woff2'),
+  url('../fonts/toyotaarabicdisplay-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}*/
+@font-face {
+  font-family: 'ToyotaDisplay-Bold';
+  src: url("../fonts/ToyotaArabicDisplay-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ToyotaDisplay-Heavy';
+  src: url("../fonts/ToyotaArabicDisplay-Heavy.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ToyotaDisplay-Regular';
+  src: url("../fonts/ToyotaArabicDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+h1, h2, h3, h4, h5, h6, p, a, div, span, em, li, input, textarea, strong, b, tr, td, th, table {
+  letter-spacing: normal !important;
+  font-family: "ToyotaDisplay-Regular", "toyota_textregular", "Tohama", "Arial" !important;
+  font-weight: normal;
+  color: inherit; }
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a, a a, div a, span a, em a, li a, input a, textarea a, strong a, b a, tr a, td a, th a, table a {
+    font: inherit; }
+
+h2, h3, h4, h5, h6, label {
+  font-family: "ToyotaDisplay-Bold", "toyota_textbold", "Tohama", "Arial" !important;
+  font-weight: normal; }
+
+b, p b, strong, p strong {
+  font-weight: bold; }
+
+body {
+  direction: rtl;
+  text-align: right; }
+
+#content .btn, #header .btn, .tt-links-box li a.btn-cmd, .btn-cmd {
+  letter-spacing: normal !important; }
+  #content .btn font, #header .btn font, .tt-links-box li a.btn-cmd font, .btn-cmd font {
+    letter-spacing: normal !important; }
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: "ToyotaDisplay-Regular", "toyota_textregular", "Tohama", "Arial" !important; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "ToyotaDisplay-Regular", "toyota_textregular", "Tohama", "Arial" !important; }
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: "ToyotaDisplay-Regular", "toyota_textregular", "Tohama", "Arial" !important; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "ToyotaDisplay-Regular", "toyota_textregular", "Tohama", "Arial" !important; }
+
+.main-heading p {
+  font-size: 16px; }
+
+.main-heading h5 {
+  font-size: 17px; }
+
+.sub-heading h2, .sub-heading h3, .sub-heading h4 {
+  font-size: 22px; }
+
+#header .tt-top-bar {
+  direction: ltr; }
+  #header .tt-top-bar .tt-menu {
+    float: right; }
+    #header .tt-top-bar .tt-menu li {
+      float: left; }
+      #header .tt-top-bar .tt-menu li::before {
+        float: right !important; }
+  #header .tt-top-bar .brand-logo {
+    float: right;
+    margin: 7px 0px 7px 23px; }
+  #header .tt-top-bar [class*="col"] {
+    float: right; }
+  #header .tt-top-bar .support-menu {
+    float: left;
+    padding: 0;
+    width: auto; }
+    #header .tt-top-bar .support-menu li {
+      float: left; }
+      #header .tt-top-bar .support-menu li .tt-search-container {
+        float: left; }
+        #header .tt-top-bar .support-menu li .tt-search-container .search-box {
+          float: right;
+          padding-left: 10px;
+          padding-right: 0; }
+        #header .tt-top-bar .support-menu li .tt-search-container .search-btn input {
+          padding: 5px 0 5px 25px; }
+        #header .tt-top-bar .support-menu li .tt-search-container .search-btn:before {
+          left: 0;
+          right: auto; }
+
+#header nav ul.mega-menu {
+  float: right; }
+
+#header .branding-box {
+  float: left; }
+
+/*
+.tt-content-hub .hub-item .tags-box .tag {
+  font: normal 13px/1 $ToyotaArabicDisplay-Bold;
+}
+*/
+.tag {
+  padding: 4px 18px;
+  font: normal 13px/1 "ToyotaDisplay-Bold", "toyota_textbold", "Tohama", "Arial";
+  line-height: 17px;
+  font-weight: normal; }
+
+#content .btn, #header .btn, .tt-links-box li a.btn-cmd, .btn-cmd {
+  font: normal 14px/1.6 "ToyotaDisplay-Bold", "toyota_textbold", "Tohama", "Arial";
+  font-weight: normal; }
+
+#content .btn {
+  font-family: "ToyotaDisplay-Bold", "toyota_textbold", "Tohama", "Arial" !important;
+  font-weight: normal; }
+
+#content .tt-promo-listing-box .btn:not(.btn-link).has-icon {
+  font-family: "ToyotaDisplay-Regular", "toyota_textregular", "Tohama", "Arial" !important; }
+
+.form-control {
+  font-family: "ToyotaDisplay-Regular", "toyota_textregular", "Tohama", "Arial" !important;
+  font-weight: normal; }
+
+.spec-details h3 {
+  font-weight: normal; }
+
+body {
+  direction: rtl;
+  text-align: right; }
+
+#content .tt-tabs .tt-tabs-box .tabs-menu li a, #header .tt-tabs .tt-tabs-box .tabs-menu li a {
+  font: normal 13px "ToyotaDisplay-Bold", "toyota_textbold", "Tohama", "Arial";
+  font-weight: normal;
+  white-space: nowrap; }
+
+header nav ul.mega-menu li .sub-menu ul li a, .tt-links-box li a {
+  font: normal 13px "ToyotaDisplay-Bold", "toyota_textbold", "Tohama", "Arial";
+  font-weight: normal;
+  white-space: nowrap; }
+
+.flip.submit-newsletter {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH"; }
+
+.content-hub-bg .btn {
+  font: normal 13px/1 "ToyotaDisplay-Bold", "toyota_textbold", "Tohama", "Arial"; }
+
+.spotlight.caption-center h3 {
+  font: normal 67px/1.07 "ToyotaDisplay-Bold", "toyota_textbold", "Tohama", "Arial";
+  margin-bottom: 15px; }
+  .spotlight.caption-center h3 a {
+    font: inherit; }
+
+.tt-carousel .swiper-button-next, .tt-carousel .swiper-button-prev {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH"; }
+
+.link-list-carousel .swiper-button-next, .link-list-carousel .swiper-button-prev {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH"; }
+
+.tt-car-item .pricing .label {
+  line-height: 21px; }
+
+.vbox-next {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH"; }
+
+.vbox-prev {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH"; }
+
+.btn:not(.btn-link).has-icon .btn-icon {
+  transform: translateY(-50%) scaleX(-1); }
+
+.main-heading h2, .main-heading h3, .tt-story-box .tt-story-content-box h2, .tt-story-box .tt-story-content-box h3 {
+  font-size: 33px; }
+
+.main-heading p, .main-heading .paragraph {
+  font-family: "ToyotaDisplay-Regular", "toyota_textregular", "Tohama", "Arial" !important; }
+
+.tt-latest-models-box .main-heading h4 {
+  font-size: 16px;
+  margin: 0; }
+
+.tt-content-hub .hub-item h4 {
+  font-size: 16px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  color: #000000; }
+
+.tt-content-hub .hub-item.hub-item-black-overlay h4 {
+  font-size: 21px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71; }
+
+#footer .tt-newsletter-box .heading h3 {
+  font-size: 23px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.09;
+  letter-spacing: normal; }
+
+#content .offer-sec sup * {
+  font-family: "toyota_textregular", "Tohama", "Arial" !important; }
+
+.splash-screen p {
+  line-height: 1.8;
+  font-size: 16px; }
+
+/*.tt-content-hub .hub-item .image, .tt-latest-models-box .tt-model-item .image-box {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.tt-latest-models-box .tt-model-item .image-box {
+    -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+.car-colours-sec .cars-colored img, .model-specs-sec .tt-car-item .image, .spec-highlights .img-placeholder {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.tt-gallery-block.tt-short-gallery-block, .tt-gallery-block.tt-gallery-block-full-page {
+  .gallery-item.gallery-item-image .image {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+}
+
+.tt-promo-feature-item .image-box, .tt-offer-listing-box .tt-offer-item .image-box {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  .tags-box {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+}*/
+.footer-contact .row .col-md-4 {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2; }
+  .footer-contact .row .col-md-4:last-child {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1; }
+
+#footer .tt-client-logos {
+  direction: ltr;
+  float: right; }
+  #footer .tt-client-logos li {
+    float: left; }
+
+.footer-bottom .link-list li a {
+  line-height: 13px; }
+
+.car-colours-sec .offer-available {
+  margin-top: -35px; }
+
+.vbox-container {
+  direction: ltr; }
+
+.head-highlight thead td, .head-highlight thead th {
+  font-size: 16px; }
+
+.iconed-text {
+  font-size: 12px; }
+
+.paragraphs-small p {
+  font-size: 9px; }
+
+.bh-sl-filters .form-check-label:before {
+  top: 3px; }
+
+header nav ul.mega-menu li:first-child {
+  margin-left: 25px;
+  margin-right: 0; }
+
+header nav ul.mega-menu li:last-child {
+  margin-left: 0;
+  margin-right: 25px; }
+
+.inpage-nav-sec .right-btn {
+  margin-top: 12px; }
+
+.date {
+  direction: ltr; }
+
+@media screen and (max-width: 991px) {
+  .tt-branch-locator-form-sec .tt-form-input-inline:nth-child(2) .filter-modal-close {
+    padding-right: 7px; }
+  #header .branding-box {
+    float: right; }
+  .tt-branch-locator-form-sec .tt-form-input-inline:nth-child(2) .bh-sl-filters li label {
+    padding: 21px 10px 32px 10px; }
+  .tt-branch-locator-form-sec .tt-form-input-inline:nth-child(2) .map-filter-heading {
+    margin-bottom: 21px; } }
+
+@media screen and (max-width: 767px) {
+  .footer-contact .row .col-md-4:last-child {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2; }
+  .tt-branch-locator-form-sec .tt-form-input-inline:nth-child(2) .bh-sl-filters li label {
+    padding: 21px 10px 32px 10px; } }
+
+@media screen and (max-width: 767px) {
+  .car-colours-sec .cars-colored {
+    padding-top: 12px; } }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 767px) {
+  .is-android .tag {
+    padding: 4px 18px;
+    line-height: 20px; }
+  .is-android .offer-available {
+    padding: 5px 10px 7px 10px; } }
+
+.tt-links-box.tt-links-radio > ul {
+  flex-direction: row-reverse; }
+
+.model-add-btn .icon, .tt-links-box li a.model-add-btn .icon, .model-add-btn .icon strong, .tt-links-box li a.model-add-btn .icon strong {
+  font-family: "ToyotaDisplay-Bold", "toyota_textbold", "Tohama", "Arial" !important; }
+
+.tt-story-box .tt-banner-bg {
+  background-image: url("../images/spotlights/toyota-corolla-layout-flip.jpg"); }
+
+.accordion-mobile-header-controls img, .filter-mobile-header-controls img {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH"; }
+
+.gm-style-iw + div {
+  right: auto !important;
+  left: 12px; }
+
+/*
+.link-list-carousel .swiper-button-prev {
+  left: -40px;
+  right: auto;
+}
+
+.link-list-carousel .swiper-button-next {
+  right: -40px;
+  left: auto;
+}
+*/
+.ui-autocomplete {
+  right: auto !important; }
+
+.slider-arrow-right, .slider-arrow-left,
+.tt-gallery-block.has-slider .swiper-button-prev, .tt-gallery-block.has-slider .swiper-button-next {
+  -moz-transform: translateY(-50%) scaleX(-1);
+  -o-transform: translateY(-50%) scaleX(-1);
+  -webkit-transform: translateY(-50%) scaleX(-1);
+  transform: translateY(-50%) scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH"; }
+
+.bh-sl-container .bh-sl-loc-list .list-details .list-content .loc-addr, .bh-sl-container .bh-sl-loc-list .list-details .list-content .loc-addr2, .bh-sl-container .bh-sl-loc-list .list-details .list-content .loc-addr3,
+.bh-sl-container .bh-sl-loc-list .list-details .list-content .loc-web, .bh-sl-container .bh-sl-loc-list .list-details .list-content .loc-phone {
+  background-position: right center; }
+
+.car-colours-sec .car-info .price-tag-big {
+  font-weight: normal; }
+
+.tt-form-input .radio-strip .radio span {
+  font-weight: normal;
+  font-size: 13px; }
+
+.car-selected-block .content .pricing .price-tag {
+  font-weight: normal; }
+
+.car-selected-block .content p {
+  font-size: 11px; }
+
+.form-group .numcount {
+  font-weight: normal; }
+
+.tt-branch-locator-form-sec .tt-form-input-inline:nth-child(2) .filter-modal-close {
+  font-weight: normal; }
+
+.tt-tabs-centered .gallery-item .iconed-text:before {
+  top: 10px;
+  -moz-transform: translateY(-50%) scaleX(-1);
+  -o-transform: translateY(-50%) scaleX(-1);
+  -webkit-transform: translateY(-50%) scaleX(-1);
+  transform: translateY(-50%) scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH"; }
+
+.tt-offer-item.tt-get .content h4 {
+  direction: ltr; }
+
+.tt-links-with-image-box ul li a {
+  font-size: 11px; }
+
+.custom-combobox-input {
+  padding-bottom: 10px; }
+
+.tt-form-input label {
+  margin-bottom: 5px; }
+
+.tt-form-input .form-control {
+  padding-bottom: 6px; }
+
+.tt-form-input .form-check .mini-label {
+  margin-bottom: 6px;
+  line-height: 1.2; }
+
+.tt-form-input .form-check {
+  margin-bottom: 6px;
+  padding-top: 6px; }
+
+.tt-form-input .radio-strip .radio span {
+  padding-top: 13px;
+  padding-bottom: 12px; }
+
+.tt-form-input .alert-message li, .tt-form-input .field-validation-error li {
+  line-height: 1.3; }
+
+.tt-carousel .swiper-banner {
+  direction: ltr; }
+
+.spotlight.caption-left .caption {
+  direction: rtl; }
+
+.tt-latest-models-box .tt-model-item {
+  direction: rtl; }
+
+.tt-latest-models-box .content-box .tt-links-box {
+  direction: rtl; }
+
+.spotlight .caption h3 {
+  font-weight: bold; }
+
+@media screen and (max-width: 992px) {
+  .component.promo.tt-simple-promo h3 {
+    font-size: 11px; }
+  .tt-specs-compare .price-tag h4 {
+    margin: 5px 0 0; } }
+
+.offer-sec .number sup {
+  font-family: "ToyotaDisplay-Regular" !important; }
+
+.offer-sec li .number {
+  text-align: right; }
+
+.btn.btn-primary:not(.yt-btn):not(.btn-link):not(.solid-icon-btn) {
+  direction: ltr; }
+
+.bh-sl-container .bh-sl-loc-list .list-details .list-content {
+  overflow-y: auto; }
+
+.link-box-space .tt-car-item .pricing .label {
+  line-height: 21px; }
+
+.tt-car-item .title h3 {
+  font-family: "ToyotaDisplay-Bold", toyota_textbold, Tohama, Arial !important;
+  letter-spacing: normal !important; }
+
+.loc-phone, .tt-time {
+  direction: ltr; }
+
+#content .tt-carousel .swiper-slide .content-box h3.dashed {
+  letter-spacing: normal !important; }
+
+.bh-sl-container .bh-sl-loc-list ul {
+  float: none; }
+
+.bh-sl-container .bh-sl-loc-list .list-details .list-content {
+  overflow: auto; }
+
+/* Toyota AR CSS  */
+.tt-car-item .pricing {
+  direction: rtl; }
+
+.tt-car-item .price-tag h4 {
+  line-height: 21px; }
+
+.tt-car-item .title h3 {
+  direction: ltr; }
+
+#content .table-st1 tbody td {
+  direction: ltr; }
+
+.tt-promo-feature-item.tt-promo-large .content .offer-sec p {
+  direction: ltr; }
+
+.spec-details h3, .spec-details h2 {
+  font-family: "ToyotaDisplay-Bold", "toyota_textbold", "Tohama", "Arial" !important; }
+
+.offer-sec .tt-offer-now .price-tag-big {
+  font-family: ToyotaDisplay-Regular, toyota_textbold, Tohama, Arial !important; }
+
+.tt-offer-item.tt-get .content h4 {
+  font-weight: bold; }
+
+#content .tt-content-hub .hub-item .btn-content .btn-link {
+  color: #d40618; }
+
+#ui-id-1 .ui-menu .ui-menu-item, #ui-id-2 .ui-menu .ui-menu-item, .tt-page-onlinesales .ui-menu .ui-menu-item {
+  direction: ltr; }
+
+/*# sourceMappingURL=style_ar.css.map */

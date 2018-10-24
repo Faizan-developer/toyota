@@ -1,0 +1,353 @@
+---
+title_en: Toyota
+title_ar: Toyota
+
+showInNav: true
+navSortOrder: 2
+---
+
+
+<div class="container">
+
+  <div class="component forms tt-forms no-footer">
+
+    <form class="validator" action="book-a-test-drive-submitted.html">
+
+      <div class="grey-bg">
+
+        <div class="controls-box">
+          <div class="custom-pagination"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="progress">
+            <div class="progress-bar form-progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                 aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="swiper-container ">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide car-select-slide">
+              <div class="tt-form-input">
+
+                <div class="form-group has-feedback is-required">
+
+                  <label for="car-select">1. You have chosen to test drive:</label>
+                  <select class="form-control select-combobox has-placeholder" placeholder="Select Model"
+                          id="car-select" required>
+                    <option value=""></option>
+                    <option value="Avalon">Avalon</option>
+                    <option value="Yasir Sport">Yasir Sport</option>
+                    <option value="Yasir Sedan">Yasir Sedan</option>
+                    <option value="Corolla">Corolla</option>
+                    <option value="Camry">Camry</option>
+                  </select>
+
+                  <div class="car-selected-block">
+                    <div class="image">
+                      <img src="../needreplace/media/Project/ToyotaTheme/Common/images/items/01.png" alt="">
+                    </div>
+                    <div class="content">
+                      <h4>Avalon</h4>
+                      <div class="pricing">
+                        <span class="label"> Starting </span>
+                        <span class="price-tag notranslate">85,900 SR</span>
+                      </div>
+                      <p>
+                        Please note test drive is only available for the highest grade of each model
+                      </p>
+                    </div>
+                  </div>
+
+                  {{> _form-enter-bar }}
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="tt-form-input">
+
+                <div class="form-group has-feedback is-required">
+                  <label for="fname" class="control-label">2. What is your first name?</label>
+                  <input type="text" class="form-control" id="fname"
+                         pattern="([a-zA-Z0-9]+[ ]*)+" maxlength="30"
+                         data-required-error="Please enter first name"
+                         data-pattern-error="Please enter valid first name (no numbers allowed)"
+                         required autocomplete="off" tabindex="-1">
+
+                  {{> _form-enter-bar }}
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="tt-form-input">
+
+                <div class="form-group has-feedback is-required">
+
+                  <label for="surname" class="control-label">3. What is your surname?</label>
+                  <input type="text" class="form-control" id="surname"
+                         pattern="([a-zA-Z0-9]+[ ]*)+" maxlength="30"
+                         data-required-error="Please enter surname name"
+                         data-pattern-error="Please enter valid first name (no numbers allowed)"
+                         required autocomplete="off" tabindex="-1">
+
+                  {{> _form-enter-bar }}
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="tt-form-input">
+
+                <div class="form-group has-feedback is-required">
+
+                  <label for="email" class="control-label">4. What is your email address?</label>
+                  <input type="email" class="form-control" id="email"
+                         data-error="This seems incorrect. Please try again"
+                         data-required-error="Please fill this in"
+                         required autocomplete="off" tabindex="-1">
+
+                  {{> _form-enter-bar }}
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="tt-form-input">
+
+                <div class="form-group has-feedback is-required">
+
+                  <label for="phone" class="control-label">5. What is your phone number?</label>
+                  <input type="text" class="form-control" id="phone"
+                         pattern="[0-9]*" maxlength="10"
+                         data-error="Please enter phone number"
+                         data-required-error="Please enter phone number"
+                         required autocomplete="off" tabindex="-1">
+
+                  {{> _form-enter-bar }}
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="tt-form-input">
+
+                <div class="form-group has-feedback is-required">
+
+                  <label for="city" class="control-label">6. Tell us your closet city?</label>
+                  <input type="text" class="form-control" id="city"
+                         data-required-error="Please enter your city"
+                         required autocomplete="off" tabindex="-1">
+
+                  {{> _form-enter-bar }}
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="tt-form-input">
+                <input type="text" class="radio-controls" tabindex="-1">
+
+                <div class="form-group has-feedback is-required radio-group">
+
+                  <label class="control-label">
+                    7. When is your preferred day and time for your test drive?
+                  </label>
+
+                  <div class="form-check">
+
+                    <div class="mini-label">Day</div>
+
+                    <div class="radio-strip content-width">
+
+                      <label class="radio">
+                        <input class="form-check-input" type="radio" name="radio-a1" value="option1" required tabindex="-1"
+                               data-error="Please complete this step" >
+                        <span>Sun</span>
+                      </label>
+
+                      <label class="radio">
+                        <input class="form-check-input" type="radio" name="radio-a1" value="option2" required tabindex="-1">
+                        <span>Mon</span>
+                      </label>
+
+                      <label class="radio">
+                        <input class="form-check-input" type="radio" name="radio-a1" value="option3" required tabindex="-1">
+                        <span>Tue</span>
+                      </label>
+
+                      <label class="radio">
+                        <input class="form-check-input" type="radio" name="radio-a1" value="option3" required tabindex="-1">
+                        <span>Wed</span>
+                      </label>
+
+                      <label class="radio">
+                        <input class="form-check-input" type="radio" name="radio-a1" value="option3" required tabindex="-1">
+                        <span>Thur</span>
+                      </label>
+
+                    </div>
+
+                  </div>
+
+                  {{> _form-enter-bar-radio }}
+
+                </div>
+
+                <div class="form-group has-feedback is-required radio-group">
+
+                  <div class="form-check">
+
+                    <div class="mini-label">Time</div>
+
+                    <div class="radio-strip">
+
+                      <label class="radio">
+                        <input class="form-check-input" type="radio" name="radio-a2" value="option1" required tabindex="-1"
+                               data-error="Please complete this step" >
+                        <span>9am - 1pm</span>
+                      </label>
+
+                      <label class="radio">
+                        <input class="form-check-input" type="radio" name="radio-a2" value="option2" required tabindex="-1">
+                        <span>1pm - 5pm</span>
+                      </label>
+
+                      <label class="radio">
+                        <input class="form-check-input" type="radio" name="radio-a2" value="option3" required tabindex="-1">
+                        <span>5pm - 7pm</span>
+                      </label>
+
+                    </div>
+
+                  </div>
+
+                  {{> _form-enter-bar-radio }}
+
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="swiper-slide">
+              <div class="tt-form-input">
+                <input type="text" class="radio-controls" tabindex="-1">
+
+                <div class="form-group has-feedback is-required radio-group">
+
+                  <label class="control-label">
+                    8. A call center member will call you to arrange your appt.
+                    <br>
+                    What is your preferred time to receive this call?
+                  </label>
+
+                  <div class="form-check">
+
+                    <div class="mini-label">Day</div>
+
+                    <div class="radio-strip">
+
+                      <label class="radio">
+                        <input class="form-check-input" type="radio" name="radio-a3" value="option1" required tabindex="-1"
+                               data-error="Please complete this step" >
+                        <span>9am - 1pm</span>
+                      </label>
+
+                      <label class="radio">
+                        <input class="form-check-input" type="radio" name="radio-a3" value="option2" required tabindex="-1">
+                        <span>1pm - 5pm</span>
+                      </label>
+
+                      <label class="radio">
+                        <input class="form-check-input" type="radio" name="radio-a3" value="option3" required tabindex="-1">
+                        <span>5pm - 7pm</span>
+                      </label>
+
+                    </div>
+
+                  </div>
+
+                  {{> _form-enter-bar-radio }}
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="swiper-slide last-slide">
+              <div class="tt-form-input">
+
+                <label>9. Would you like to?</label>
+
+                <div class="form-group">
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Signup to receive newsletter messages
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck2">
+                      Receive SMS messages with your latest offers
+                    </label>
+                  </div>
+
+                  {{> _form-enter-last-field }}
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        {{> _form-submit-box }}
+
+      </div>
+    </form>
+  </div>
+
+  <div class="splash-screen">
+    <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 p-0">
+
+      <div class="main-heading">
+        <h3>Book a Test Drive</h3>
+        <p>Booking a test drive could not be easier, simply fill in your details below. We will check car and
+          appointment availability in your city and get in touch with you within 48 hours to arrange the
+          appointment
+        </p>
+        <p>The form should take less than 5 minutes to complete</p>
+
+        <div class="component link">
+          <a href="javascript:void(0)" class="btn btn-primary action-btn">Start</a>
+          <span class="btn-side-info">
+            Press Enter
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+
+

@@ -1,0 +1,256 @@
+.hero-offers {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  .offer-card {
+    margin: 70px 0;
+  }
+
+  .img-cnt {
+    position: absolute;
+    width: 68vw;
+    z-index: -1;
+    right: 0;
+    left: auto;
+    height: 100%;
+
+    img {
+      width: 100%;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      min-height: 600px;
+    }
+  }
+
+  .price-tag-big {
+    margin-top: 4px;
+    min-height: 63px;
+    margin-bottom: 17px;
+    strong {
+      letter-spacing: 1.6px;
+      font-size: 13px;
+
+    }
+  }
+  .price-label {
+    padding-top: 5px;
+  }
+
+  .white-bg {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    background: white;
+    left: 263px;
+    z-index: 0;
+    transform: translateX(-100%);
+  }
+
+  &.no-offers {
+
+    .offer-card {
+      h1, h2, h3 {
+        &.dashed:before {
+          margin: 0 auto;
+          margin-bottom: 21px;
+        }
+      }
+      h1, h2, h3, p {
+        text-align: center;
+      }
+    }
+    .offer-sec {
+      display: none;
+    }
+  }
+
+  .offer-sec .number {
+    font-size: 32px;
+  }
+}
+
+.offer-card {
+  width: 405px;
+  display: inline-block;
+  background-color: white;
+  padding: 30px 50px 21px 50px;
+  color: #000;
+  position: relative;
+
+  .tt-aligner {
+    min-height: 402px;
+    height: 1px;
+  }
+
+  .dashed:before {
+    margin-bottom: 23px;
+  }
+
+  h1, h2, h3 {
+    letter-spacing: 8px;
+    font-size: 30px;
+    line-height: 41px;
+    margin-bottom: 18px;
+  }
+
+  h4 {
+    color: #000;
+  }
+
+  p, .paragraph {
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    color: #000;
+    font-family: $ToyotaText-Regular;
+  }
+  .btn-link {
+    padding: 5px 0 5px 0;
+  }
+}
+
+.offer-sec {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 14px;
+
+  &.no-mid-border {
+    li:before {
+      content: none;
+    }
+  }
+
+  ul {
+    padding-top: 4px;
+    margin-bottom: 5px;
+  }
+
+  li {
+    display: inline-block;
+    padding: 0 42px 0 0;
+    position: relative;
+    margin-bottom: 0;
+    margin-right: 1px;
+    .number {
+      text-align: left;
+    }
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 1px;
+      background-color: #e7e7e7;
+      position: absolute;
+      top: 4px;
+      left: -1px;
+      bottom: 0;
+    }
+
+    &:first-child {
+      padding-left: 0;
+      padding-right: 32px;
+      border-left: none;
+      &:before {
+        content: none;
+        display: inline-block;
+      }
+    }
+    &:last-child {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    &.tt-offer {
+
+    }
+    &.tt-offer-now {
+      display: block;
+      clear: both;
+      float: left;
+      margin: 10px 0 0;
+      padding: 0 !important;
+      text-align: left;
+      width: 100%;
+    }
+  }
+
+  .number {
+    font-family: $ToyotaText-Bold !important;
+    font-size: 26px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #d40618;
+    position: relative;
+    sup {
+      font-size: 15px;
+      font-family: $ToyotaText-Regular !important;
+      font-weight: normal;
+
+      top: -5px;
+      position: relative;
+      margin: 0 5px;
+      left: 0 !important;
+      right: 0 !important;
+    }
+  }
+
+  .label {
+    margin-top: 3px;
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 0.5px;
+    line-height: 0.86;
+  }
+  &.no-borders {
+    margin: 0;
+    float: none;
+    li {
+      padding-left: 0;
+      &:before {
+        display: none
+      }
+      .number {
+        //font-size: 32px;
+      }
+    }
+  }
+  .tt-offer-now {
+    .price-label, .price-tag-big strong {
+      margin-top: 3px;
+      font-size: 14px;
+      color: #000;
+      letter-spacing: 0.5px;
+      line-height: 0.86;
+      font-family: $ToyotaText-Regular;
+    }
+    .price-tag-big {
+      font-family: $ToyotaText-Bold !important;
+      font-size: 26px;
+      font-weight: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #d40618;
+      position: relative;
+    }
+  }
+}
+
+@media screen and (max-width: 1920px) {
+
+  .hero-offers .img-cnt {
+    width: 70vw;
+    img {
+      min-height: 600px;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .hero-offers .img-cnt {
+    width: 75vw;
+  }
+}
+

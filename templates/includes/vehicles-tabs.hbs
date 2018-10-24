@@ -1,0 +1,63 @@
+<div class="tt-tabs">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="component tabs tt-tabs-box">
+                <ul class="tabs-menu">
+                    <li class="current"><a href="#tab-1">
+
+                        {{#is language "en"}}
+                            {{tabs_menu_item_en_1}}
+                        {{else}}
+                            {{tabs_menu_item_ar_1}}
+                        {{/is}}
+
+                    </a></li>
+                    <li><a href="#tab-2">  {{#is language "en"}}
+                        {{tabs_menu_item_en_2}}
+                    {{else}}
+                        {{tabs_menu_item_ar_2}}
+                    {{/is}}</a></li>
+                    <li><a href="#tab-3">  {{#is language "en"}}
+                        {{tabs_menu_item_en_3}}
+                    {{else}}
+                        {{tabs_menu_item_ar_3}}
+                    {{/is}}</a></li>
+                    <li><a href="#tab-4">  {{#is language "en"}}
+                        {{tabs_menu_item_en_4}}
+                    {{else}}
+                        {{tabs_menu_item_ar_4}}
+                    {{/is}}</a></li>
+                    <li><a href="#tab-5">  {{#is language "en"}}
+                        {{tabs_menu_item_en_5}}
+                    {{else}}
+                        {{tabs_menu_item_ar_5}}
+                    {{/is}}</a></li>
+                </ul>
+            </div>
+            <div class="tab">
+                <div id="tab-1" class="tab-content">
+                    {{> _vehicles-item-list-passengers }}
+                    {{> _vehicles-item-list-passengers }}
+                    <div class="row">
+                        <div class="component link text-center">
+                            <a href="page-vehicles.html" class="btn btn-primary">view all vehicles</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="tab-2" class="tab-content">
+                    {{> _vehicles-item-list-suvs }}
+                </div>
+                <div id="tab-3" class="tab-content">
+                    {{> _vehicles-item-list-vans }}
+                </div>
+                <div id="tab-4" class="tab-content">
+                    {{> _vehicles-item-list-commercial }}
+                </div>
+                <div id="tab-5" class="tab-content">
+                    {{> _submenu-item }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

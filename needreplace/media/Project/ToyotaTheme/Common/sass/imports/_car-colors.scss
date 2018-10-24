@@ -1,0 +1,171 @@
+.car-colours-sec {
+
+  .container {
+    //padding-top: 147px;
+  }
+
+  .cars-colored {
+    text-align: center;
+    img {
+      display: none;
+      max-width: 100%;
+      &.active {
+        display: inline-block;
+      }
+      &:only-child {
+        display: inline-block;
+      }
+    }
+  }
+
+  .car-info {
+    /*    z-index: 1;
+        position: absolute;
+        top: 52px;
+        width: 100%;*/
+    z-index: 1;
+    position: static;
+    margin-top: 52px;
+    width: 100%;
+    h3, h2 {
+      font: normal 20px "toyota_textbold", "Tohama", "Arial";
+      text-transform: uppercase;
+      letter-spacing: 3.2px;
+      line-height: 1.45;
+      margin-bottom: 15px;
+    }
+
+    .price-tag-big {
+      margin-top: 4px
+    }
+    .paragraphs-small {
+      margin-top: 13px;
+    }
+
+  }
+  .paragraphs-small {
+    max-width: 183px;
+  }
+
+  .color-selector {
+    padding-top: 23px;
+    .color-info {
+      //position: absolute;
+      margin-top: 60px;
+    }
+  }
+  .buttons {
+    margin-top: 51px;
+  }
+}
+
+.color-selector {
+  h4 {
+    color: #000;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+  }
+  .color-list {
+    min-width: 100%;
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 53px;
+    left: 10px;
+    li {
+      float: left;
+      &:hover .tt-color, &.active .tt-color {
+        border-color: #ebebeb;
+        span {
+          border: 1px solid #ebebeb;
+        }
+      }
+    }
+    .tt-color {
+      margin-right: 6px;
+      border-radius: 50%;
+      border: 1px solid transparent;
+      width: 35px;
+      height: 35px;
+      padding: 4px;
+      cursor: pointer;
+      transition: 400ms all ease;
+      /*&:hover, &.active {
+        border-color: #ebebeb;
+        span {
+          border: 1px solid #ebebeb;
+        }
+      }*/
+      span {
+        color: currentColor;
+        display: inline-block;
+        min-width: 25px;
+        min-height: 25px;
+        background-color: currentColor;
+        border-radius: 50%;
+        border: solid 1px #ebebeb;
+      }
+
+    }
+
+  }
+
+  .color-info {
+    .info {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  .color-name {
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    color: #a3a6a0;
+  }
+
+  .availability {
+    font-size: 11px;
+    color: #000;
+    margin-top: 4px;
+  }
+
+}
+
+.price-label {
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #333333;
+}
+
+.price-tag-big {
+  font: normal 25px "toyota_textbold", "Tohama", "Arial";
+  line-height: normal;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #d40618;
+  strong {
+    display: block;
+    color: #888888;
+    text-decoration: line-through;
+    font-size: 12px;
+    letter-spacing: 1.4px;
+  }
+}
+
+.paragraphs-small {
+  p {
+    font-family: $ToyotaText-Regular;
+    font-size: 8px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+    color: #888888;
+  }
+}

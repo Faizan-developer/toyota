@@ -1,0 +1,3072 @@
+.arrow-text {
+  display: none;
+}
+
+#header .tt-title-vehicles {
+  display: none;
+}
+
+.row-no-padding [class*="col"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.desktop-only {
+  display: block !important;
+}
+
+.mobile-only {
+  display: none !important;
+}
+
+/* LARGE DESKTOP */
+@media screen and (min-width: 1600px) {
+  .banner-full .banner-height {
+    max-height: initial;
+  }
+  .error-page {
+    max-height: initial;
+  }
+}
+
+/* LAPTOPS */
+@media screen and (max-width: 1366px) {
+  .hero-offers .img-cnt img {
+    width: auto;
+    height: 100%;
+  }
+  .tt-latest-models-box .banner-upper {
+    top: 152px;
+  }
+  .spotlight.caption-left .caption .pricing {
+    margin: 30px 0 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .inpage-nav-sec > .container {
+    padding: 0;
+  }
+
+  .tt-links-box.no-border.tt-split-four.swiper-container > ul > li {
+    height: auto;
+  }
+
+  .model-specs-sec .tt-car-item {
+    min-height: 100%;
+    padding-bottom: 10px;
+  }
+  body .link-list-carousel .tt-car-item {
+    //margin-top: 20px;
+    //margin-bottom: 20px;
+    padding-bottom: 0;
+    overflow: visible;
+    position: static;
+  }
+  .tt-car-item .pricing .label {
+    display: inline-block;
+  }
+  .tt-car-item .image {
+    // display: none
+  }
+
+}
+
+/* LANDSCAPE */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .cover-banner {
+
+    height: calc(88vh - 102px);
+  }
+
+  .tt-client-logos li {
+    //float: $right;
+  }
+  .tt-latest-models-box .banner-upper {
+    top: 90px;
+
+  }
+  .spotlight .caption {
+    margin-top: 100px;
+  }
+  header .tt-top-bar .tt-menu ul li:before {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .tt-story-box .tt-story-content-box {
+    max-width: 300px;
+    height: 550px;
+  }
+  .hub-item {
+    &.hub-item-half {
+      .image, .content {
+        width: 50%;
+      }
+    }
+    &.hub-item-full {
+      .image {
+        max-width: 66.66%;
+
+        img {
+          //max-width: 100%;
+
+        }
+      }
+      .content {
+        width: 33.3%;
+      }
+    }
+
+  }
+  .tt-latest-models-box {
+    .swiper-button-prev, .swiper-button-next {
+      margin-top: -40px;
+    }
+  }
+  #content .spotlight {
+    &.caption-left, &.caption-center {
+      h3 {
+        font-size: 40px !important;
+        line-height: 50px !important;
+      }
+    }
+  }
+  #footer .tt-client-logos li {
+    margin-left: 15px;
+    margin-right: 0px;
+  }
+  .tt-footer-list {
+    padding: 0 30px 0 0;
+  }
+
+}
+
+/* PORTRAIT */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .tt-page-features .component.promo-feature.tt-promo-listing-box {
+    margin: 0 -15px;
+    width: auto;
+    padding: 0;
+  }
+  .content-hub-detail .tt-gallery-block.has-slider .swiper-container .swiper-slide .gallery-item img {
+    height: 190px;
+    width: auto;
+  }
+  .campaign-highlights .padded {
+    box-shadow: none
+  }
+  .tt-page-findacenter, .tt-page-findcenter {
+    .ui-autocomplete {
+      width: 100%
+    }
+  }
+  .mob-filter-show header {
+    display: none;
+  }
+  .tt-latest-models-box .banner-upper {
+    top: 125px;
+    img {
+      width: 90%;
+    }
+  }
+  .tt-split-four > ul > li {
+    /*  max-width: 270px;
+      padding-right: 20px;*/
+  }
+  header .login {
+    height: 40px;
+    margin-top: 15px;
+    &:after {
+      top: 13px;
+    }
+  }
+  header .login ul li.init {
+    height: 40px;
+  }
+  .spotlight .caption span {
+    padding-top: 10px;
+  }
+  .tt-story-box .tt-banner-bg .tt-story-content-box h3 {
+    top: -200px !important;
+  }
+
+  .tt-gallery-block .gallery-item {
+    //margin-bottom: 2px;
+  }
+  .inpage-nav a {
+    margin: 0 10px;
+  }
+  .color-selector .color-list li {
+    margin-right: 0
+  }
+  .btn {
+    //margin-bottom: 10px;
+    &.has-icon.btn-black {
+      padding-right: 8px;
+    }
+  }
+  .spec-highlights .spec-details {
+    width: 50%
+  }
+  .container {
+    padding: 0;
+  }
+  .component.promo.tt-simple-promo {
+    padding: 50px 15px;
+  }
+
+  .tt-promo-feature-item {
+    width: 100%;
+    max-width: 480px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .tt-promo-feature-item.tt-promo-large {
+    max-width: 100%
+  }
+  .hero-offers .offer-card {
+    width: 50%;
+  }
+
+  /*  .desktop-only {
+      display: none !important;
+    }
+
+    .mobile-only {
+      display: block !important;
+
+    }*/
+  .cover-banner, .spotlight {
+    height: 50vh;
+  }
+  #content {
+    .spotlight .banner-image img, .spotlight .banner-image video {
+      width: auto;
+      height: 80vh;
+    }
+    .spotlight.caption-center .caption {
+      margin-top: 70px;
+      z-index: 101;
+    }
+  }
+  .tt-available-offers-box .tt-links-box {
+    [class^=col] {
+      &:last-child {
+        display: none
+      }
+    }
+  }
+  .tt-gray-box {
+    margin: 50px 0;
+  }
+  #content .tt-latest-models-box .content-box {
+    margin-top: 60px;
+
+  }
+  #footer .footer-bottom {
+    width: 100%;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+  }
+  .swiper-pagination.swiper-pagination-bullets {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    line-height: 1;
+    bottom: 30px !important;
+    height: auto;
+  }
+  #footer {
+    .footer-contact {
+      height: auto
+    }
+    .component.link-list.tt-link-list-inline {
+      ul li {
+        margin: 0 0 5px 10px !important;
+      }
+
+      p {
+        //display: none;
+        margin: 10px 0 10px;
+      }
+    }
+  }
+  .inpage-nav-sec .car-title img {
+    max-width: 120px;
+  }
+  .spec-highlights .container {
+    overflow: hidden;
+  }
+  .inpage-nav-sec .car-title {
+    left: 0;
+  }
+  .hero-offers .white-bg {
+    left: 200px;
+  }
+  .link-list-carousel {
+    .swiper-button-next {
+      right: -25px;
+      left: auto;
+    }
+    .swiper-button-prev {
+      left: -25px;
+      right: auto;
+    }
+  }
+  .spec-highlights .container {
+    height: 530px;
+  }
+  .spotlight .caption-validity p {
+    display: none
+  }
+  #content .tt-specs-compare .tt-car-item {
+    padding: 0 20px;
+    .pricing {
+      .label, .price-tag h4 {
+        display: block;
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+
+  .vbox-title {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .video-gallery-full .video-box {
+    margin-bottom: 20px;
+  }
+  .campaign-highlights {
+    .padded {
+      padding: 50px 50px;
+    }
+    .info-padd {
+      padding-right: 0;
+    }
+  }
+
+  .video-gallery-full.has-video-icons .video-box .poster:after {
+    width: 50px;
+    height: 50px;
+  }
+
+  .tt-gallery-block.has-youtube-video .youtube-iframe, .tt-gallery-block.has-youtube-video .image {
+    min-height: 505px;
+  }
+  .tt-specs-compare .tt-car-item {
+    padding: 0 10px;
+    .info {
+      padding: 0 8px 0 15px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+  .hero-offers {
+    display: none
+  }
+  .campaign-highlights .video-sec {
+    padding-left: 20px;
+  }
+
+  .tt-offer-item .image-box .tags-box {
+    left: 30px;
+  }
+  #content {
+    .spotlight {
+      &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        content: "";
+        display: block;
+        z-index: 20;
+      }
+      &.caption-video {
+        &:after {
+          display: none
+        }
+      }
+    }
+  }
+  .btn:not(.btn-link) {
+    padding: 13px 25px;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1.5px;
+  }
+  .mobile-nav-box {
+    display: block
+  }
+
+  .tt-single-slider.video {
+    height: 390px;
+  }
+
+  .tt-gallery-block.has-youtube-video .youtube-iframe, .tt-gallery-block.has-youtube-video .image {
+    min-height: 400px;
+  }
+
+  /*
+  h1 {
+    // font-family: "Helvetica";
+    font-size: 36px;
+    font-family: $ToyotaText-Regular;
+    margin: 0 0 10px;
+    color: #d40618;
+  }
+
+  h2 {
+    font: bold 38px $ToyotaText-Bold;
+    margin: 0 0 10px;
+    letter-spacing: 8px;
+    color: #000;
+  }
+  h3 {
+    font-size: 25px;
+    line-height: 1.4;
+    letter-spacing: 5px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: normal;
+    letter-spacing: 3.2px;
+  }
+
+  h5 {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 0 10px;
+  }
+
+  h6 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 10px;
+  }
+  */
+  .tt-content-hub {
+    .hub-item.hub-item-half, .hub-item.hub-item-full {
+      .image img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+    }
+  }
+  .tt-latest-models-box .banner-behind {
+    max-width: 620px;
+  }
+  footer .footer-bottom .tt-link-list-inline ul li:before {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .tt-nav-section {
+    border-bottom: 1px solid #f3f3f3;
+  }
+
+  //.desktop-only {
+  //  display: none !important;
+  //}
+  //.mobile-only {
+  //  display: block !important;
+  //}
+
+  /* nav only */
+  header {
+    .tt-nav-section nav > .container {
+      padding: 0 0;
+      width: 100%;
+      .logo {
+        margin-right: 15px;
+        margin-left: 15px;
+
+      }
+    }
+    .tt-top-bar, nav ul.mega-menu {
+      display: none;
+    }
+  }
+  /* nav only */
+  .tt-latest-models-box .banner-upper {
+    top: 145px;
+    img {
+      width: 90%;
+      height: auto;
+    }
+  }
+  .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 0;
+    width: 100%;
+  }
+  .tt-story-box .tt-banner-bg .tt-story-content-box, .main-heading {
+    h1, h2, h3 {
+      font: normal 25px/1.4 $ToyotaText-Bold;
+      letter-spacing: 5px;
+    }
+  }
+  .tt-carousel .swiper-slide.swiper-slide-active .content-box {
+    .pull-left, .pull-right {
+      float: $left;
+      display: block;
+      clear: both;
+      padding-top: 25px;
+    }
+  }
+  .tt-latest-models-box .content-box {
+    margin-top: 120px;
+    margin-bottom: 50px;
+  }
+  .tt-story-box {
+
+    .tt-banner-bg {
+      //background-size: 100% 346px;
+      //background-position: top center;
+      //height: auto;
+      //background-size: 250% 100%;
+
+    }
+
+  }
+
+  #content .tt-content-hub {
+    .row {
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      [class*=col] {
+        width: 100%;
+        display: block;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    .hub-item {
+      width: 100%;
+      height: auto;
+      max-width: 375px;
+      margin-right: auto;
+      margin-left: auto;
+      .image {
+        width: 100% !important;
+        min-height: 330px;
+        height: auto;
+        max-height: 330px;
+        max-width: 100%;
+        &.desktop-only {
+          display: none !important;
+        }
+        &.mobile-only {
+          display: block !important;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .content {
+
+        width: 100%;
+        /* height: 330px;
+         max-height: 330px;*/
+        min-height: 330px;
+        height: auto;
+        max-height: initial;
+        padding: 100px 40px 70px;
+        position: relative;
+        .tags-box {
+          padding: 5px 0
+        }
+      }
+      &.hub-item-half {
+
+      }
+      &.hub-item-full {
+        img {
+          min-height: 300px;
+          //width: auto;
+          height: 100%;
+          width: 100%;
+        }
+      }
+      &.hub-item-video .image {
+        position: absolute
+      }
+    }
+  }
+  .tt-carousel {
+    .swiper-button-prev, .swiper-button-next {
+      display: none;
+    }
+    .swiper-carousel .swiper-slide {
+      width: 80%
+    }
+  }
+
+  #content {
+    .spotlight {
+      &.caption-left .caption {
+        height: 400px;
+        top: 50%;
+        padding: 0 25px;
+        margin: -150px 70px 0;
+        max-width: 80%;
+        width: 100%;
+        .pricing {
+          margin: 10px 0;
+          .label {
+            margin: 0;
+            padding: 0 0 3px;
+            font-size: 13px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: normal;
+          }
+          .price-tag, .price-tag h4 {
+            font-size: 20px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: normal;
+            letter-spacing: 2.4px;
+            text-align: left;
+            color: #d40618;
+          }
+        }
+        span {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+      }
+      .caption-validity {
+        padding: 0 100px;
+        max-width: 80%;
+        width: 100%;
+      }
+      &.caption-video {
+        .caption {
+          /*          vertical-align: middle;
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    flex-basis: auto;
+                    flex-direction: column;*/
+
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 21;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: auto;
+          margin: 0;
+          h3 {
+            margin: 0;
+            padding: 0 10px;
+            font-size: 20px;
+            display: block;
+            clear: both;
+            float: none;
+          }
+        }
+      }
+      &.space-none-bottom {
+        padding-bottom: 0;
+      }
+      &.caption-center {
+        .caption {
+          margin-top: 30px;
+        }
+      }
+      .caption {
+
+        h2, h3, h4 {
+          color: inherit;
+          a {
+            color: inherit;
+            text-decoration: none;
+          }
+        }
+        h1 {
+          line-height: 1.43;
+          letter-spacing: 10px;
+          font-size: 28px;
+          padding-bottom: 10px;
+        }
+        h2 {
+          line-height: 1.43;
+          letter-spacing: 10px;
+          font-size: 28px;
+          padding-bottom: 10px;
+
+        }
+        h3 {
+          line-height: 1.43;
+          letter-spacing: 10px;
+          font-size: 28px;
+          padding-bottom: 10px;
+        }
+        h4 {
+          line-height: 1.43;
+          letter-spacing: 10px;
+          font-size: 28px;
+
+        }
+        p {
+          padding: 0;
+          line-height: 1.43;
+          letter-spacing: 1.4px;
+          font-size: 12px;
+        }
+        span {
+          clear: $left;
+          float: $left;
+          font: normal 18px $ToyotaText-Regular;
+          color: inherit;
+
+          padding: 0 15px 10px;
+          margin: 0;
+        }
+      }
+
+    }
+
+    .tt-tabs-box .tabs-menu li:before {
+      margin-left: 20px;
+      margin-right: 20px
+    }
+
+  }
+  body {
+    footer {
+      background: #333;
+      .tt-copyright {
+        text-align: right;
+        float: $right;
+        padding: 30px 0 30px;
+      }
+      .footer-bottom {
+        margin: 0 0 !important;
+        padding: 0 15px;
+        height: auto;
+        text-align: left;
+        width: calc(100% + 30px);
+      }
+
+      .footer-contact {
+        padding: 40px 0 30px;
+      }
+      .tt-footer-list {
+        text-align: left;
+        float: $left;
+        margin: 0 0 15px;
+        padding: 0;
+        max-width: 100%;
+        li {
+          float: $left;
+          margin: 0 25px 10px 0 !important;
+        }
+      }
+      .tt-footer-list {
+        .tt-link-list-line, .tt-link-list-inline {
+          ul {
+            margin-top: 20px;
+            li {
+              a {
+                //font-size: 18px !important;
+                img {
+                  height: 18px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .footer-cols {
+        background: #f8f8f8;
+        padding: 0 15px;
+      }
+      .tt-client-logos li {
+        float: $right;
+        margin: 20px 20px 20px 0;
+      }
+    }
+  }
+
+  .tt-latest-models-box .content-box .tt-links-box {
+    margin-top: 0;
+  }
+  .tt-gallery-block .gallery-item .image {
+    min-height: auto
+  }
+  /*#content {
+    .tt-short-gallery-block {
+      .main-row {
+        display: block;
+        [class^=col] {
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+    }
+
+  }*/
+
+  .tt-gallery-block.tt-short-gallery-block .gallery-item {
+    //margin: 0 20px 20px;
+    .content {
+      padding-right: 20px;
+      padding-left: 20px;
+      h3 {
+        margin: 0;
+        font-size: 20px;
+        line-height: normal;
+        letter-spacing: 3.2px;
+      }
+      p {
+        display: none
+      }
+    }
+  }
+  .component.promo.tt-simple-promo {
+    padding: 30px 10px 50px;
+    margin: 0;
+    .dashed.centered:before {
+      display: none
+    }
+    .promo-img {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 11px;
+    }
+    p, .btn {
+      display: none
+    }
+
+    h3 {
+      font-size: 8px;
+      line-height: normal;
+      letter-spacing: 1.3px;
+      margin-bottom: 0;
+      color: inherit;
+    }
+  }
+
+  .tt-promo-feature-item.tt-promo-large .content {
+    padding: 30px 20px;
+    overflow: hidden;
+    .content-left {
+      width: 45%;
+    }
+    .content-right {
+      width: 54%;
+      padding-right: 0;
+      padding-left: 50px;
+    }
+  }
+  .specs-list.specs-two-col-list li {
+    line-height: normal;
+    width: 100%;
+    padding-right: 0;
+  }
+  .tt-show-2-on-portrait {
+    [class*="col"] {
+      &:last-child {
+        display: none
+      }
+    }
+  }
+  .tt-specs-compare {
+    .price-tag h4 {
+      font-size: 15px;
+      letter-spacing: 1.8px;
+      margin: 0;
+    }
+  }
+  .tt-links-box.tt-links-radio > ul > li {
+    width: calc(33% - 10px);
+  }
+  .overlay-content {
+    width: 100%;
+  }
+  .tt-links-box.tt-links-radio > ul > li:nth-child(3n+2) {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .model-specs-sec {
+    .tt-split-four > ul > li {
+      width: 33.2%;
+    }
+  }
+  #content .banner-image {
+    height: auto;
+  }
+
+  .tt-gallery-block.tt-short-gallery-block {
+    &.has-youtube-video, &.has-video {
+      .gallery-item.gallery-item-image {
+        margin: 0 -1px;
+        .image {
+          min-height: 400px
+        }
+      }
+    }
+  }
+  .tt-maps-accordion .accordion-inner .tt-heading-box {
+    position: relative;
+    padding-right: 30px;
+    padding-left: 30px;
+    &:before {
+      display: none
+    }
+  }
+
+  .inpage-nav-sec {
+    position: relative;
+    text-align: left;
+    background-color: #fff;
+    overflow: visible;
+    z-index: 5;
+    /*    .container{
+          z-index:1;
+        }
+        &.whitebg{
+          &:before{
+            height:100vh;
+            transition:all .5s ease 0s
+          }
+        }
+        &:before{
+          transition:all .5s ease .2s;
+          z-index:1;
+          left:0;
+          right:0;
+          top:0;
+          position:absolute;
+          content:'';
+          display:block;
+          background-color:white;
+          width:100%;
+          height:1px;
+        }*/
+
+    .container {
+      min-height: 0;
+    }
+    .right-btn {
+      display: none;
+    }
+    .inpage-nav {
+      display: none;
+    }
+    .car-title {
+      display: block;
+      position: relative;
+      top: auto;
+      left: auto;
+      right: auto;
+      bottom: auto;
+      padding: 13px 20px 13px;
+      background-color: #f8f8f8;
+      margin: 0 -25px;
+      img {
+        display: none;
+      }
+      .textual {
+        display: block;
+        text-transform: uppercase;
+        font-family: $ToyotaText-Bold;
+        font-size: 11px;
+        font-weight: normal;
+        line-height: 1;
+        letter-spacing: 1.3px;
+        color: #000000;
+        margin-bottom: 7px;
+      }
+      .selected {
+        font-family: $ToyotaText-Regular;
+        font-size: 16px;
+
+        font-weight: normal;
+        line-height: 1;
+        letter-spacing: normal;
+        color: #888888;
+        display: block;
+      }
+
+      &:after {
+        transform: rotate(180deg);
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 21px;
+        left: auto;
+        background: url('../images/arrows/menu-arrow-active-mob.svg') no-repeat center;
+        width: 10px;
+        height: 100%;
+      }
+      &.opened:after {
+        transform: rotate(0);
+        top: -2px;
+      }
+      .arrow-text {
+        content: '';
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 38px;
+        left: auto;
+        height: 100%;
+        padding: 20px 0;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #d50519;
+        font: 12px/22px "toyota_textbold", "Tohama", "Arial";
+        .collapsed {
+          display: none
+        }
+        .expanded {
+          display: block
+        }
+      }
+      &.opened .arrow-text {
+        .collapsed {
+
+          display: block
+        }
+        .expanded {
+          display: none
+        }
+      }
+    }
+    .inpage-nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background: white;
+      z-index: 1;
+      height: calc(100vh - 60px);
+      overflow: auto;
+      li {
+        display: block;
+        &:before {
+          display: none;
+        }
+        &.active {
+          a {
+            color: #d40618;
+          }
+        }
+        a {
+          border-bottom: 1px solid #f3f3f3;
+          display: block;
+          margin: 0 20px;
+          padding: 26px 21px 24px;
+          color: #000;
+          &:after {
+            content: none;
+            display: none;
+          }
+        }
+      }
+    }
+    > .container {
+      width: 100%;
+      padding: 0 20px;
+    }
+  }
+  .sticky-nav-two {
+    padding-top: 60px !important;
+  }
+
+  .tt-gallery-block.has-slider .no-slider .swiper-slide {
+    min-width: 178.5px;
+  }
+  .tt-content-hub .hub-item.hub-item-video h4 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 15px;
+
+  }
+  .tt-specs-compare .tt-car-item .info {
+    padding: 0;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 767px) {
+  .is-android {
+    .car-colours-sec .offer-available {
+      padding: 7px 10px 5px 10px;
+      line-height: 1;
+    }
+
+    .tag {
+      padding-bottom: 0;
+      padding-top: 0;
+      line-height: 26px;
+    }
+  }
+  .tt-content-hub .hub-item .tags-box .tag {
+    padding-bottom: 0;
+    padding-top: 0;
+    line-height: 26px;
+  }
+}
+
+/* MOBILES */
+@media screen and (max-width: 767px) {
+
+  .spec-highlights .tags-box {
+    left: 40px;
+    right: auto;
+  }
+
+  #content {
+    .tt-short-gallery-block {
+      .main-row {
+        display: block;
+        [class^=col] {
+          margin-right: auto;
+          margin-left: auto;
+          min-width: calc(100% - 40px);
+          max-width: calc(100% - 40px);
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+  }
+
+  .model-specs-sec {
+    .swiper-slide-active.active-tt-style {
+      &:before, &:after {
+        content: none;
+        display: none;
+      }
+    }
+  }
+
+  .vbox-next, .vbox-prev {
+    //position:absolute;
+  }
+  .model-gallery-sec {
+    padding-top: 20px;
+  }
+  h5.closingSoon {
+    //display: block !important;
+  }
+  .tt-offer-listing-box .row.row-eq-height [class^=col] {
+    margin-top: 20px;
+  }
+  #contentHubListingComponent .tt-hub-tabs-box {
+    margin: 0 -15px;
+  }
+  #mainContainer #articleContainer .tt-offer-item {
+    /*margin-left: -10px;
+    margin-right: -10px;*/
+  }
+
+  .tt-gallery-block.has-slider .swiper-button-prev, .tt-gallery-block.has-slider .swiper-button-next {
+    display: none;
+  }
+
+  .tt-tabs-box .tabs-menu li:before {
+    top: -1px;
+  }
+
+  .campaign-highlights {
+    margin-bottom: 20px;
+  }
+
+  .tt-gallery-block.tt-gallery-block-fullpage {
+    .no-slider .swiper-slide {
+      width: 100%
+    }
+  }
+
+  .tt-tabs-box .tabs-menu li:before {
+    top: -1px;
+  }
+
+  .tt-tabs.tt-tabs-centered .tt-tabs-box .tabs-menu li a {
+    padding: 5px 0 7px;
+    line-height: 20px;
+  }
+
+  .articles {
+    margin-top: 50px;
+  }
+
+  .content-hub-detail {
+    .testimony {
+      margin: 18px 0 51px 0;
+    }
+    .tt-single-slider {
+      overflow: visible;
+    }
+  }
+
+  .tt-gallery-block {
+    &.has-slider {
+      .container {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  .testimony {
+    padding-left: 33px;
+    .message {
+      h1 {
+        line-height: 1.5;
+        letter-spacing: 0.7px;
+        font-size: 20px;
+        margin-bottom: 31px;
+      }
+      &:before {
+        left: -33px;
+      }
+    }
+    .t-name {
+      font-size: 15px;
+      line-height: 2;
+      letter-spacing: 0.5px;
+      font-family: $ToyotaText-Regular;
+      margin-bottom: 4px;
+    }
+  }
+
+  .tt-single-slider:not(.video) {
+
+    .swiper-container {
+      margin-bottom: 66px;
+    }
+
+    .swiper-container.no-slider {
+      margin-bottom: 20px;
+    }
+
+    .slider-arrow-right, .slider-arrow-left {
+      display: none
+    }
+    .swiper-container, .tt-single-slider {
+      overflow: visible;
+    }
+
+  }
+
+  #content .tt-gallery-block.has-slider {
+    margin-bottom: 38px;
+  }
+
+  #content .content-hub-detail .offer-listing {
+    padding-bottom: 30px;
+  }
+
+  .content-hub-detail .tt-gallery-block.has-slider .swiper-container .swiper-slide .gallery-item img {
+    width: 100%;
+    height: auto;
+  }
+  #content .tt-single-slider .swiper-slide img, #content .tt-gallery-block.has-slider .gallery-item.gallery-item-image .image img {
+    width: auto;
+    height: 375px;
+    min-width: 425px;
+  }
+
+  .tt-single-slider:not(.video), .tt-gallery-block.has-slider {
+    .fraction-pagination {
+      .swiper-pagination-bullet {
+        background-color: #333333;
+        opacity: 0.5;
+        &.swiper-pagination-bullet-active {
+          opacity: 1;
+        }
+      }
+    }
+
+    .swiper-pagination {
+      margin: 0;
+      bottom: -38px;
+    }
+  }
+
+  .tt-gallery-block.has-slider {
+    .swiper-container {
+      overflow: visible;
+      width: 100%;
+    }
+  }
+
+  .tt-accordion.tt-accordion-faqs.tt-accordion-large h4 {
+    word-break: break-word;
+  }
+
+  .tt-branch-locator-form-sec .tt-form-input-inline:nth-child(2) .bh-sl-filters li {
+    width: calc(100% + 20px) !important;
+    &:last-child {
+      border-bottom: 1px solid #f3f3f3;
+    }
+  }
+
+  .tt-branch-locator-form-sec .tt-form-input-inline:nth-child(2) .bh-sl-filters li .form-check-input:checked ~ .form-check-label::before {
+    margin-right: 50px;
+    margin-left: 0;
+  }
+
+  .offer-sec .number sup {
+    right: -11px;
+  }
+
+  .tt-offer-item {
+    .offer-sec ul {
+      margin-bottom: 14px;
+    }
+  }
+
+  .vbox-title {
+    display: none !important;
+  }
+
+  .vbox-content {
+    overflow: visible;
+  }
+
+  .vbox-content > img {
+    max-height: 260px;
+  }
+
+  .vbox-title.mobile {
+    display: block !important;
+    position: absolute !important;
+    background: transparent;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px 0;
+    font-family: $ToyotaText-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.79;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #ffffff;
+    transform: translateY(100%);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .swiper-pagination.swiper-pagination-bullets {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    line-height: 1;
+    bottom: 20px;
+    height: auto;
+  }
+  #content .tt-offer-listing-box .btn-align {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .vbox-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .sitemap-head {
+    margin: 32px 0;
+    h2 {
+      font-size: 25px;
+      line-height: 1.4;
+      letter-spacing: 5px;
+    }
+  }
+  .sitemap {
+    padding: 46px 53px 71px 53px;
+  }
+
+  #header .tt-title-vehicles {
+    display: block;
+  }
+  #content {
+    .tt-hub-tabs-box {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .tt-tabs {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+  .car-colours-sec .cars-colored {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    overflow: hidden;
+  }
+
+  .car-colours-sec .offer-available {
+    float: right;
+    margin: -29px 0 0 0;
+    padding: 6px 10px 6px 10px;
+    line-height: 1;
+    height: auto;
+  }
+
+  .car-colours-sec .cars-colored img {
+    width: calc(100% + 40px);
+    max-width: none;
+    margin-left: -20px;
+  }
+
+  .car-colours-sec .color-selector .color-info {
+    margin-top: 10px;
+  }
+
+  #footer .footer-contact {
+    height: auto;
+    padding: 40px 0;
+  }
+  .tt-gallery-block.has-youtube-video .youtube-iframe, .tt-gallery-block.has-youtube-video .image {
+    min-height: 60vw;
+  }
+
+  .car-selected-block {
+    .image {
+      float: none;
+      text-align: center;
+      width: 50%;
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle;
+      img {
+        width: 100%;
+      }
+    }
+    .content {
+      display: inline-block;
+      vertical-align: middle;
+      width: 49%;
+      float: none;
+      padding-left: 10px;
+      box-sizing: border-box;
+    }
+  }
+
+  .splash-screen {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    -ms-grid-row-align: flex-start;
+    align-items: flex-start;
+    margin: 2px 0 0 0;
+    height: 100%;
+    .main-heading h2, .main-heading h3 {
+      margin-bottom: 19px;
+    }
+    .main-heading {
+      padding: 0 30px;
+    }
+    .component.link {
+      margin: 0;
+    }
+    .btn-side-info {
+      display: none;
+    }
+
+  }
+
+  .tt-form-input .radio-strip.content-width .radio span {
+    padding: 12px 13px 11px;
+  }
+  .swiper-slide .tt-form-input .radio-strip.current-radio-strip .form-check-input:checked ~ span {
+    box-shadow: none;
+  }
+
+  .tt-form-input .form-check .mini-label {
+    margin-bottom: 15px;
+  }
+
+  .tt-form-input .radio-strip .radio.checkbox-selection span {
+    background-color: #888888 !important;
+  }
+
+  .form-group.radio-group {
+    .col {
+      padding: 0;
+      margin: 0;
+    }
+    .alert-message, .field-validation-error {
+      margin-right: 0;
+    }
+  }
+
+  .tt-form-input .radio-strip .radio {
+    margin-right: 20px;
+  }
+
+  .tt-form-input .radio-strip.content-width {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    .radio {
+      margin-right: 0;
+      display: inline-flex;
+    }
+  }
+
+  .tt-forms {
+    padding: 78px 4px 78px;
+    .controls-box {
+      top: -62px;
+    }
+    .swiper-container {
+      //height: calc(100vh - 174px);
+      width: 100%;
+    }
+
+    .component.link {
+      margin: 0;
+    }
+    .btn-side-info {
+      display: none;
+    }
+    .show-on-type {
+      visibility: visible;
+      opacity: 1;
+    }
+    .tt-form-input {
+      .text-field-controls {
+        padding-top: 5px;
+        .btn {
+          //padding: 12px 65px;
+          min-width: 150px;
+          box-sizing: border-box;
+        }
+      }
+      .d-flex {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        .col {
+          min-height: auto;
+          padding: 0;
+        }
+      }
+    }
+
+  }
+
+  .tt-form-input .form-check-input:focus ~ .form-check-label:before {
+    border: 1px solid #e4e5e6 !important;
+  }
+
+  .swiper-slide.last-slide {
+    padding-bottom: 0;
+  }
+
+  .banner-full .banner-height {
+    height: 350px;
+    width: 100%;
+    max-height: none;
+    position: relative;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: auto;
+      width: 100%;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  .spec-highlights.tt-content-specs .btn-content {
+    margin-top: 24px;
+  }
+
+  .spec-highlights.tt-content-specs {
+    margin-top: 0;
+  }
+
+  #content .spec-highlights.tt-content-specs {
+    .img-placeholder {
+      z-index: -1;
+    }
+    .spec-details {
+      position: relative;
+      top: -43px;
+      padding: 64px 30px 16px 30px;
+      height: auto;
+      min-height: auto;
+    }
+    .nested-container {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .img-placeholder {
+      margin-top: 0;
+      height: 212px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .btn-content {
+    }
+  }
+
+  .model-specs-sec {
+
+    .swiper-slide-active {
+      .tt-car-item {
+        &:before, &:after {
+          content: none;
+          display: none;
+        }
+      }
+    }
+  }
+
+  .model-specs-sec .tt-car-item:hover:after, .model-specs-sec .tt-car-item.active:after, .model-specs-sec .swiper-slide-active.active-tt-style:after, .model-specs-sec .swiper-slide-active:not(.active-tt-style) .tt-car-item:after,
+  .model-specs-sec .tt-car-item:hover:before, .model-specs-sec .tt-car-item.active:before, .model-specs-sec .swiper-slide-active.active-tt-style:before, .model-specs-sec .swiper-slide-active:not(.active-tt-style) .tt-car-item:before {
+    content: none;
+    display: none;
+  }
+
+  .tt-car-item {
+    .price-tag {
+      position: relative;
+      top: -2px;
+    }
+  }
+
+  .link-box-space {
+    padding-top: 25px;
+  }
+
+  .tt-links-box.tt-links-radio {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    > ul {
+      display: block;
+      white-space: nowrap;
+      overflow-x: auto;
+      width: 100%;
+      padding: 0 15px;
+      > li {
+        width: 71vw;
+        max-width: 270px;
+        min-width: 250px;
+        display: inline-block;
+        float: none;
+        margin-right: 30px;
+        margin-bottom: 46px;
+        margin-top: 5px;
+        &:nth-child(3n+2) {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .tt-links-box.tt-links-radio > ul > li {
+    vertical-align: top;
+    //background: red;
+    margin: 20px 20px 20px 0 !important;
+    .tt-car-item {
+      //min-height: 245px;
+    }
+  }
+
+  .figlio {
+    box-shadow: none;
+  }
+
+  .vbox-overlay.theme-white .vbox-content h3.main {
+    font-size: 20px;
+  }
+
+  .vbox-close {
+    top: 26px;
+  }
+
+  .vbox-overlay.content-sized .vbox-inline {
+    padding-top: 79px !important;
+    padding-bottom: 20px;
+  }
+
+  .overlay-content .btn-bar {
+    text-align: center !important;
+  }
+
+  .overlay-content {
+    padding: 0 20px;
+  }
+
+  .tt-car-item {
+    .pricing .label {
+      font-size: 13px;
+      white-space: normal;
+      margin-right: 3px;
+    }
+
+  }
+  #content .tt-specs-compare .tt-car-item .pricing * {
+    line-height: normal
+  }
+  .tt-specs-compare {
+    margin-top: 49px;
+    > ul {
+      > li {
+        &:first-child {
+          margin-left: 0;
+        }
+        &:nth-child(n+3) {
+          display: none;
+        }
+      }
+    }
+
+    .tt-car-item {
+      padding: 0 10px;
+      overflow: visible;
+      .title h3 {
+        margin-bottom: 7px;
+      }
+      .image {
+        margin-bottom: 0;
+        height: 100px;
+      }
+      .info {
+        padding: 0 9px;
+        white-space: normal;
+      }
+    }
+    li a.btn-cmd {
+      line-height: normal;
+      margin-bottom: 3px;
+    }
+
+  }
+
+  .table-st1-responsive {
+    tbody {
+      td:nth-child(n+4) {
+        display: none;
+      }
+      .td-title {
+        display: none;
+      }
+      td {
+        border-right: 1px solid rgba(236, 235, 233, .6);
+      }
+    }
+    .tr-full-title {
+      display: table-row;
+      td {
+        background-color: #fcfcfc;
+      }
+    }
+  }
+
+  .tt-accordion .accordion-inner > h4.active:before {
+    margin-top: 2px;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-only {
+    display: block !important;
+  }
+  .spotlight.caption-video .caption {
+    max-width: 100%;
+    padding: 0 20px;
+    width: auto;
+    margin-top: -55px;
+  }
+  #footer .tt-client-logos {
+    margin: 25px 0 0;
+    //float: left !important;
+    li {
+      float: $left;
+      margin-left: 0;
+      margin-right: 40px;
+    }
+  }
+  .container {
+    width: 100%;
+    max-width: 100%;
+    //padding: 0;
+
+  }
+  #content {
+    .hero-offers, .inpage-nav-sec, .car-colours-sec, .model-specs-sec, .model-gallery-sec, .spec-highlights, .tt-gallery-block.tt-short-gallery-block, .tt-hub-tabs-box, .tt-vehicle-gallery, .tt-vehicle-available-offers-sec, .tt-vehicle-compare-sec, .tt-offer-details-sec {
+      .container {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+  #content .tt-story-box {
+
+    .tt-banner-bg {
+      //background-size: 130% 246px !important;
+      //background-size: contain !important;
+      height: 246px;
+
+    }
+    .tt-story-content-box {
+      height: auto;
+      position: relative;
+      text-align: center;
+      margin: 246px auto 0;
+      padding: 30px 0 30px;
+      float: none;
+      display: inline-block;
+      width: 100%;
+      h3 {
+        position: absolute;
+        top: -160px;
+        z-index: 10;
+        width: 100%;
+        font-size: 25px;
+        line-height: 1.4;
+        letter-spacing: 5px;
+        //text-align: left;
+        // test
+        //padding: 0 50px;
+        &.dashed.white:before {
+          // test
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+      p {
+        color: #000;
+      }
+
+    }
+    &.tt-story-feature-box {
+      .tt-story-content-box {
+        text-align: left;
+        h3 {
+          padding: 0 0 0 35px;
+          font-size: 20px;
+          max-width: 90%;
+          letter-spacing: 3.2px;
+          &.dashed.white:before {
+            margin-right: 0;
+            margin-left: 0;
+          }
+        }
+        .content {
+          padding: 0 35px
+        }
+      }
+    }
+  }
+  .pricing {
+    .label {
+
+      font-size: 12px;
+
+    }
+  }
+  header {
+    .tt-nav-section nav > .container {
+      padding: 0;
+    }
+    .branding-box {
+
+      .logo {
+        display: table-cell;
+        height: 60px;
+        vertical-align: middle;
+        float: none;
+        padding: 0 20px;
+        max-width: 160px;
+        img {
+          max-width: 100%
+        }
+      }
+    }
+  }
+  .content-hub-bg {
+    padding-bottom: 30px;
+    padding-top: 10px;
+  }
+  .main-heading {
+    padding: 0 20px;
+    margin: 30px 0;
+    h4 {
+
+    }
+  }
+  .tt-latest-models-box .main-heading h4 {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .content-hub {
+    margin: 0 5px;
+  }
+  body #footer {
+    background: #333;
+    .tt-copyright {
+      text-align: left;
+      float: $left;
+      padding: 10px 15px 30px;
+    }
+    .foot-item {
+      margin-bottom: 30px;
+      max-width: 100%;
+      padding: 0;
+      .heading {
+        h3 {
+          margin-bottom: 5px;
+        }
+        p {
+          margin: 0
+        }
+      }
+    }
+
+  }
+
+  .tt-banner-bg {
+    //background-size: 100% 246px !important;
+    .tt-story-content-box {
+      margin-top: 246px !important;
+      h3 {
+        top: -150px !important;
+      }
+    }
+  }
+
+  #content {
+    .tt-offer-details-sec {
+      .tt-links-box {
+        padding: 0 20px;
+      }
+    }
+    .tt-accordion {
+      .tt-links-box {
+        padding: 0
+      }
+    }
+    .tt-promo-listing-box [class^=col] {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+    .white-space-pre {
+      white-space: initial;
+    }
+    .tt-tabs-box {
+      white-space: nowrap;
+      overflow-x: auto;
+      padding: 0 20px;
+      text-align: center;
+      .tabs-menu {
+        width: auto
+      }
+    }
+    .tt-links-box {
+      white-space: nowrap;
+      overflow-x: auto;
+      padding: 0 0;
+      display: block;
+      width: max-content;
+      opacity: 1;
+      ul {
+        display: block;
+        width: inherit;
+        li {
+          width: auto;
+          float: initial;
+          vertical-align: top;
+        }
+      }
+
+    }
+
+    .tt-specs-compare {
+      padding: 0;
+      width: 100%;
+      > ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+      }
+
+    }
+    .spec-highlights {
+
+      .img-placeholder {
+        margin-top: 370px;
+        min-height: auto;
+        margin-right: -15px;
+        margin-left: -15px;
+        img {
+          width: 100%
+
+        }
+      }
+      .spec-details {
+        width: calc(100% - 40px);
+        box-shadow: 5px 2px 30px 0 rgba(0, 0, 0, 0.12);
+        min-height: 410px;
+        height: 1px;
+        margin: 0 20px;
+        top: 220px;
+      }
+      .container:before {
+        display: none
+      }
+    }
+
+    .model-specs-sec, .car-colours-sec {
+      margin-right: 20px;
+      margin-left: 20px;
+    }
+    .specs-list li {
+      line-height: normal;
+      width: 100%;
+      padding-right: 0;
+      padding-left: 12px;
+    }
+    .offer-listing, .promo-feature {
+      margin: 0;
+      padding: 0;
+      .row {
+        display: block;
+        //margin: 0;
+        overflow: hidden;
+
+      }
+    }
+    .spotlight {
+      &.caption-left .caption p {
+        padding: 0;
+        display: none;
+      }
+      .caption-validity {
+        display: none
+      }
+      .banner-image {
+        img {
+          width: 100%;
+          max-height: 365px;
+          height: auto;
+        }
+        video {
+          height: 100%;
+          width: auto;
+          min-height: 363px;
+        }
+      }
+
+    }
+    .spotlight.caption-left .caption {
+      margin-right: auto;
+      margin-left: auto;
+      height: 300px;
+      margin-top: -125px;
+      max-width: 85%;
+    }
+    .tt-tabs.tt-tabs-centered .tt-tabs-box .tabs-menu {
+      margin: 30px 0 30px;
+
+    }
+    .tt-vehicle-gallery {
+      margin-top: 0
+    }
+
+    #content .tt-tabs.tt-tabs-centered .tt-tabs-box .tabs-menu {
+      margin: 30px 0 30px;
+    }
+
+    .spotlight.caption-center .caption {
+      z-index: 21;
+
+    }
+    .tt-gallery-block {
+      margin: 0 0;
+      width: auto;
+      .main-row .col-md-4 {
+      }
+      .cols-3 > [class*="col"] {
+        width: 33.3%;
+
+        .gallery-item-image img {
+          //width: 100% !important;
+        }
+      }
+    }
+
+    .tt-gallery-block-fullpage:not(.has-slider) {
+
+      .col-md-4 > a:before {
+        display: none;
+        content: none;
+      }
+
+      .main-row [class*="col"] {
+        margin-bottom: 1px;
+      }
+
+      .cols-3 > [class*="col"]:nth-child(3n+3) {
+        > a:after {
+          content: none;
+        }
+      }
+
+    }
+
+    .tt-offer-item .image-box img {
+      width: 100%;
+      height: auto
+    }
+    .tt-promo-listing-box .btn:not(.btn-link).has-icon {
+      margin: 30px 0 25px 20px;
+    }
+    .tt-promo-feature-item.tt-promo-large .content {
+      .content-left, .content-right {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0;
+
+        border: none;
+      }
+
+    }
+    .tt-gray-box {
+      padding: 40px 20px;
+      margin: 50px 20px;
+      &.side-padd-1 {
+        padding: 40px 5px;
+      }
+    }
+    .tt-accordion.tt-accordion-faqs {
+      //margin: 0 0 30px;
+
+    }
+    .sub-heading {
+      width: auto;
+      margin: 0 20px 20px;
+    }
+
+    .tt-offer-item, .tt-promo-feature-item {
+      margin: 0px 5px 20px;
+      width: calc(100% - 10px);
+    }
+    .tt-promo-listing-box.tt-offer-details-box {
+      .component.promo-feature.tt-promo-feature-item.tt-promo-large {
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+
+      }
+    }
+    .tt-offer-item .content {
+      padding-right: 30px;
+      padding-left: 30px;
+      padding-top: 30px;
+
+    }
+    .tt-promo-feature-item .content {
+      padding: 30px;
+    }
+    .tt-promo-feature-item.tt-promo-large .content {
+      padding: 30px 20px;
+    }
+    .hero-offers {
+      display: none;
+    }
+  }
+  #footer {
+    .tt-client-logos li {
+      float: left;
+      margin-left: 0;
+      margin-right: 45px;
+      margin-bottom: 0
+    }
+    .tt-footer-list {
+      &.pull-left {
+        ul {
+          display: none
+        }
+      }
+      &.pull-right {
+        height: 110px;
+        .tt-link-list-inline {
+          h4 {
+            margin-left: 50px;
+            font: bold 14px "toyota_textregular", "Tohama", "Arial";
+            /*margin-top: 7px;*/
+          }
+          p {
+            position: absolute;
+            left: 15px;
+            margin: 0;
+            padding: 0;
+            top: 50px;
+          }
+          ul {
+            position: absolute;
+            left: 15px;
+            margin: 0;
+            padding: 0;
+            top: 80px;
+          }
+        }
+      }
+    }
+  }
+  #content {
+    .tt-offer-item {
+      .image-box {
+        height: auto;
+      }
+      .content .btn-content {
+        width: calc(100% - 60px);
+        left: 30px;
+      }
+    }
+    .car-colours-sec {
+      .buttons {
+        display: block;
+        text-align: center;
+        margin: 20px 0 50px;
+        .has-icon.btn-black {
+          position: absolute;
+          top: 75px;
+          margin: 0;
+          right: 50%;
+          left: auto;
+          transform: translateX(50%);
+        }
+      }
+      .color-selector {
+        .color-info {
+          //position: static;
+          margin-bottom: 20px;
+          text-align: center;
+          .availability {
+            display: none
+          }
+        }
+        .color-list {
+          position: static;
+          width: 80%;
+          margin: 0 auto 20px;
+          text-align: center;
+          li {
+            float: none;
+            margin: 0 auto;
+            display: inline-block;
+            .tt-color {
+              width: 45px;
+              height: 45px;
+
+              span {
+                width: 35px;
+                height: 35px;
+              }
+            }
+          }
+        }
+        h4 {
+          display: none;
+        }
+      }
+      .car-info {
+        .paragraphs-small {
+          display: none
+        }
+      }
+    }
+    .tt-promo-listing-box.tt-offer-details-box {
+      margin: 0 0 20px;
+      padding: 0;
+      .tt-promo-feature-item.tt-promo-large .content {
+        h1, h2, h3 {
+          font-size: 25px;
+          line-height: 1.4;
+          letter-spacing: 5px;
+        }
+      }
+    }
+
+  }
+  .vbox-overlay {
+
+    .vbox-top-name {
+      padding: 32px 120px 0 20px;
+      left: 0;
+      top: 0;
+      text-align: left;
+    }
+    .vbox-num {
+      width: 100%;
+      background: none !important;
+      text-align: center;
+      left: 0;
+      right: 0;
+    }
+  }
+  #footer .tt-link-list h4, #footer .tt-link-list-line h4, #footer .tt-link-list-inline h4 {
+    margin-top: 0
+  }
+  #content .tt-specs-compare {
+    > ul {
+      > li {
+        width: 50%;
+      }
+    }
+  }
+
+  .tt-links-box.tt-links-radio .tt-car-item .radio-sec {
+    padding-top: 13px;
+  }
+
+  #content .link-list-carousel {
+    .swiper-container {
+      width: calc(100% + 40px);
+      margin-left: -20px;
+    }
+    .swiper-wrapper {
+      width: calc(100% - 50px);
+      //padding-left: 50px;
+      padding-left: 10px;
+      > li {
+        float: none;
+        width: 71vw;
+        max-width: 300px;
+        min-width: 250px;
+      }
+    }
+  }
+
+  .spec-heading, .spec-tabs {
+    display: none;
+
+  }
+  .spec-tabs.spec-margin-adjust {
+    margin-top: 0;
+  }
+  .model-specs-sec {
+    .tt-car-item {
+      //min-height: 252px;
+      min-height: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .btn-bar {
+      margin-top: 21px;
+    }
+  }
+  body .tt-car-item {
+    max-width: 280px;
+    margin-right: 20px;
+  }
+  .tt-available-offers-box, .tt-promo-listing-box {
+    overflow: auto;
+  }
+  .car-colours-sec .car-info {
+    h3, h2 {
+      font: normal 17px $ToyotaText-Bold;
+      line-height: 1.71;
+      letter-spacing: 2.7px;
+    }
+    .price-tag-big {
+      font: normal 20px $ToyotaText-Bold;
+      line-height: normal;
+      letter-spacing: 2.4px;
+    }
+  }
+  #content .tt-gallery-block.tt-short-gallery-block {
+    &.has-youtube-video, &.has-video {
+      .gallery-item.gallery-item-image {
+        .image {
+          min-height: 220px;
+
+        }
+        h3.dashed.white.centered.video-icon {
+          font-size: 0;
+
+          &:before {
+            margin-bottom: 0;
+            width: 60px;
+            background-size: 100%;
+            height: 60px;
+          }
+        }
+      }
+    }
+  }
+
+  /*.side-padd-100 {
+    padding-left: 100px;
+    padding-right: 100px;
+  }*/
+
+  .video-slider {
+    .container {
+      padding: 0;
+    }
+    .local-video.video-playing:hover:after {
+      display: none;
+    }
+  }
+
+  .campaign-highlights .padded {
+    padding: 10px 0;
+    box-shadow: none;
+  }
+  .campaign-highlights .video-sec {
+    padding: 0;
+    margin-top: 45px;
+  }
+
+  .video-sec .yt-btn {
+    top: -13px;
+  }
+  .tt-single-slider.video {
+    height: 56vw;
+    .swiper-button-prev, .swiper-button-next, .swiper-pagination {
+      display: none;
+    }
+  }
+
+  .tt-single-slider.video {
+
+  }
+
+  .content-hub-detail .main-heading {
+    padding: 0 20px;
+    margin: 20px 0;
+  }
+
+  #content .side-padd-100 {
+    padding: 0 20px;
+    &.main-heading {
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+
+  .content-hub-detail {
+
+    .side-padd-20 {
+      padding: 0;
+    }
+  }
+
+  .ui-widget.ui-widget-content {
+    max-height: 141px;
+    overflow-y: auto;
+  }
+
+  .tt-page-findacenter, .tt-page-findcenter {
+    .ui-autocomplete.ui-widget.ui-widget-content {
+      max-height: 100%;
+      max-width: 100%;
+      position: fixed;
+      z-index: 100;
+      width: 100% !important;
+      left: 0 !important;
+      right: 0 !important;
+      top: 130px !important;
+      box-shadow: none;
+      border-top: 1px solid #ecebe9;
+    }
+  }
+  .tt-forms .grey-bg {
+    background-color: #fff;
+  }
+
+  .splash-screen.form-response {
+    min-height: calc(100vh - 60px);
+    padding: 20px 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center
+
+  }
+
+  .tt-story-box.tt-story-feature-box {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .tt-form-input .radio-strip.mobile-full {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    .radio {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+  }
+
+  .tt-form-input .radio-strip .radio .text {
+    position: static;
+    padding: 10px 0 5px 0;
+    font-size: 12px;
+  }
+
+  .sm-lists {
+    padding-bottom: 10px;
+    li {
+      margin-bottom: 20px;
+    }
+  }
+  .col-list-item {
+    margin-bottom: 0;
+  }
+  .sitemap .border-row {
+    margin: -10px 0 30px 0;
+  }
+
+  .sitemap .bordered-col:after {
+    left: -17px;
+    right: -19px;
+  }
+  .sitemap {
+    h3 {
+      margin-bottom: 28px;
+    }
+
+  }
+
+  .tt-latest-models-box .tt-model-item .pricing .label {
+    color: #a3a6a0;
+  }
+  .tt-latest-models-box .content-box {
+    margin-top: 38px;
+  }
+  .tt-latest-models-box .banner-upper {
+    top: 180px;
+  }
+  .tt-latest-models-box.tt-carousel .swiper-slide.swiper-slide-active .content-box .pull-right {
+    padding-top: 22px;
+  }
+
+  .tt-latest-models-box {
+    padding-top: 20px;
+  }
+
+  .tt-forms {
+    transition: all .3s ease;
+  }
+
+  .tt-forms.review-bar-mobile {
+    padding-top: 222px;
+    .controls-footer-box {
+      display: block;
+      width: calc(100% + 40px);
+      margin-left: -20px;
+      padding: 20px;
+      max-width: 100vw;
+    }
+  }
+
+  /*.splash-screen *{
+    display:none;
+  }*/
+
+  .controls-footer-box .error-details, .controls-footer-box {
+    display: block;
+
+  }
+
+  .controls-footer-box .form-group {
+    padding-bottom: 0;
+    padding-top: 9px;
+  }
+
+  .error-details {
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  .tt-forms {
+    .swiper-slide {
+      overflow-y: auto;
+    }
+  }
+
+  .controls-footer-box {
+
+    .error-details .alert-message {
+      padding: 5px 0 !important;
+    }
+
+    .alert-message, .field-validation-error {
+      font-size: 10px;
+    }
+
+    transition: all .5s ease;
+    opacity: 0;
+    display: none;
+    padding: 22px 0 0 0;
+    bottom: auto;
+    top: -222px;
+    .form-group h4 {
+      margin-bottom: 0;
+      display: none;
+    }
+    .text-field-controls {
+      padding-top: 5px;
+      margin: 0 auto;
+    }
+  }
+  .tt-heading-box .loc-default-dist {
+    //border: none;
+    //padding: 0;
+  }
+  .tt-accordion.tt-accordion-faqs {
+    margin: 0 0 50px;
+  }
+  .tt-accordion.tt-accordion-faqs.tt-accordian-adjust-1 {
+    margin-bottom: 50px;
+    margin-top: 0;
+  }
+  #content .sub-heading {
+    width: auto;
+    margin: 0 !important;
+    padding: 0 0 30px;
+    text-align: center;
+    //padding: 0;
+    h4 {
+      font-family: $ToyotaText-Bold;
+      font-size: 20px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: 3.2px !important;
+      text-align: center;
+      color: #000000;
+    }
+  }
+  .offer-sec .number {
+    line-height: 1.5;
+  }
+  .tt-short-splash-screen h3 {
+    text-align: center;
+    width: calc(100vw - 40px);
+    padding: 0;
+    margin: 0;
+  }
+
+  .video-sec {
+    .col-sm-12:last-child {
+      .video-box {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .video-gallery-full {
+    .container {
+      padding: 0;
+      margin: 0;
+      .row {
+        display: block;
+        width: 100%;
+        white-space: nowrap;
+        overflow-y: auto;
+        margin: 0 0 0 20px;
+        .col-4 {
+          display: inline-block;
+          width: 80%;
+          max-width: 80%;
+          margin: 0 20px 0 0;
+          padding: 0;
+          &:last-child {
+            margin-right: 40px;
+          }
+        }
+      }
+    }
+    .load-btn-bar {
+      display: block;
+      width: 100%;
+      margin: 30px 0 20px 0;
+    }
+  }
+
+  .mob-filter-show {
+    header {
+      display: none;
+    }
+  }
+  .tt-story-feature-box {
+    .btn-content {
+      text-align: left;
+      padding: 0 35px;
+    }
+  }
+
+  .bh-sl-loc-list.no-result-found {
+    margin-top: 0;
+    height: 100vh !important;
+    .bh-no-result {
+      position: absolute;
+      top: 220px;
+      transform: translateY(-50%);
+    }
+  }
+  .inpage-nav-sec .car-title {
+    margin: 0;
+
+  }
+
+  #content {
+    .content-hub-detail {
+      .tt-gallery-block.tt-short-gallery-block {
+        &.has-youtube-video, &.has-video {
+          .video-icon {
+            min-width: auto;
+          }
+        }
+      }
+    }
+  }
+  .tt-page-contactus #content .offer-listing .row {
+    margin: 00px -15px 35px;
+    .tt-offer-item.tt-get {
+      margin-bottom: 30px;
+    }
+  }
+  #content #offersListingContainer .tt-offer-item {
+    margin-right: 20px;
+    margin-left: 20px;
+    width: calc(100% - 40px);
+  }
+  #content .content-hub-detail > .component.content {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #content .tt-filter-categories ul li {
+    margin: 0 5px;
+  }
+  #content .tt-maps-accordion .accordion-inner.list-focus .tt-content .tt-filter-categories .c-label {
+    font-size: 12px;
+  }
+  #content .model-specs-sec .tt-links-box.no-border.tt-split-four.swiper-container > ul > li {
+    border: none;
+  }
+  #content .finance-tabs .spec-highlights.tt-content-specs .img-placeholder {
+    margin: 0;
+  }
+  #content .spec-highlights.tt-content-specs .img-placeholder {
+    height: 100%;
+    width: 100%;
+  }
+  #content .spec-highlights.tt-content-specs .img-placeholder img {
+    width: 100%;
+  }
+
+  .force-show-list {
+    .ui-autocomplete {
+      display: block !important;
+    }
+  }
+
+  /*
+  .scroll-attached{
+    .tt-branch-locator-form-sec{
+      .form-input:first-child{
+        position:relative;
+        &:before{
+          content:'';
+          display:block;
+          width:100%;
+          height:100%;
+          background-color:blue;
+          position:absolute;
+          top:0;
+          left:0;
+          z-index:2;
+          opacity:.2;
+        }
+      }
+      .bh-sl-address{
+        //pointer-events:none;
+        &.pointer-allow{
+          //pointer-events:all;
+        }
+      }
+    }
+  }
+  */
+
+  /*.force-show-autocomplete{
+    .ui-autocomplete{
+      display:block !important;
+    }
+
+    &.mob-filters-open, &.force-error-top{
+      .ui-autocomplete{
+        display:none !important;
+      }
+    }
+  }*/
+  .tt-form-input.slide-textarea {
+    .d-flex {
+      margin-top: -30px;
+    }
+  }
+  .specs-list.specs-two-col-list {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    column-gap: 30px;
+  }
+
+  .content-hub-detail .tt-gallery-block.has-youtube-video .youtube-iframe {
+    min-height: auto;
+    height: 217px
+  }
+  #contentModelBox3Container {
+    display: none !important;
+  }
+  #content .offers.benefits-handler {
+    padding-bottom: 50px;
+  }
+  #content .tt-tabs-box .tabs-menu li:before {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+
+  .vbox-content > img {
+    max-height: calc(100vh - 200px);
+  }
+  .vbox-num {
+    //display:none !important;
+    bottom: 10px;
+    padding: 0;
+    height: 22px;
+  }
+
+  .vbox-title.mobile {
+    padding: 2px 15px 0;
+  }
+
+  #content .tt-offer-details-sec .link-list-carousel .tt-links-box.no-border.tt-split-four.swiper-container > ul > li {
+    min-width: 300px;
+  }
+  #content .spotlight .banner-image {
+    video, img {
+      max-height: 100% !important;
+      width: 100% !important;
+
+    }
+  }
+  #content .tt-single-slider .swiper-slide img, #content .tt-gallery-block.has-slider .gallery-item.gallery-item-image .image img {
+    width: 100%;
+    height: auto;
+  }
+  .tt-carousel .swiper-carousel .swiper-slide {
+    width: 70%;
+  }
+  #content .spotlight {
+    height: 100%;
+    max-height: 100%;
+  }
+  #content .tt-story-box .tt-banner-bg {
+    background-size: cover !important;
+  }
+  #content .tt-content-hub .hub-item {
+    max-width: 330px;
+
+  }
+
+  .vbox-num {
+    bottom: -12px !important;
+  }
+  .tt-short-splash-screen .scroll-to-continue-btn {
+    position: static;
+    margin-top: 15px;
+  }
+
+  .tt-branch-locator-form-sec .tt-form-search-box-init {
+    left: 50px;
+    right: 50px;
+    width: calc(100vw - 100px);
+  }
+
+  #content .tt-content-hub .hub-item.hub-item-full img {
+    height: auto;
+    /* position: relative;
+     top: -57%;*/
+  }
+
+  .tt-carousel.tt-banner-t1 {
+    .mobile-only {
+      position: relative;
+      top: -240px;
+    }
+  }
+  #content .tt-offer-item, #content .tt-promo-feature-item {
+    width: 330px;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 20px;
+  }
+  .video-sec {
+    max-width: 380px;
+    margin: 45px auto 0 auto;
+  }
+
+  .tt-maps-accordion .accordion-inner.list-focus .tt-content.list-details {
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 90px;
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+  .tt-latest-models-box .banner-upper img {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+
+  .tt-latest-models-box .banner-upper {
+    top: 105px;
+    img {
+      padding-bottom: 40px;
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .tt-banner-bg .tt-story-content-box h3 {
+    top: -160px !important;
+  }
+  header .branding-box .logo {
+    max-width: 140px;
+  }
+  .car-selected-block .image {
+    width: 40%;
+  }
+  .car-selected-block .content {
+    width: 59%;
+  }
+  #content .tt-story-box.tt-story-feature-box .tt-story-content-box h3 {
+    padding: 0 10px 0 10px;
+    font-size: 20px;
+    max-width: 100%;
+    letter-spacing: 3.2px;
+  }
+  #content .tt-maps-accordion .accordion-inner.list-focus .tt-content .tt-filter-categories .c-label {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .short-top-nav li:first-child {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  header .tt-nav-section nav > .container .logo {
+    max-width: 100px;
+    padding: 0 10px;
+  }
+  #content .spotlight .banner-image {
+    img, video {
+      height: 340px;
+      min-height: auto;
+    }
+  }
+  #content .tt-content-hub .hub-item .image img {
+    height: 100%;
+    width: auto;
+  }
+  .tt-latest-models-box .banner-upper {
+    top: 90px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .tt-footer-list {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .component.promo.tt-simple-promo .promo-img a {
+    pointer-events: none
+  }
+  .tt-offer-item.tt-get .content {
+    h3, h4 {
+      a {
+        pointer-events: none;
+      }
+    }
+  }
+}
+

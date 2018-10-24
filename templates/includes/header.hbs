@@ -1,0 +1,109 @@
+<div class="tt-nav-section">
+    <nav>
+        <div class="container">
+            <div class="branding-box">
+                <a href="index.html" class="logo">
+                    <img src="../needreplace/media/Project/ToyotaTheme/Common/images/logos/Toyota.svg"
+                         class="desktop" alt="Toyota">
+                    <img src="../needreplace/media/Project/ToyotaTheme/Common/images/logos/Toyota.svg"
+                         class="mobile" alt="Toyota">
+                </a>
+            </div>
+
+            <!--desktop nav-->
+            <ul class="nav navbar-nav mega-menu">
+                <!--<li class="active"><a href="#">Home</a></li>-->
+
+                <li class="tt-vehicles-item">
+                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">Vehicles</a>-->
+                    <a href="#." class="dropdown-toggle " data-toggle="dropdown">
+
+                        {{#is language "en"}}
+                            {{title_en_1}}
+                        {{else}}
+                            {{title_ar_1}}
+                        {{/is}}
+
+
+                    </a>
+                    <div class="dropdown-menu sub-menu">
+
+                        <div class="container">
+                            {{> vehicles-tabs }}
+                        </div>
+
+                    </div>
+                </li>
+                <li class="tt-title-vehicles">
+                    <a href="/en/Vehicles" class="">Vehicles</a></li>
+                <li>
+                    <a href="#." class="dropdown-toggle" data-toggle="dropdown">
+                        {{#is language "en"}}
+                            {{title_en_2}}
+                        {{else}}
+                            {{title_ar_2}}
+                        {{/is}}
+                    </a>
+                    <div class="dropdown-menu sub-menu">
+
+                        <ul class="listing">
+                            <li><a href="#.">Menu 1</a></li>
+                            <li><a href="#.">Menu 1</a></li>
+                            <li><a href="#.">Menu 1</a></li>
+                        </ul>
+
+
+                    </div>
+                </li>
+                <li>
+                    <a href="#.">{{#is language "en"}}
+                        {{title_en_3}}
+                    {{else}}
+                        {{title_ar_3}}
+                    {{/is}}</a>
+                </li>
+                <li>
+                    <a href="#." class="dropdown-toggle" data-toggle="dropdown">
+
+                        {{#is language "en"}}
+                            {{title_en_4}}
+                        {{else}}
+                            {{title_ar_4}}
+                        {{/is}}
+                    </a>
+                    <div class="dropdown-menu sub-menu">
+                        <ul class="listing">
+                            <li><a href="#.">Menu Menu MenuMenu Menu Menu 1</a></li>
+                            <li><a href="#.">Menu 1</a></li>
+                            <li><a href="#.">Menu Menu Menu 1</a></li>
+                            <li><a href="#.">Menu Menu Menu 1</a></li>
+                            <li><a href="#.">Menu Menu Menu 1</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li class="active-nav">
+                    <a href="#.">{{#is language "en"}}
+                        {{title_en_5}}
+                    {{else}}
+                        {{title_ar_5}}
+                    {{/is}}</a>
+                </li>
+            </ul>
+            <!--desktop nav end-->
+
+            <!--mobile nav-->
+            {{> mobile-nav }}
+            <!--mobile nav end -->
+
+        </div>
+
+    </nav>
+</div>
+
+
+
+
+
+
+

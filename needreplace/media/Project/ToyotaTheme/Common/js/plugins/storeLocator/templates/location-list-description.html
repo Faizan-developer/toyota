@@ -1,0 +1,72 @@
+{{#location}}
+<li class="accordion-inner" data-markerid="{{markerid}}" data-lat="{{lat}}" data-long="{{lng}}">
+
+    <!--<div class="list-label">{{marker}}</div>-->
+    <div class="tt-heading-box">
+        <div class="loc-name">{{name}}</div>
+        <div class="loc-dist loc-default-dist">{{distance}} {{length}}</div>
+    </div>
+    <div class="tt-content list-details">
+        <div class="list-content">
+            <div class="tt-address">
+                <div class="loc-addr">{{address}}</div>
+                {{#if address2}}
+                <div class="loc-addr2">{{address2}}</div>
+                {{/if}}
+                <div class="loc-addr3">{{city}}{{#if city}},{{/if}} {{state}} {{postal}}</div>
+                {{#if phone}}
+                <div class="loc-phone">{{phone}}</div>
+                {{/if}}
+                {{#if web}}
+                <div class="tt-web">
+                    <div class="loc-web"><a href="{{web}}" target="_blank">{{niceURL web}}</a></div>
+                </div>
+                {{/if}}
+            </div>
+            <div class="tt-filter-categories">
+                <ul>
+                    {{#each Categories}}
+                    {{#if CategoryTitle}}
+                    <li>
+                        <span class="c-icon" style="background: url({{CategoryImageURL}}) no-repeat center;"></span><span class="c-label label-show-room">{{CategoryTitle}}</span>
+                    </li>
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+            <div class="tt-opening-hours">
+                <h5 class="closingSoon">{{#if closingSoonLabel}}{{closingSoonLabel}} <strong><em>- </em><span class="closingSoonTime">7 PM</span></strong>{{/if}}</h5>
+                <ul>
+                    {{#each toyotaCenterTiming}}
+                    {{#if DayTitle}}
+                    <li class="tt-toyotaCenterTiming">
+                        <span class="tt-day dayTitle">{{DayTitle}}</span>
+                        <span class="tt-time">  {{#if DayOpeningTiming}} <span class="daystartTimeShow"> {{DayOpeningTiming}} </span> - <span class="dayclosingtimeShow">{{DayClosingTiming}}</span>{{else}} {{../closedLabel}} {{/if}}</span>
+                        <span class="text-hide d-none">  {{#if DayOpeningTiming}} <span class="daystartTime"> {{DayOpeningTimingEnglish}} </span> - <span class="dayclosingtime">{{DayClosingTimingEnglish}}</span>{{/if}}</span>
+                        <span class="text-hide d-none tt-time-value">{{Value}}</span>
+                    </li>
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+            {{#if distance}}
+            {{#if altdistance}}
+            <div class="loc-dist loc-alt-dist">{{altdistance}} {{altlength}}</div>
+            {{/if}}
+
+            {{#if getDirectionsLabel}}
+            <div class="loc-directions">
+                <a class="btn btn-primary"
+                   href="https://maps.google.com?saddr={{mylat}},{{mylng}}&amp;daddr={{lat}},{{lng}}"
+                   target="_blank">{{getDirectionsLabel}}</a>
+                <!--<a class="btn btn-primary"
+                   href="https://maps.google.com?saddr=Current+Location&amp;daddr={{lat}},{{lng}}"
+                   target="_blank">{{getDirectionsLabel}}</a>-->
+            </div>
+            {{/if}}
+            {{/if}}
+
+        </div>
+    </div>
+</li>
+{{/location}}

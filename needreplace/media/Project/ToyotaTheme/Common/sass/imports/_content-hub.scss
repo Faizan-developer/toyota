@@ -1,0 +1,407 @@
+.content-hub-bg {
+  background-color: #fcfcfc;
+  padding: 30px 0 80px;
+  .btn-align {
+    text-align: center;
+    margin: 40px auto 10px;
+  }
+}
+
+.component {
+  &.content-hub {
+    display: block;
+  }
+}
+
+.tt-content-hub {
+  .hub-item {
+    position: relative;
+    box-shadow: 5px 2px 30px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+    height: 385px;
+    h4 {
+      font: normal 15px $ToyotaText-Bold;
+      letter-spacing: 1.8px;
+      color: #000000;
+    }
+    .tags-box {
+      display: block;
+      position: absolute;
+      top: 35px;
+      margin: 0 0;
+      width: calc(100% - 80px);
+      padding: 10px 0;
+
+    }
+    .content {
+      padding: 40px 40px;
+      display: inline-block;
+      width: 365px;
+      height: 100%;
+      position: absolute;
+      z-index: 2;
+      max-width: 100%;
+      color: inherit;
+      p {
+        font-size: 15px;
+        color: #000;
+        line-height: 1.67;
+        letter-spacing: 0.5px;
+      }
+    }
+    .image {
+      float: $right;
+      position: relative;
+      min-height: 390px;
+      img {
+        -webkit-transition: 1s ease;
+        -moz-transition: 1s ease;
+        -o-transition: 1s ease;
+        transition: 1s ease;
+        max-width: 100%;
+        //height: 100%;
+        //max-width: 760px;
+        //object-fit: cover;
+        //
+        width: 100%;
+        &:hover {
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+
+      }
+    }
+    .btn-content {
+      position: absolute;
+      bottom: 0;
+      margin: 0 0;
+      border-top: 1px solid rgba(236, 235, 233, 0.5);
+      width: calc(100% - 80px);
+      padding: 10px 0;
+      left: 40px;
+      .btn {
+        padding-right: 0;
+        padding-left: 0
+      }
+    }
+    &.hub-item-video {
+      cursor: pointer;
+      .image {
+        &:before {
+          content: " ";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          display: inline-block;
+          background: rgba(159, 1, 15, 0.7) no-repeat center;
+          background-size: 60px 60px;
+          left: 0;
+          top: 0;
+          z-index: 1;
+        }
+      }
+      .image {
+        position: relative;
+        z-index: 1;
+        top: 0;
+        width: 100%;
+
+        img {
+          -webkit-transition: 1s ease;
+          -moz-transition: 1s ease;
+          -o-transition: 1s ease;
+          transition: 1s ease;
+
+        }
+
+      }
+      h4 {
+        min-width: 80px;
+        .tt-video-icon:before {
+          content: " ";
+          width: 100%;
+          height: 60px;
+          position: static;
+          display: block;
+          background: url(../images/icons/play-button.svg) no-repeat center;
+          background-size: 60px 60px;
+          left: 0;
+          top: 0;
+          z-index: 1;
+          //margin: 0 auto 15px;
+          clear: both;
+          text-align: center;
+          float: none;
+
+        }
+        span {
+          display: inline-block;
+          margin-top: 15px;
+        }
+
+        margin: 0;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        a {
+          //color: #fff !important;
+          span {
+            display: block;
+            clear: both
+          }
+        }
+      }
+    }
+    &.hub-item-video, &.hub-item-black-overlay {
+      &:hover {
+        .image {
+          img, video {
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+    &.hub-item-black-overlay {
+
+      .image {
+        &:before {
+          content: " ";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          display: inline-block;
+          background: rgba(0, 0, 0, 0.85) no-repeat center;
+          background-size: 60px 60px;
+          left: 0;
+          top: 0;
+          z-index: 1;
+          box-shadow: 5px 2px 30px 0 rgba(0, 0, 0, 0.1);
+        }
+      }
+      .image {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+      }
+      h4 {
+        letter-spacing: 3.2px;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 20px;
+        position: relative;
+        padding-right: 40px;
+        padding-left: 0px;
+        &:before {
+          content: "";
+          position: static;
+          width: 50px;
+          height: 3px;
+          background: #fff;
+          top: -21px;
+          display: block;
+          margin-bottom: 21px;
+        }
+      }
+
+      .btn-link {
+        color: #fff;
+        font-size: 10px !important;
+        letter-spacing: 1.5px !important;
+      }
+    }
+
+    &.hub-item-half, &.hub-item-full {
+      h4 {
+        /*white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;*/
+      }
+    }
+
+    &.hub-item-half {
+      .content, .image {
+        width: 50%;
+        overflow: hidden;
+      }
+
+    }
+    &.hub-item-black-overlay {
+      .image {
+        width: 100%;
+        overflow: hidden;
+      }
+
+    }
+    &.hub-item-full {
+
+      .image {
+        width: 780px;
+        float: $left;
+        overflow: hidden;
+      }
+      .content {
+        float: $right;
+        width: 33.3%;
+        right: 0;
+        left: auto;
+        background: #fff;
+      }
+    }
+
+    .tt-aligner-item {
+      width: 100%;
+    }
+
+  }
+}
+
+.tag {
+  min-width: 100px;
+
+  white-space: nowrap;
+  text-align: center;
+  font: normal 10px/1 $ToyotaText-Bold;
+  height: 25px;
+  text-transform: uppercase;
+  padding: 0px 18px;
+  border-radius: 12.5px;
+  background-color: #ecebe9;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  color: #888888;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
+  pointer-events: none;
+  line-height: normal;
+  padding: 6px 18px;
+  //padding: 4px 18px;
+  font-weight: normal;
+  &:hover {
+    //opacity: .8;
+    color: #888888;
+  }
+}
+
+.tt-gallery-block .gallery-item.gallery-item-image .image video, .tt-gallery-block .gallery-item.gallery-item-image .image img {
+  /*  height: auto;
+    width: auto !important;*/
+
+}
+
+.tt-gallery-block.tt-gallery-block-fullpage.has-slider .gallery-item.gallery-item-image .image video, .tt-gallery-block.tt-gallery-block-fullpage.has-slider .gallery-item.gallery-item-image .image img {
+  //max-height: 292px;
+}
+
+.tt-single-slider .swiper-slide img {
+  //width: auto;
+}
+
+.content-hub-detail .tt-gallery-block.has-slider .swiper-container .swiper-slide .gallery-item img {
+  height: 292px;
+  width: auto;
+}
+
+.tt-single-slider .swiper-container .swiper-slide {
+  max-height: 474px;
+  overflow: hidden;
+}
+
+.content-hub-detail {
+  .tt-single-slider, .main-heading, .tt-gallery-block.tt-short-gallery-block.has-video, .tt-gallery-block.tt-short-gallery-block.has-youtube-video {
+    max-width: 770px;
+    margin: 0 auto 60px;
+    display: block;
+    float: none;
+    overflow: hidden;
+  }
+
+  .offer-listing {
+    padding-bottom: 50px;
+  }
+
+  .tt-offer-listing-box .row.row-eq-height [class^=col] {
+    margin-top: 0;
+  }
+
+}
+
+#content {
+  .content-hub-detail {
+    .tt-gallery-block.tt-short-gallery-block {
+      &.has-youtube-video, &.has-video {
+        .video-icon {
+          height: 80px;
+          margin: 0;
+          &:before {
+            margin: 0;
+            font-size: 0; // to remove the nbsp gap
+          }
+        }
+      }
+    }
+  }
+}
+
+.video-slider .tt-single-slider .swiper-container .swiper-slide {
+  max-height: 100%;
+}
+
+#content .content-hub-detail > .component.content {
+  width: 100%;
+  max-width: 770px;
+  margin: 0 auto;
+  display: block;
+  float: none;
+  overflow: hidden;
+  padding: 0px 100px 50px;
+  text-align: left;
+}
+
+.content-hub-detail .main-heading .side-padd-100.main-heading .dashed.centered ~ p {
+  text-align: center !important;
+}
+
+.content-hub-detail .component.offer-listing .date.text-small {
+  text-align: left;
+}
+
+.main-heading .dashed.centered * {
+  text-align: center;
+}
+
+.tt-quicklinks-promos.text-center .row.row-no-padding {
+  width: 100%;
+}
+
+.tt-hub-tabs-box {
+  //max-height: 90px;
+}
+
+.content-hub-detail {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  //margin-top: 60px;
+}
+
+
+.tt-content-hub .hub-item {
+  .tags-box .tag {
+    line-height: 1.4
+  }
+}
+
+.tt-content-hub .hub-item.hub-item-video h4 *{
+  color: inherit !important;
+}

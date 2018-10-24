@@ -1,0 +1,143 @@
+/*.spotlight {
+  max-height: 100%;
+
+}
+#content .spotlight .banner-image {
+  max-height: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+.cover-banner {
+  //height: -webkit-fill-available
+  height: 100%;
+  min-height: 600px;
+}
+
+#content .spotlight {
+
+  height: 100%;
+}*/
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  #content .spotlight .banner-image img, #content .spotlight .banner-image video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+
+  }
+  /*#content .spotlight.caption-left .banner-image img {
+    width: 100%;
+    max-width: 150%;
+    height: auto;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+  }*/
+  #content .cover-banner {
+    min-height: 45vh;
+    height: auto;
+    max-width: 100%;
+  }
+  #content .spotlight {
+    height: auto;
+    //min-height: 30vh;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #content .spotlight .banner-image {
+    img, video {
+      width: 100%;
+      max-height: 100%;
+      height: auto;
+      min-height: auto;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .tt-content-hub .hub-item .image img {
+    height: 100%;
+    width: auto;
+  }
+  .tt-content-hub .hub-item {
+    height: 320px;
+  }
+  .container {
+    width: 100%;
+  }
+  .inpage-nav-sec {
+    padding-right: 20px;
+  }
+}
+
+.specs-three-col-list ul {
+  display: inline-block;
+  width: calc(33.33% - 5px);
+  vertical-align: top;
+}
+
+.specs-list.specs-three-col-list li {
+  width: 100%;
+}
+
+.specs-list.specs-three-col-list li:before {
+  top: 10.5px;
+}
+
+.tt-gallery-block .gallery-item.gallery-item-image .image .youtube-thumb {
+
+}
+
+.tt-gallery-block .gallery-item.gallery-item-image .image {
+
+  white-space: nowrap;
+}
+
+.tt-gallery-block.tt-gallery-block-fullpage .main-row [class*="col"] {
+  align-self: center;
+}
+
+/* FIREFOX ONLY */
+@-moz-document url-prefix() {
+  .tt-gallery-block-fullpage:not(.has-slider) .col-md-4 > a .gallery-item .image img {
+    transform: translate(0%);
+  }
+}
+
+.tt-story-box .tt-story-content-box, .tt-gallery-block.tt-short-gallery-block .main-row [class*="col"] .gallery-item, .tt-content-hub .hub-item.hub-item-black-overlay, .tt-content-hub .hub-item.hub-item-video {
+  color: #fff;
+  h1, h2, h3, h4, h5, p {
+    color: inherit;
+    a, span {
+      color: inherit;
+    }
+    &.dashed:before, &:before {
+      background: currentColor;
+    }
+  }
+}
+
+.tt-content-hub .hub-item {
+  &.hub-item-video h4 span {
+    margin-top: 10px;
+  }
+  &.hub-item-black-overlay {
+    .btn-content {
+      border-color: currentColor;
+      .btn-link {
+        color: inherit
+      }
+    }
+  }
+}
+
+.inpage-nav-sec .car-title img {
+  max-width: 250px;
+}
+
+.short-top-nav li.active a img {
+  filter: invert(.5) sepia(1) saturate(100) hue-rotate(25deg);
+}

@@ -1,0 +1,914 @@
+/*.no-top-margin {
+  margin-top: 0px;
+}
+
+.terms-conditions-content {
+  > {
+    h4 {
+      font: normal 20px "toyota_textbold", "Tohama", "Arial";
+      letter-spacing: 3.2px;
+      text-transform: uppercase;
+      color: #000000;
+    }
+    p {
+      font: normal 15px "toyota_textregular", "Tohama", "Arial";
+      line-height: 25px;
+      letter-spacing: 0.5px;
+      color: #000000;
+    }
+    .terms-conditions-separator {
+      height: 1px;
+      width: 100%;
+      background-color: #ecebe9;
+      margin: 30px 0px;
+    }
+  }
+  &:last-child > .terms-conditions-separator {
+    display: none;
+  }
+}
+
+!*FINANCE*!
+
+.finance-tabs, .finance-image-holder {
+  overflow: visible !important;
+}
+
+.finance-image img {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.finance-tabs .spec-highlights.tt-content-specs {
+  .spec-details {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 60px 0 rgba(0, 0, 0, 0.04);
+  }
+  .container:before {
+    display: none !important;
+  }
+}
+
+.offers {
+  margin-top: 70px;
+}
+
+.offer-header {
+  h3 {
+    text-align: center;
+  }
+  p {
+    max-width: 570px;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #000000;
+  }
+}
+
+.offers .offers-listing {
+  padding: 30px 0;
+  border-top: solid 1px #ecebe9;
+  border-bottom: solid 1px #ecebe9;
+  max-width: 967px;
+  margin: 50px auto 60px;
+  .offer {
+    display: inline-block;
+    width: 135px;
+    margin: 0 32px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #888888;
+    &:first-child {
+      margin-left: 12px;
+    }
+    &:last-child {
+      margin-right: 12px;
+    }
+  }
+}
+
+.dream-car {
+  !*
+      background-image: url("../beirut-images/dream-car.png");
+      background-size: cover;
+      padding: 150px 0 125px;
+  *!
+  margin-top: 90px;
+  .dream-car-container .box {
+    position: relative;
+    img {
+      width: 100%;
+    }
+    .box-item {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: auto;
+      left: 0;
+      right: 0;
+      h3 {
+        width: 245px;
+        font-size: 20px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 3.2px;
+        text-align: left;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-bottom: 21px;
+      }
+      p {
+        width: 271px;
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.67;
+        letter-spacing: 0.5px;
+        text-align: left;
+        color: #ffffff;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+.box-item-mobile {
+  padding: 0 50px;
+  width: 100%;
+  p {
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: 0.5px;
+    text-align: left;
+    color: #000;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+
+.disclaimer {
+  margin-top: 90px;
+  margin-bottom: 40px;
+  .container .disclaimer-content {
+    background-color: #fcfcfc;
+    padding: 50px 40px;
+    h4 {
+      margin-bottom: 16px;
+      letter-spacing: 0.5px;
+    }
+    ul {
+      width: 50%;
+      display: inline-block;
+      float: left;
+      &:first-child {
+        padding-right: 39px;
+      }
+      &:last-child {
+        padding-left: 39px;
+      }
+      li {
+        font-size: 13px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.85;
+        letter-spacing: 0.4px;
+        text-align: left;
+        color: #000000;
+        margin-bottom: 0;
+        position: relative;
+        display: block;
+        vertical-align: top;
+        padding: 0 10px 0 12px;
+        &:before {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          top: 9px;
+          width: 3px;
+          height: 3px;
+          background-color: red;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+!*TERMS AND CONDITIONS *!
+
+.about-us-boxes-handler {
+  margin-top: -75px;
+  margin-left: -15px;
+  margin-right: -15px;
+  .about-us-box-container {
+    display: inline-block;
+    float: left;
+    width: 33.33333333%;
+    padding: 0 15px;
+  }
+}
+
+.about-us-boxes-listing {
+  //width: 100%;
+  overflow: auto;
+  margin: 0;
+}
+
+.about-us-boxes-handler .about-us-boxes {
+  min-height: 361px;
+  //height: auto;
+  height: calc(100% - 20px);
+  box-shadow: 5px 2px 15px 0 rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+  padding: 50px 40px 16px 40px;
+  margin-bottom: 20px;
+  > {
+    h3 {
+      font: normal 20px "toyota_textbold", "Tohama", "Arial";
+      letter-spacing: 3.2px;
+      text-transform: uppercase;
+    }
+    p {
+      font: normal 15px "toyota_textregular", "Tohama", "Arial";
+      line-height: 25px;
+      letter-spacing: 0.5px;
+      color: #000000;
+    }
+  }
+}
+
+.main-heading {
+//  margin-top: 70px;
+}
+
+.about-us-small-container {
+  .p-small-1 {
+    font: normal 15px "toyota_textregular", "Tohama", "Arial";
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    color: #000000;
+    max-width: 570px;
+    margin: auto;
+  }
+  .gallery {
+    margin-top: 0;
+  }
+}
+
+.about-us-section-3 {
+  position: relative;
+  .heading h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 60px;
+  }
+  .section-3-background-image {
+    .sub-heading-container {
+      h4 {
+        font-size: 15px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.53;
+        letter-spacing: 0.5px;
+        text-align: left;
+        color: #000000;
+        margin-bottom: 20px;
+      }
+      .row .col-md-5 {
+        font-size: 15px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.67;
+        letter-spacing: 0.5px;
+        text-align: left;
+        color: #000000;
+      }
+    }
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    z-index: 9;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.about-us-section-3, .articles {
+  .heading h3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+}
+
+.articles .heading h3{
+  text-align: center;
+}
+
+.about-us-section-3 .heading h3{
+  text-align: left;
+}
+
+.articles {
+  margin-top: 90px;
+  .heading h3 {
+    margin-bottom: 60px;
+  }
+}
+
+!*Error page*!
+
+.error-page {
+  !*
+      background-image: url('../beirut-images/error.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+  *!
+  width: 100%;
+  margin-bottom: -50px;
+  position: relative;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+  .text-center {
+    padding: 0 40px;
+    max-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: auto;
+    h1 {
+      font-size: 67px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 0.9;
+      letter-spacing: 40px;
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 15px;
+      font-weight: bold;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: 1.67;
+      letter-spacing: 1.8px;
+      text-align: center;
+      color: #ffffff;
+      max-width: 410px;
+      margin: 25px auto 30px;
+      text-transform: uppercase;
+    }
+    .btn-align {
+      text-align: center;
+    }
+  }
+}*/
+
+.no-top-margin {
+  margin-top: 0px;
+}
+
+.terms-conditions-content {
+  /*padding-bottom: 30px;
+  border-bottom: 2px solid #ecebe9;
+  margin-bottom: 30px;*/
+}
+
+.terms-conditions-content > h4 {
+  font: normal 20px "toyota_textbold", "Tohama", "Arial";
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.terms-conditions-content > p {
+  font: normal 15px "toyota_textregular", "Tohama", "Arial";
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.terms-conditions-content > .terms-conditions-separator {
+  height: 2px;
+  width: 100%;
+  background-color: #ecebe9;
+  margin: 30px 0px;
+}
+
+.terms-conditions-content:last-child > .terms-conditions-separator {
+  display: none;
+}
+
+/*FINANCE*/
+.finance-tabs, .finance-image-holder {
+  overflow: visible !important;
+}
+
+.finance-image img {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.finance-tabs .spec-highlights.tt-content-specs .spec-details {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 60px 0 rgba(0, 0, 0, 0.04);
+}
+
+
+.finance-tabs .spec-highlights.tt-content-specs .container:before {
+  //display: none !important;
+}
+
+.offers {
+  margin-top: 70px;
+}
+
+.offer-header h3 {
+  text-align: center;
+}
+
+.offer-header p {
+  max-width: 570px;
+  margin: 0 auto;
+  margin-top: 25px;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #000000;
+}
+
+.offers .offers-listing {
+  padding: 30px 0;
+  border-top: solid 1px #ecebe9;
+  border-bottom: solid 1px #ecebe9;
+  max-width: 967px;
+  margin: 50px auto 60px;
+  /*display:table;*/
+  /*width:100%;*/
+}
+
+.offers .offers-listing .offer {
+  display: inline-block;
+  width: 135px;
+  margin: 0 32px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #888888;
+  /*display:table-cell;*/
+  vertical-align: middle;
+}
+
+.offers .offers-listing .offer:first-child {
+  margin-left: 12px;
+}
+
+.offers .offers-listing .offer:last-child {
+  margin-right: 12px;
+}
+
+.dream-car {
+  /*
+    background-image: url("../beirut-images/dream-car.png");
+    background-size: cover;
+    padding: 150px 0 125px;
+*/
+  margin-top: 90px;
+}
+
+.dream-car .dream-car-container .box {
+  position: relative;
+}
+
+.dream-car .dream-car-container .box img {
+  width: 100%;
+}
+
+.dream-car .dream-car-container .box .box-item {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.dream-car .dream-car-container .box .box-item h3 {
+  width: 245px;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-align: left;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 21px;
+}
+
+.dream-car .dream-car-container .box .box-item p {
+  width: 271px;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.box-item-mobile {
+  padding: 0 50px 20px;
+  width: 100%;
+}
+
+.box-item-mobile p {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #000;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.disclaimer {
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+
+.disclaimer .container .disclaimer-content {
+  background-color: #fcfcfc;
+  padding: 50px 40px;
+}
+
+.disclaimer .container .disclaimer-content h4 {
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
+.disclaimer .container .disclaimer-content ul {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.disclaimer .container .disclaimer-content ul:first-child {
+  padding-right: 39px;
+}
+
+.disclaimer .container .disclaimer-content ul:last-child {
+  padding-left: 39px;
+}
+
+.disclaimer .container .disclaimer-content ul li {
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 0;
+  position: relative;
+  display: block;
+  vertical-align: top;
+  padding: 0 10px 0 12px;
+}
+
+.disclaimer .container .disclaimer-content ul li:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 3px;
+  height: 3px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+/*TERMS AND CONDITIONS */
+.about-us-boxes-handler {
+  margin-top: -75px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.about-us-boxes-handler .about-us-box-container {
+  display: inline-block;
+  float: left;
+  width: 33.33333333%;
+  padding: 0 15px;
+}
+
+.about-us-boxes-listing {
+  overflow: auto;
+  margin: 0;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.about-us-boxes-handler .about-us-boxes {
+  min-height: 361px;
+  height: calc(100% - 20px);
+  //box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.04);
+  background-color: #fff;
+  padding: 50px 40px 16px 40px;
+  margin-bottom: 20px;
+  height: 100%;
+  position: relative;
+  box-shadow: 5px 2px 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+.about-us-boxes-handler .about-us-boxes > h3 {
+  font: normal 20px "toyota_textbold", "Tohama", "Arial";
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.about-us-boxes-handler .about-us-boxes > p {
+  font: normal 15px "toyota_textregular", "Tohama", "Arial";
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.main-heading {
+  //margin-top: 70px;
+}
+
+.about-us-small-container .p-small-1 {
+  font: normal 15px "toyota_textregular", "Tohama", "Arial";
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  color: #000000;
+  max-width: 570px;
+  margin: auto;
+}
+
+.about-us-small-container .gallery {
+  margin-top: 0;
+}
+
+.about-us-section-3 {
+  position: relative;
+}
+
+.about-us-section-3 .heading h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 60px;
+}
+
+.about-us-section-3 .section-3-background-image {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 90px;
+  z-index: 9;
+}
+
+.about-us-section-3 .section-3-background-image .sub-heading-container h4 {
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.53;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.about-us-section-3 .section-3-background-image .sub-heading-container .two-columns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  column-gap: 30px;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.about-us-section-3 .section-3-background-image .sub-heading-container .row .col-md-5 {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #000000;
+}
+
+.about-us-section-3 img {
+  display: block;
+  width: 100%;
+  padding-top: 100px;
+}
+
+/*.about-us-section-3 .heading h3 {
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase; }*/
+
+.articles {
+  margin-top: 90px;
+}
+
+.articles .heading h3 {
+  margin-bottom: 60px;
+}
+
+/*Error page*/
+.error-page {
+
+  /*
+    background-image: url('../beirut-images/error.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+*/
+  width: 100%;
+  //margin-bottom: -85px;
+  position: relative;
+  overflow: hidden;
+  //min-height: 600px;
+  max-height: 800px;
+}
+
+.error-page img {
+  width: 100%;
+  height: auto;
+}
+
+.error-page .blacked-out {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  top: 0;
+  opacity: 0.58;
+}
+
+.error-page .text-center {
+  padding: 0 40px;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
+}
+
+.error-page .text-center h1 {
+  font-size: 67px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.9;
+  letter-spacing: 40px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "toyota_textbold", "Tohama", "Arial";
+}
+
+.error-page .text-center p, .error-page .text-center h2 {
+  font-size: 15px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #ffffff;
+  max-width: 410px;
+  margin: 25px auto 30px;
+  text-transform: uppercase;
+}
+
+.error-page .text-center .btn-align {
+  text-align: center;
+}
+
+#content .tt-gray-box.no-top-margin {
+  margin: 0 5px 20px;
+}
+
+.about-us-section-3 .section-3-background-image .sub-heading-container .two-columns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  column-gap: 30px;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.67;
+  letter-spacing: 0.5px;
+  color: #000000;
+}
+
+.about-us-section-3, .articles {
+  .heading h3 {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 3.2px;
+    color: #000000;
+    //text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.articles {
+  .heading h3 {
+
+    text-align: center;
+  }
+}
+

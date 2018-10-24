@@ -1,0 +1,81 @@
+<div class="vehicles-toggle-box">
+    <div class="component accordion tt-accordion">
+        <div class="accordion-inner">
+            <h4>  {{#is language "en"}}
+                {{tabs_menu_item_en_1}}
+            {{else}}
+                {{tabs_menu_item_ar_1}}
+            {{/is}}
+
+            </h4>
+
+            <div class="tt-content" style="display: none;">
+                <div class="car-listing-box car-item-listing-box">
+                    {{> _vehicles-item-list-passengers }}
+                </div>
+            </div>
+        </div>
+        <div class="accordion-inner">
+            <h4>  {{#is language "en"}}
+                {{tabs_menu_item_en_2}}
+            {{else}}
+                {{tabs_menu_item_ar_2}}
+            {{/is}}
+
+            </h4>
+
+            <div class="tt-content" style="display: none;">
+                <div class="car-listing-box car-item-listing-box">
+                    {{> _vehicles-item-list-suvs }}
+                </div>
+            </div>
+        </div>
+        <div class="accordion-inner">
+            <h4>  {{#is language "en"}}
+                {{tabs_menu_item_en_3}}
+            {{else}}
+                {{tabs_menu_item_ar_3}}
+            {{/is}}
+
+            </h4>
+
+            <div class="tt-content" style="display: none;">
+                <div class="car-listing-box car-item-listing-box">
+                    {{> _vehicles-item-list-vans }}
+                </div>
+            </div>
+        </div>
+        <div class="accordion-inner">
+            <h4>  {{#is language "en"}}
+                {{tabs_menu_item_en_4}}
+            {{else}}
+                {{tabs_menu_item_ar_4}}
+            {{/is}}
+
+            </h4>
+
+            <div class="tt-content" style="display: none;">
+                <div class="car-listing-box car-item-listing-box">
+                    {{> _vehicles-item-list-commercial }}
+                </div>
+            </div>
+        </div>
+        <div class="accordion-inner">
+            <h4>Offers
+                <em>
+                    <!-- <img src="../needreplace/media/Project/ToyotaTheme/Common/images/arrows/menu-arrow-active-mob.svg"
+                          alt="">-->
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="14" height="9" viewBox="0 0 14 9">
+                         <path fill="#d40618" fill-rule="evenodd" d="M1.639.48L0 1.998 7 8.48l7-6.482L12.361.48 7 5.445z"></path>
+                     </svg>-->
+                </em>
+            </h4>
+
+            <div class="tt-content" style="display: none;">
+                <div class="car-listing-box car-item-listing-box">
+                    <p>empty</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

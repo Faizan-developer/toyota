@@ -1,0 +1,77 @@
+.tt-story-box {
+  width: 100%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+  &.tt-story-feature-box {
+    margin: 40px 0;
+  }
+
+  .tt-banner-bg {
+    background: url(../images/spotlights/no-image-layout.jpg) no-repeat center / cover;
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .tt-story-content-box {
+    width: 370px;
+    color: #fff;
+    /*position: absolute;
+    right: 0;
+    height: inherit;
+    margin: 0 130px;*/
+    float: $right;
+    position: static;
+    height: 650px;
+    margin: 0;
+
+    h2, h3 {
+      font: normal 30px/1.5 $ToyotaText-Bold;
+      color: #ffffff;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+    p {
+
+      font: normal 15px/1.67 $ToyotaText-Regular;
+      color: #ffffff;
+      letter-spacing: 0.5px;
+    }
+  }
+  .btn-content {
+    margin-top: 40px;
+  }
+
+  &.tt-story-feature-box {
+
+    .tt-story-content-box {
+      float: $left;
+      height: 577px;
+      h4, h3 {
+        font: normal 20px $ToyotaText-Bold;
+        color: inherit;
+        text-transform: uppercase;
+        letter-spacing: 3.2px;
+        margin-bottom: 30px;
+      }
+
+    }
+
+  }
+}
+
+.tt-story-box .tt-story-content-box h2, .tt-story-box .tt-story-content-box h3 {
+  white-space: normal;
+  word-break: break-word;
+}
+
+.tt-story-box .tt-banner-bg .tt-story-content-box h2, .tt-story-box .tt-banner-bg .tt-story-content-box h3, .main-heading h2, .main-heading h3 {
+  white-space: normal;
+  word-break: break-word;
+}

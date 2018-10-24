@@ -1,0 +1,59 @@
+.component {
+  &.link-list {
+    &.tt-link-list {
+      h4 {
+        font: bold 14px $ToyotaText-Regular;
+        color: #8a8a8a;
+        margin: 0 0 20px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 0 0 10px;
+          padding: 0;
+          line-height: 15px;
+          a {
+            font: normal 12px/15px $ToyotaText-Regular;
+            color: #8a8a8a;
+          }
+        }
+      }
+      p {
+        font: normal 12px/15px $ToyotaText-Regular;
+        color: #8a8a8a;
+
+      }
+    }
+
+    &.tt-link-list-line, &.tt-link-list-inline {
+      h4 {
+        font: normal 14px $ToyotaText-Bold;
+        color: #8a8a8a;
+        margin: 0 0 20px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 0 0 10px;
+          padding: 0;
+          line-height: 15px;
+          display: inline-block;
+          a {
+            font: normal 12px/15px $ToyotaText-Regular;
+            color: #8a8a8a;
+            margin-right: 13px;
+            margin-left: 0px;
+          }
+        }
+      }
+      p {
+        font: normal 12px/15px $ToyotaText-Regular;
+        color: #8a8a8a;
+
+      }
+    }
+  }
+}
+
