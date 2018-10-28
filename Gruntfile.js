@@ -1,5 +1,6 @@
 var utc = new Date().toJSON().slice(0, 10).replace(/-/g, '');
 var packageName = "package/package" + utc;
+const sass = require('node-sass');
 module.exports = function (grunt) {
     'use strict';
     grunt.initConfig({
@@ -52,7 +53,8 @@ module.exports = function (grunt) {
         },
         sass: {
             options: {
-                sourceMap: true
+                sourceMap: true,
+                implementation:sass
             },
             dist: {
                 files: {

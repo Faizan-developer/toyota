@@ -27,7 +27,8 @@
   "dependencies": {
     "grunt-browser-sync": "^2.2.0",
     "grunt-cli": "^1.2.0",
-    "handlebars-helpers": "^0.8.0"
+    "handlebars-helpers": "^0.8.0",
+    "node-sass": "^4.9.4"
   },
   "devDependencies": {
     "assemble": "~0.4.37",
@@ -42,7 +43,7 @@
     "grunt-ftp-deploy": "^0.2.0",
     "grunt-pagespeed": "^2.0.1",
     "grunt-rtlcss": "^2.0.1",
-    "grunt-sass": "^2.1.0",
+    "grunt-sass": "^3.0.2",
     "grunt-tinypng": "^0.6.1",
     "grunt-w3c-html-validation": "^0.1.9",
     "grunt-zip": "^0.17.1"
